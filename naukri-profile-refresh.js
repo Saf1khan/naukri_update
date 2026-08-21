@@ -102,15 +102,20 @@ async function googleLogin(ctx, page) {
 }
 
 (async () => {
-  const ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
-    channel: 'chrome',
+  const launchOptions = {
     headless: false, // naukri's Akamai bot-check blocks headless; off-screen headed instead
     viewport: LOGIN_MODE ? null : { width: 1280, height: 850 },
     args: [
       '--disable-blink-features=AutomationControlled',
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
       ...(LOGIN_MODE ? ['--window-position=100,100', '--start-maximized'] : ['--window-position=-32000,-32000']),
     ],
-  });
+  };
+  if (process.platform === 'win32') {
+    launchOptions.channel = 'chrome';
+  }
+  const ctx = await chromium.launchPersistentContext(PROFILE_DIR, launchOptions);
   let page = ctx.pages()[0] || (await ctx.newPage());
 
   try {

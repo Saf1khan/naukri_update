@@ -24,8 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
-      - name: Install Playwright Chromium dependencies
-        run: npx playwright install-deps chromium
+      - name: Install Playwright & Chromium Browsers
+        run: |
+          npx playwright install --with-deps chromium
 
       - name: Run Profile Refresh Script
         env:
