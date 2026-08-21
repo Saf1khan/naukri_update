@@ -105,10 +105,13 @@ async function googleLogin(ctx, page) {
   const launchOptions = {
     headless: false, // naukri's Akamai bot-check blocks headless; off-screen headed instead
     viewport: LOGIN_MODE ? null : { width: 1280, height: 850 },
+    userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
     args: [
       '--disable-blink-features=AutomationControlled',
       '--no-sandbox',
       '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
       ...(LOGIN_MODE ? ['--window-position=100,100', '--start-maximized'] : ['--window-position=-32000,-32000']),
     ],
   };

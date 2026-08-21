@@ -28,6 +28,13 @@ jobs:
         run: |
           npx playwright install --with-deps chromium
 
+      - name: Extract Saved Browser Session
+        run: |
+          if [ -f "naukri-profile.zip" ]; then
+            echo "Extracting naukri-profile.zip..."
+            unzip -o -q naukri-profile.zip
+          fi
+
       - name: Run Profile Refresh Script
         env:
           NAUKRI_PROFILE_URL: ${{ secrets.NAUKRI_PROFILE_URL || 'https://www.naukri.com/mnjuser/profile' }}
