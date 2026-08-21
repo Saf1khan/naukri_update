@@ -3,6 +3,8 @@ name: Hourly Naukri Profile Refresh
 on:
   schedule:
     - cron: '0 * * * *'
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
