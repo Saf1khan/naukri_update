@@ -18,6 +18,18 @@ const PROFILE_URL = naukriProfileUrl;
 const LOGIN_URL = `https://www.naukri.com/nlogin/login?URL=${PROFILE_URL}`;
 
 const PROFILE_DIR = path.join(__dirname, '.naukri-chrome-profile');
+const ZIP_FILE = path.join(__dirname, 'naukri-profile.zip');
+
+if (!fs.existsSync(PROFILE_DIR) && fs.existsSync(ZIP_FILE)) {
+  console.log('[setup] Extracting saved browser session from naukri-profile.zip...');
+  const { execSync } = require('child_process');
+  if (process.platform === 'win32') {
+    execSync(`powershell -Command "Expand-Archive -Path '${ZIP_FILE}' -DestinationPath '${__dirname}' -Force"`);
+  } else {
+    execSync(`unzip -q "${ZIP_FILE}" -d "${__dirname}"`);
+  }
+}
+
 const LOG_FILE = path.join(__dirname, 'naukri-refresh.log');
 const ERROR_SHOT = path.join(__dirname, 'naukri-refresh-error.png');
 const LOGIN_MODE = process.argv[2] === 'login';
@@ -70,7 +82,7 @@ async function googleLogin(ctx, page) {
   while (Date.now() < deadline) {
     // consent screen ("Continue") sometimes follows the password step
     if (!g.isClosed()) {
-      await g.locator('button:has-text("Continue")').first().click({ timeout: 500 }).catch(() => {});
+      await g.locator('button:has-text("Continue")').first().click({ timeout: 500 }).catch(() => { });
     }
     const done = ctx.pages().find((p) => {
       try { return onProfile(new URL(p.url())); } catch { return false; }
@@ -78,7 +90,7 @@ async function googleLogin(ctx, page) {
     if (done) { log('Google login OK, session saved.'); return done; }
     if (g.isClosed() || /naukri\.com/.test(g.url())) {
       // auth finished but landed elsewhere — go to the profile directly
-      await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => {});
+      await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => { });
       if (onProfile(new URL(page.url()))) { log('Google login OK, session saved.'); return page; }
     }
     await page.waitForTimeout(2000);
@@ -93,19 +105,44 @@ async function googleLogin(ctx, page) {
   const ctx = await chromium.launchPersistentContext(PROFILE_DIR, {
     channel: 'chrome',
     headless: false, // naukri's Akamai bot-check blocks headless; off-screen headed instead
-    viewport: { width: 1280, height: 850 },
+    viewport: LOGIN_MODE ? null : { width: 1280, height: 850 },
     args: [
       '--disable-blink-features=AutomationControlled',
-      ...(LOGIN_MODE ? [] : ['--window-position=-32000,-32000']),
+      ...(LOGIN_MODE ? ['--window-position=100,100', '--start-maximized'] : ['--window-position=-32000,-32000']),
     ],
   });
   let page = ctx.pages()[0] || (await ctx.newPage());
 
   try {
-    await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => { });
 
     if (!onProfile(new URL(page.url()))) {
-      page = await googleLogin(ctx, page);
+      if (LOGIN_MODE) {
+        log('Interactive Login Mode: Please sign into Naukri in the opened Chrome window...');
+        if (!page.url().includes('nlogin')) {
+          await page.goto(LOGIN_URL, { waitUntil: 'domcontentloaded', timeout: 60000 }).catch(() => { });
+        }
+        // Poll for up to 30 minutes waiting for the user to complete login manually
+        const deadline = Date.now() + 1800000;
+        let loggedIn = false;
+        while (Date.now() < deadline) {
+          const profileTab = ctx.pages().find((p) => {
+            try { return onProfile(new URL(p.url())); } catch { return false; }
+          });
+          if (profileTab) {
+            page = profileTab;
+            loggedIn = true;
+            log('Interactive login successful! Session saved to persistent profile.');
+            break;
+          }
+          await page.waitForTimeout(2000);
+        }
+        if (!loggedIn) {
+          throw new Error('Interactive login timed out after 30 minutes.');
+        }
+      } else {
+        page = await googleLogin(ctx, page);
+      }
     }
     // login may land on /mnjuser/homepage — make sure we're on the profile itself
     if (!/\/mnjuser\/profile/.test(page.url())) {
@@ -140,7 +177,7 @@ async function googleLogin(ctx, page) {
   } catch (err) {
     const pages = ctx.pages();
     for (let i = 0; i < pages.length; i++) {
-      await pages[i].screenshot({ path: ERROR_SHOT.replace('.png', `-${i}.png`) }).catch(() => {});
+      await pages[i].screenshot({ path: ERROR_SHOT.replace('.png', `-${i}.png`) }).catch(() => { });
     }
     log(`ERROR: ${err.message.split('\n')[0]} (screenshots: naukri-refresh-error-*.png)`);
     process.exitCode = 1;
