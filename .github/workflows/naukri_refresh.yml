@@ -24,10 +24,12 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
-      - name: Run Profile Refresh (API-based, no browser needed)
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Profile Refresh (Playwright with Cookies)
         env:
           NAUK_AT: ${{ secrets.NAUK_AT }}
           NAUK_RT: ${{ secrets.NAUK_RT }}
           NAUK_SID: ${{ secrets.NAUK_SID }}
-          NAUKRI_PROFILE_ID: ${{ secrets.NAUKRI_PROFILE_ID }}
-        run: node naukri-api-refresh.js
+        run: node naukri-cookie-refresh.js
