@@ -25,8 +25,9 @@ const NAUK_RT = process.env.NAUK_RT;
 const NAUK_SID = process.env.NAUK_SID;
 
 (async () => {
+  const isCI = Boolean(process.env.CI);
   const launchOptions = {
-    headless: true,
+    headless: !isCI ? false : false, // Run headed with xvfb in CI to avoid headless bot checks
     args: [
       '--disable-blink-features=AutomationControlled',
       '--no-sandbox',
@@ -35,10 +36,6 @@ const NAUK_SID = process.env.NAUK_SID;
       '--disable-gpu',
     ],
   };
-
-  if (process.platform === 'win32') {
-    launchOptions.channel = 'chrome';
-  }
 
   const browser = await chromium.launch(launchOptions);
 
@@ -61,9 +58,15 @@ const NAUK_SID = process.env.NAUK_SID;
 
   const page = await context.newPage();
 
+  // Mask webdriver property
+  await page.addInitScript(() => {
+    Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+  });
+
   try {
     log('Navigating to Naukri Profile page with authenticated cookies...');
     await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
+    log(`Landed on URL: ${page.url()}`);
 
     // Wait for the page or check if redirected to login
     if (page.url().includes('nlogin')) {

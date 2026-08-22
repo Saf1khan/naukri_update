@@ -32,4 +32,12 @@ jobs:
           NAUK_AT: ${{ secrets.NAUK_AT }}
           NAUK_RT: ${{ secrets.NAUK_RT }}
           NAUK_SID: ${{ secrets.NAUK_SID }}
-        run: node naukri-cookie-refresh.js
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukri-cookie-refresh.js
+
+      - name: Upload Debug Screenshot on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: error-screenshot
+          path: naukri-refresh-error*.png
+          if-no-files-found: ignore
