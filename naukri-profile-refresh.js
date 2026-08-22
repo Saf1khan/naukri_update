@@ -48,9 +48,37 @@ async function googleLogin(ctx, page) {
     waitUntil: 'domcontentloaded', timeout: 60000,
   });
 
-  // Naukri's "Sign in with Google" is a plain div.socialbtn.google
-  const googleBtn = page.locator('.socialbtn.google, [class*="socialbtn"][class*="google"]').first();
-  await googleBtn.waitFor({ timeout: 20000 });
+  // Naukri's Google sign-in element shape changes often; try a few stable fallbacks.
+  const googleButtonSelectors = [
+    '.socialbtn.google',
+    '[class*="socialbtn"][class*="google"]',
+    'button:has-text("Google")',
+    '[role="button"]:has-text("Google")',
+    'a:has-text("Google")',
+    'div:has-text("Google")',
+  ];
+  let googleBtn = null;
+  for (const selector of googleButtonSelectors) {
+    const candidate = page.locator(selector).first();
+    const visible = await candidate.isVisible().catch(() => false);
+    if (visible) {
+      googleBtn = candidate;
+      break;
+    }
+  }
+  if (!googleBtn) {
+    for (const selector of googleButtonSelectors) {
+      const candidate = page.locator(selector).first();
+      try {
+        await candidate.waitFor({ state: 'visible', timeout: 10000 });
+        googleBtn = candidate;
+        break;
+      } catch {
+        // try next selector
+      }
+    }
+  }
+  if (!googleBtn) throw new Error('Google sign-in button not found on Naukri login page');
   await googleBtn.click();
 
   // The Google sign-in may open a popup OR replace the current tab — find it either way
