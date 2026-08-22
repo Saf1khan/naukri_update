@@ -20,9 +20,19 @@ const log = (msg) => {
   fs.appendFileSync(LOG_FILE, line + '\n');
 };
 
-const NAUK_AT = process.env.NAUK_AT;
-const NAUK_RT = process.env.NAUK_RT;
-const NAUK_SID = process.env.NAUK_SID;
+const NAUK_AT = (process.env.NAUK_AT || '').trim();
+const NAUK_RT = (process.env.NAUK_RT || '').trim();
+const NAUK_SID = (process.env.NAUK_SID || '').trim();
+
+console.log('Secret check:');
+console.log(' - NAUK_AT:', NAUK_AT ? `Present (${NAUK_AT.length} chars)` : 'MISSING (empty)');
+console.log(' - NAUK_RT:', NAUK_RT ? `Present (${NAUK_RT.length} chars)` : 'MISSING (empty)');
+console.log(' - NAUK_SID:', NAUK_SID ? `Present (${NAUK_SID.length} chars)` : 'MISSING (empty)');
+
+if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
+  console.error('ERROR: All secrets (NAUK_AT, NAUK_RT, NAUK_SID) are missing in GitHub Secrets!');
+  process.exit(1);
+}
 
 (async () => {
   const isCI = Boolean(process.env.CI);
@@ -98,7 +108,8 @@ const NAUK_SID = process.env.NAUK_SID;
     log(`OK: headline ${current.endsWith('.') ? 'dot removed' : 'dot added'} (verified) → "${updated.slice(0, 60)}"`);
   } catch (err) {
     await page.screenshot({ path: ERROR_SHOT }).catch(() => {});
-    log(`ERROR: ${err.message.split('\n')[0]}`);
+    log(`ERROR: ${err.message}`);
+    console.error('Stack trace:', err.stack);
     process.exitCode = 1;
   } finally {
     await browser.close();
