@@ -37,7 +37,8 @@ if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
 (async () => {
   const isCI = Boolean(process.env.CI);
   const launchOptions = {
-    headless: !isCI ? false : false, // Run headed with xvfb in CI to avoid headless bot checks
+    headless: false,
+    ...(process.platform === 'win32' ? { channel: 'chrome' } : {}),
     args: [
       '--disable-blink-features=AutomationControlled',
       '--no-sandbox',
@@ -54,14 +55,15 @@ if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
     viewport: { width: 1280, height: 850 },
   });
 
-  // Inject session cookies directly
+  // Clean values to prevent CDP Protocol error (Storage.setCookies)
+  const cleanVal = (v) => (v ? String(v).replace(/[\r\n"']/g, '').trim() : '');
   const cookiesToSet = [
-    { name: 'nauk_at', value: NAUK_AT, domain: '.naukri.com', path: '/' },
-    { name: 'nauk_rt', value: NAUK_RT, domain: '.naukri.com', path: '/' },
-    { name: 'nauk_sid', value: NAUK_SID, domain: '.naukri.com', path: '/' },
-    { name: 'nauk_otl', value: NAUK_SID, domain: '.naukri.com', path: '/' },
-    { name: 'is_login', value: '1', domain: '.naukri.com', path: '/' },
-    { name: 'persona', value: 'default', domain: '.naukri.com', path: '/' },
+    { name: 'nauk_at', value: cleanVal(NAUK_AT), url: 'https://www.naukri.com' },
+    { name: 'nauk_rt', value: cleanVal(NAUK_RT), url: 'https://www.naukri.com' },
+    { name: 'nauk_sid', value: cleanVal(NAUK_SID), url: 'https://www.naukri.com' },
+    { name: 'nauk_otl', value: cleanVal(NAUK_SID), url: 'https://www.naukri.com' },
+    { name: 'is_login', value: '1', url: 'https://www.naukri.com' },
+    { name: 'persona', value: 'default', url: 'https://www.naukri.com' },
   ].filter(c => Boolean(c.value));
 
   await context.addCookies(cookiesToSet);
@@ -77,11 +79,6 @@ if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
     log('Navigating to Naukri Profile page with authenticated cookies...');
     await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
     log(`Landed on URL: ${page.url()}`);
-
-    // Wait for the page or check if redirected to login
-    if (page.url().includes('nlogin')) {
-      throw new Error('Redirected to login — session cookies expired. Please update NAUK_AT in secrets.');
-    }
 
     const textarea = page.locator('#resumeHeadlineTxt, textarea[name="resumeHeadline"], textarea.resumeHeadlineTxt, textarea').first();
 
