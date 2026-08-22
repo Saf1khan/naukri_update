@@ -186,25 +186,27 @@ async function googleLogin(ctx, page) {
     }
 
     // Resume headline widget → pencil icon → textarea → save
-    const editIcon = page.locator('#lazyResumeHead span.edit.icon, [data-ga-track*="resumeHeadline"] .edit');
+    const editIcon = page.locator('#lazyResumeHead span.edit.icon, [data-ga-track*="resumeHeadline"] .edit, a[href*="resumeHeadline/edit"], .widgetHead .edit');
     await editIcon.first().waitFor({ timeout: 30000 });
     await editIcon.first().click();
 
-    const textarea = page.locator('#resumeHeadlineTxt');
-    await textarea.waitFor({ timeout: 15000 });
-    const current = (await textarea.inputValue()).trimEnd();
+    const textarea = page.locator('#resumeHeadlineTxt, textarea[name="resumeHeadline"], textarea.resumeHeadlineTxt, textarea');
+    await textarea.first().waitFor({ timeout: 20000 });
+    const current = (await textarea.first().inputValue()).trimEnd();
     const updated = current.endsWith('.') ? current.slice(0, -1) : current + '.';
 
-    await textarea.fill(updated);
-    await page.getByRole('button', { name: /^save$/i }).first().click();
-    await textarea.waitFor({ state: 'hidden', timeout: 15000 });
+    await textarea.first().fill(updated);
+    const saveBtn = page.getByRole('button', { name: /^save$/i }).or(page.locator('button.btn-save, .action button, button:has-text("Save")'));
+    await saveBtn.first().waitFor({ timeout: 10000 });
+    await saveBtn.first().click();
+    await page.waitForTimeout(4000);
 
     // modal closing isn't proof the save stuck — reload from the server and re-read
     await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await editIcon.first().waitFor({ timeout: 30000 });
     await editIcon.first().click();
-    await textarea.waitFor({ timeout: 15000 });
-    const saved = (await textarea.inputValue()).trimEnd();
+    await textarea.first().waitFor({ timeout: 15000 });
+    const saved = (await textarea.first().inputValue()).trimEnd();
     if (saved !== updated) {
       throw new Error(`save did not stick — server headline is "${saved.slice(0, 60)}", expected "${updated.slice(0, 60)}"`);
     }

@@ -10,6 +10,8 @@
   "author": "Ankit Baghel",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.4.2",
+    "playwright": "^1.62.1",
     "playwright-core": "^1.61.1"
   }
 }
