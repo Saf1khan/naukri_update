@@ -32,7 +32,11 @@ jobs:
         run: |
           if [ -f "naukri-profile.zip" ]; then
             echo "Extracting naukri-profile.zip..."
-            unzip -o -q naukri-profile.zip
+            unzip_exit_code=0
+            unzip -o -q naukri-profile.zip || unzip_exit_code=$?
+            if [ "$unzip_exit_code" -gt 1 ]; then
+              exit "$unzip_exit_code"
+            fi
           fi
 
       - name: Run Profile Refresh Script
