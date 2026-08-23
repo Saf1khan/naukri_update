@@ -80,6 +80,10 @@ if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
     await page.goto(PROFILE_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
     log(`Landed on URL: ${page.url()}`);
 
+    if (page.url().includes('nlogin/login') || page.url().includes('/login')) {
+      throw new Error('Injected cookies are invalid or expired — Naukri redirected to the login page. Please re-copy fresh cookie values from your browser into GitHub Secrets.');
+    }
+
     const textarea = page.locator('#resumeHeadlineTxt, textarea[name="resumeHeadline"], textarea.resumeHeadlineTxt, textarea').first();
 
     // If modal is not already open, click the edit icon
