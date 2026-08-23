@@ -57,8 +57,11 @@ if (!NAUK_AT && !NAUK_SID && !NAUK_RT) {
 
   // Clean values to prevent CDP Protocol error (Storage.setCookies)
   const cleanVal = (v) => (v ? String(v).replace(/[\r\n"']/g, '').trim() : '');
+  
+  // NAUK_RT and NAUK_SID are long-lived session cookies (valid for weeks/months).
+  // Injecting an expired NAUK_AT access token causes Naukri to reject the session.
+  // When NAUK_RT and NAUK_SID are injected without a stale NAUK_AT, Naukri auto-issues a fresh nauk_at access token automatically!
   const cookiesToSet = [
-    { name: 'nauk_at', value: cleanVal(NAUK_AT), url: 'https://www.naukri.com' },
     { name: 'nauk_rt', value: cleanVal(NAUK_RT), url: 'https://www.naukri.com' },
     { name: 'nauk_sid', value: cleanVal(NAUK_SID), url: 'https://www.naukri.com' },
     { name: 'nauk_otl', value: cleanVal(NAUK_SID), url: 'https://www.naukri.com' },
