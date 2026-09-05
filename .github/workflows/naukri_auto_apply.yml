@@ -1,0 +1,63 @@
+name: Daily Naukri Auto-Apply
+
+on:
+  schedule:
+    # 9:00 AM IST = 3:30 AM UTC, Monday–Friday only
+    - cron: '30 3 * * 1-5'
+  workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
+
+jobs:
+  auto-apply:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    permissions:
+      contents: write  # Needed to commit applied-jobs.json back to repo
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Auto-Apply Script
+        env:
+          NAUK_RT: ${{ secrets.NAUK_RT }}
+          NAUK_SID: ${{ secrets.NAUK_SID }}
+          JOB_KEYWORDS: "React Developer,Full Stack Developer,Software Engineer,AI Engineer,Frontend Engineer"
+          JOB_LOCATIONS: "Bangalore,Hyderabad,Remote"
+          JOB_EXPERIENCE_MIN: "1"
+          JOB_EXPERIENCE_MAX: "3"
+          MAX_APPLIES_PER_RUN: "25"
+          NOTICE_PERIOD: "15 days"
+          CURRENT_CTC: "3"
+          EXPECTED_CTC: "10"
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukri-auto-apply.js
+
+      - name: Commit applied-jobs.json (persist applied job IDs)
+        if: always()  # Always commit even if script had partial success
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add applied-jobs.json naukri-apply.log || true
+          git diff --staged --quiet || git commit -m "chore: update applied-jobs.json and log [skip ci]"
+          git push || true
+
+      - name: Upload Debug Screenshot on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apply-error-screenshot
+          path: naukri-apply-error*.png
+          if-no-files-found: ignore

@@ -1,11 +1,12 @@
 # secrets & personal data
 .env
 
-# runtime output
+# runtime output — logs and error shots are uploaded as artifacts, not committed
 *.log
 applications*.csv
 apply-state-*.json
 *.png
+# applied-jobs.json is intentionally NOT ignored — CI commits it to persist state
 
 # saved browser sessions (contain logged-in cookies)
 .*-chrome-profile/
