@@ -42,7 +42,7 @@ jobs:
           MAX_APPLIES_PER_RUN: "25"
           NOTICE_PERIOD: "15 days"
           CURRENT_CTC: "3"
-          EXPECTED_CTC: "10"
+          EXPECTED_CTC: "6"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukri-auto-apply.js
 
       - name: Commit applied-jobs.json (persist applied job IDs)
