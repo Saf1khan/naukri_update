@@ -741,5 +741,878 @@
     "company": "Kapture CRM",
     "status": "skipped",
     "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032971",
+    "date": "2026-09-07",
+    "time": "8:55:10 pm",
+    "title": "Java Developer",
+    "company": "CGI",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032924",
+    "date": "2026-09-07",
+    "time": "8:55:14 pm",
+    "title": "Azure Data engineer ((DLT),Python, Data Bricks & Data Factory)",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "220826015289",
+    "date": "2026-09-07",
+    "time": "8:55:17 pm",
+    "title": "SAP UI5 /FIORI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "220826015257",
+    "date": "2026-09-07",
+    "time": "8:55:21 pm",
+    "title": "SAP BODS Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "090826001799",
+    "date": "2026-09-07",
+    "time": "8:55:24 pm",
+    "title": "SAP BODS Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "090826001600",
+    "date": "2026-09-07",
+    "time": "8:55:27 pm",
+    "title": "SAP UI5 and FIORI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "090826001540",
+    "date": "2026-09-07",
+    "time": "8:55:30 pm",
+    "title": "SAP BTP @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "160826002211",
+    "date": "2026-09-07",
+    "time": "8:55:35 pm",
+    "title": "SAP CPI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032807",
+    "date": "2026-09-07",
+    "time": "8:55:39 pm",
+    "title": "Business Analyst",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032805",
+    "date": "2026-09-07",
+    "time": "8:55:43 pm",
+    "title": "Data Analyst",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "200826034653",
+    "date": "2026-09-07",
+    "time": "8:55:46 pm",
+    "title": "SAP CPI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "120826043851",
+    "date": "2026-09-07",
+    "time": "8:55:50 pm",
+    "title": "SAP BTP/CPI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032753",
+    "date": "2026-09-07",
+    "time": "8:55:54 pm",
+    "title": "PySpark / Spark Developer",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "120826043952",
+    "date": "2026-09-07",
+    "time": "8:55:58 pm",
+    "title": "SAP UI5 / FIORI Consultant @ Infosys",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032740",
+    "date": "2026-09-07",
+    "time": "8:56:02 pm",
+    "title": "Lead Engineer",
+    "company": "AMS",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032716",
+    "date": "2026-09-07",
+    "time": "8:56:05 pm",
+    "title": "Backend Java Developer",
+    "company": "Photon",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032680",
+    "date": "2026-09-07",
+    "time": "8:56:10 pm",
+    "title": "Python Developer",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032668",
+    "date": "2026-09-07",
+    "time": "8:56:14 pm",
+    "title": "AEM cloud migration Lead - full time opportunity-Bangalore -onsite",
+    "company": "DFCS",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032645",
+    "date": "2026-09-07",
+    "time": "8:56:18 pm",
+    "title": "Pyspark Developer",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032621",
+    "date": "2026-09-07",
+    "time": "8:56:22 pm",
+    "title": "Dot Net Developer",
+    "company": "Insight Global",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "050926012825",
+    "date": "2026-09-07",
+    "time": "8:56:30 pm",
+    "title": "Business Analyst Lead",
+    "company": "HCLTech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926033404",
+    "date": "2026-09-07",
+    "time": "8:56:33 pm",
+    "title": "C++ Bazel Developer Role",
+    "company": "Xoriant",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031012",
+    "date": "2026-09-07",
+    "time": "8:56:37 pm",
+    "title": "Java Developer",
+    "company": "Ascendion",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926030939",
+    "date": "2026-09-07",
+    "time": "8:56:43 pm",
+    "title": "Hiring  Senior ETL Testing/ Data Engineer - Remote",
+    "company": "2coms",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926030930",
+    "date": "2026-09-07",
+    "time": "8:56:48 pm",
+    "title": "Digital : Python For Data Science",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926029831",
+    "date": "2026-09-07",
+    "time": "8:56:51 pm",
+    "title": "Microsoft Dynamics Crm Developer",
+    "company": "Techaim Information Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926029608",
+    "date": "2026-09-07",
+    "time": "8:56:55 pm",
+    "title": "Snowflake Data Engineer",
+    "company": "A leading company into IT",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032962",
+    "date": "2026-09-07",
+    "time": "8:57:02 pm",
+    "title": "Data Engineer",
+    "company": "Insight Global",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032701",
+    "date": "2026-09-07",
+    "time": "8:57:07 pm",
+    "title": "GCP - Lead/Sr. Lead/Architect /10-16 Yrs/Immediate Joiners",
+    "company": "Leading Client",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032926",
+    "date": "2026-09-07",
+    "time": "8:57:19 pm",
+    "title": "Group Leader - CDMO",
+    "company": "Jubilant Pharmova",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032912",
+    "date": "2026-09-07",
+    "time": "8:57:21 pm",
+    "title": "Walk-in || Java Developer (Springboot)",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "070926032813",
+    "date": "2026-09-07",
+    "time": "8:57:24 pm",
+    "title": "Walk-in || Automation Tester (Java + Selenium)",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "070926032801",
+    "date": "2026-09-07",
+    "time": "8:57:28 pm",
+    "title": "Senior Electronics Engineer",
+    "company": "IEG Auto Power Ltd",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032759",
+    "date": "2026-09-07",
+    "time": "8:57:31 pm",
+    "title": "Process Specialist - US Insurance Ops",
+    "company": "Principal Financial Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032729",
+    "date": "2026-09-07",
+    "time": "8:57:37 pm",
+    "title": "Business Development Manager | IT Services, AI Solutions",
+    "company": "Accelerate AI",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926026062",
+    "date": "2026-09-07",
+    "time": "8:57:40 pm",
+    "title": "5months contract only1-2yrs Excellent communications skills/ Reporting",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032642",
+    "date": "2026-09-07",
+    "time": "8:57:44 pm",
+    "title": "Hiring For OTA Automation",
+    "company": "Satven",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032528",
+    "date": "2026-09-07",
+    "time": "8:57:48 pm",
+    "title": "Engineer-Techno commercial (Store)",
+    "company": "Adani Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032493",
+    "date": "2026-09-07",
+    "time": "8:57:53 pm",
+    "title": "Senior Engineer – Digital Solutions and AI Integration",
+    "company": "Adani Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032471",
+    "date": "2026-09-07",
+    "time": "8:57:57 pm",
+    "title": "Site HR Operation - Partner",
+    "company": "Adani Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032431",
+    "date": "2026-09-07",
+    "time": "8:58:02 pm",
+    "title": "Technical Expert || Government Project || Delhi",
+    "company": "BDO India",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "230626021508",
+    "date": "2026-09-07",
+    "time": "8:58:08 pm",
+    "title": "Senior Manager IT - Cloud",
+    "company": "Cyfuture",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032358",
+    "date": "2026-09-07",
+    "time": "8:58:12 pm",
+    "title": "Senior Mutual Fund Operations Executive",
+    "company": "Fortune Growealth",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032246",
+    "date": "2026-09-07",
+    "time": "8:58:16 pm",
+    "title": "Java Developer",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032198",
+    "date": "2026-09-07",
+    "time": "8:58:21 pm",
+    "title": "PHP Technical Architect, Data Architect, PHP, Vue.js",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032131",
+    "date": "2026-09-07",
+    "time": "8:58:25 pm",
+    "title": "Finance Executive",
+    "company": "RK Kejriwal Associates Bhiwadi",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032056",
+    "date": "2026-09-07",
+    "time": "8:58:30 pm",
+    "title": "Selenium + API Testing with Java",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032039",
+    "date": "2026-09-07",
+    "time": "8:58:34 pm",
+    "title": "Mainframe Developer",
+    "company": "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032038",
+    "date": "2026-09-07",
+    "time": "8:58:37 pm",
+    "title": "Senior Python AI Developer",
+    "company": "Saanvi Nexus",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031993",
+    "date": "2026-09-07",
+    "time": "8:58:41 pm",
+    "title": "Python Developer",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031967",
+    "date": "2026-09-07",
+    "time": "8:58:45 pm",
+    "title": "Lead Site Reliability Engineer (SRE)",
+    "company": "Skillventory",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031929",
+    "date": "2026-09-07",
+    "time": "8:58:50 pm",
+    "title": "Lead Engineer- Python Full Stack",
+    "company": "Evalueserve",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "170826026955",
+    "date": "2026-09-07",
+    "time": "8:58:54 pm",
+    "title": "Artificial Intelligence Engineer",
+    "company": "IT Bridge Consultants",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "170826025002",
+    "date": "2026-09-07",
+    "time": "8:58:58 pm",
+    "title": "Senior Ux Product Designer",
+    "company": "IT Bridge Consultants",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033017",
+    "date": "2026-09-07",
+    "time": "8:59:20 pm",
+    "title": "Data Analytics Engineer",
+    "company": "ACL Digital",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032749",
+    "date": "2026-09-07",
+    "time": "8:59:24 pm",
+    "title": "Lead Full stack Engineer",
+    "company": "Arrive",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031543",
+    "date": "2026-09-07",
+    "time": "8:59:30 pm",
+    "title": "Senior Frontend Engineer at A FinTech Company",
+    "company": "Talentzo Delhi",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032410",
+    "date": "2026-09-07",
+    "time": "8:59:50 pm",
+    "title": "Computer Operator",
+    "company": "Vittsure Tech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "010426026051",
+    "date": "2026-09-07",
+    "time": "8:59:53 pm",
+    "title": "Principal/Senior Software Engineer - Java",
+    "company": "PubMatic",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032368",
+    "date": "2026-09-07",
+    "time": "8:59:59 pm",
+    "title": "RUST Developer",
+    "company": "Xfactor Telant",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032306",
+    "date": "2026-09-07",
+    "time": "9:00:04 pm",
+    "title": "Senior Full Stack Developer",
+    "company": "Ishvara Tech Consulting",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "060826015854",
+    "date": "2026-09-07",
+    "time": "9:00:07 pm",
+    "title": ".Net Fullstack Developer",
+    "company": "IT Bridge Consultants",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "200826000051",
+    "date": "2026-09-07",
+    "time": "9:00:13 pm",
+    "title": "Artificial Intelligence Engineer virtual interview on 5th Sep 26",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031848",
+    "date": "2026-09-07",
+    "time": "9:00:56 pm",
+    "title": "Senior Data Scientist",
+    "company": "Valuelabs",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031828",
+    "date": "2026-09-07",
+    "time": "9:01:00 pm",
+    "title": "Java Architect",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "290726033306",
+    "date": "2026-09-07",
+    "time": "9:01:05 pm",
+    "title": "Executive Assistant To Director",
+    "company": "Westwell Distributors",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "040926021055",
+    "date": "2026-09-07",
+    "time": "9:02:10 pm",
+    "title": "iOS Developer",
+    "company": "Apexon",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031054",
+    "date": "2026-09-07",
+    "time": "9:02:15 pm",
+    "title": "Lead Software Engineer-Frontend",
+    "company": "A leading Company",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926030375",
+    "date": "2026-09-07",
+    "time": "9:02:21 pm",
+    "title": "Golang Developer",
+    "company": "Infobeans",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926030119",
+    "date": "2026-09-07",
+    "time": "9:02:25 pm",
+    "title": "Sap Mm Consultant",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033050",
+    "date": "2026-09-07",
+    "time": "9:02:32 pm",
+    "title": "Frappe developer",
+    "company": "Rxbb",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032703",
+    "date": "2026-09-07",
+    "time": "9:02:49 pm",
+    "title": "Magento Developer - Onsite (Chennai)",
+    "company": "Colan Infotech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033057",
+    "date": "2026-09-07",
+    "time": "9:03:16 pm",
+    "title": "Fullstack Developer",
+    "company": "Arunarcis Solutions",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033070",
+    "date": "2026-09-07",
+    "time": "9:04:01 pm",
+    "title": "Walk-in || Direct Walk In - Software Engineer - 09 Sep 26 @ Bangalore",
+    "company": "MKS Vision",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "070926031380",
+    "date": "2026-09-07",
+    "time": "9:04:13 pm",
+    "title": "Azure .Net Fullstack || Virtual Drive",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "200426022738",
+    "date": "2026-09-07",
+    "time": "9:05:49 pm",
+    "title": "Dot Net Developer",
+    "company": "sonal.garg@talentcorner.in",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "060826036879",
+    "date": "2026-09-07",
+    "time": "9:07:00 pm",
+    "title": "REACT/Angular + AI (2-3 YRS)-INF",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "300726029582",
+    "date": "2026-09-07",
+    "time": "9:07:04 pm",
+    "title": ".NET Fullstack (REACT OR Angular)-INF",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "200826033092",
+    "date": "2026-09-07",
+    "time": "9:07:08 pm",
+    "title": "Python Django Developer - INF (2 To 9) YRS",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028988",
+    "date": "2026-09-07",
+    "time": "9:07:11 pm",
+    "title": "Custom Software Engineer",
+    "company": "Logic Planet",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "130726032080",
+    "date": "2026-09-07",
+    "time": "9:07:14 pm",
+    "title": "Python Django Developer - INF",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "200826036149",
+    "date": "2026-09-07",
+    "time": "9:07:18 pm",
+    "title": "React JS Developer(2-3y & 5-9y)",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "270726031120",
+    "date": "2026-09-07",
+    "time": "9:07:22 pm",
+    "title": ".NET + Reactjs (2-3 YRS)-INF",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028978",
+    "date": "2026-09-07",
+    "time": "9:07:25 pm",
+    "title": "Alert - AI Fullstack (AI+Python+ React) - L-A-IIEBH",
+    "company": "Bounteous",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "130826014561",
+    "date": "2026-09-07",
+    "time": "9:07:29 pm",
+    "title": "Java Developer Microservices-INF(5-9)YRS",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028947",
+    "date": "2026-09-07",
+    "time": "9:07:33 pm",
+    "title": "Java Full Stack Developer",
+    "company": "CGI",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028927",
+    "date": "2026-09-07",
+    "time": "9:07:37 pm",
+    "title": "Fullstack Developer",
+    "company": "Purview Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028898",
+    "date": "2026-09-07",
+    "time": "9:07:41 pm",
+    "title": "Custom Software Engineer",
+    "company": "Logic Planet",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "140826032429",
+    "date": "2026-09-07",
+    "time": "9:07:45 pm",
+    "title": "Java Developer (5-9Y)",
+    "company": "Infosys",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926028874",
+    "date": "2026-09-07",
+    "time": "9:07:49 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Capgemini",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031783",
+    "date": "2026-09-07",
+    "time": "9:08:09 pm",
+    "title": "Export Sales Coordinator",
+    "company": "Faijan",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031732",
+    "date": "2026-09-07",
+    "time": "9:08:14 pm",
+    "title": "Data Engineer at A FinTech Company",
+    "company": "Talentzo Delhi",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926031598",
+    "date": "2026-09-07",
+    "time": "9:08:18 pm",
+    "title": "Java Full Stack Developer with Reactjs",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033091",
+    "date": "2026-09-07",
+    "time": "9:08:40 pm",
+    "title": "Senior/Lead Data Scientist",
+    "company": "Tredence",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926030664",
+    "date": "2026-09-07",
+    "time": "9:08:50 pm",
+    "title": "SFCC Backend and API Developer",
+    "company": "Msys Inc",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926033105",
+    "date": "2026-09-07",
+    "time": "9:09:05 pm",
+    "title": "Full Stack Mobile Developer",
+    "company": "Softinnovation",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070926032369",
+    "date": "2026-09-07",
+    "time": "9:09:37 pm",
+    "title": "Digital Marketing Executive",
+    "company": "Fintellect associates",
+    "status": "skipped",
+    "reason": "unconfirmed"
   }
 ]
