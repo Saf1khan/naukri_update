@@ -31,10 +31,39 @@ if (!NAUK_RT || !NAUK_SID) {
   process.exit(1);
 }
 
-const KEYWORDS = (process.env.JOB_KEYWORDS || 'React Developer,Full Stack Developer,Software Engineer,AI Engineer,Frontend Engineer')
+// ── Job Search Config ─────────────────────────────────────────────────────────
+// Priority order matters: preferred roles & locations are tried FIRST each run.
+// Naukri searches are de-duplicated by job ID so no double-applying ever.
+
+// Tier 1 = preferred roles | Tier 2 = broader tech roles (also applied if quota not met)
+const KEYWORDS = (process.env.JOB_KEYWORDS || [
+  // ── Tier 1: Preferred roles (primary target) ──────────────────────────────
+  'React Developer',
+  'Full Stack Developer',
+  'MERN Stack Developer',
+  'Frontend Developer',
+  'Software Engineer',
+  'AI Engineer',
+  // ── Tier 2: Broader tech roles (good pay, good match) ────────────────────
+  'Next.js Developer',
+  'Node.js Developer',
+  'JavaScript Developer',
+  'TypeScript Developer',
+  'Python Developer',
+  'Backend Developer',
+  'Web Developer',
+  'Software Developer',
+  'ML Engineer',
+].join(','))
   .split(',').map(k => k.trim()).filter(Boolean);
 
-const LOCATIONS = (process.env.JOB_LOCATIONS || 'Bangalore,Hyderabad,Remote')
+// Location search order:
+//   1. Bangalore (most preferred)
+//   2. Hyderabad (second preferred)
+//   3. Pan India (catches ALL other cities — Mumbai, Pune, Chennai, Delhi, etc.)
+//   4. Remote (any-location remote roles)
+// Note: "Pan India" and "Remote" use special URL formats (no "-in-city" suffix)
+const LOCATIONS = (process.env.JOB_LOCATIONS || 'Bangalore,Hyderabad,Pan India,Remote')
   .split(',').map(l => l.trim()).filter(Boolean);
 
 const EXP_MIN = parseInt(process.env.JOB_EXPERIENCE_MIN || '1', 10);
@@ -83,10 +112,27 @@ const humanDelay = () => sleep(1500 + Math.random() * 2000); // 1.5–3.5 s
 // sort=f   → reverse-chronological (newest jobs at the top)
 // jobAge=0 → all jobs, not just last 24h (combined with sort=f = freshest globally)
 function buildSearchUrl(keyword, location, pageNo = 1) {
-  const kw  = keyword.trim().toLowerCase().replace(/\s+/g, '-');
-  const loc = location.trim().toLowerCase().replace(/\s+/g, '-');
+  const kw = keyword.trim().toLowerCase().replace(/\s+/g, '-');
   const pageSuffix = pageNo > 1 ? `-${pageNo}` : '';
-  return `https://www.naukri.com/${kw}-jobs-in-${loc}${pageSuffix}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
+
+  // Special locations: "Pan India" or "Remote" don't use "-in-city" suffix
+  const isPanIndia = /^(pan.?india|all|india)$/i.test(location.trim());
+  const isRemote   = /^remote$/i.test(location.trim());
+
+  let baseUrl;
+  if (isPanIndia) {
+    // https://www.naukri.com/react-developer-jobs?sort=f → all India
+    baseUrl = `https://www.naukri.com/${kw}-jobs${pageSuffix}`;
+  } else if (isRemote) {
+    // https://www.naukri.com/react-developer-jobs?sort=f&wfhType=5 → remote jobs
+    baseUrl = `https://www.naukri.com/${kw}-jobs${pageSuffix}`;
+    return `${baseUrl}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}&wfhType=5`;
+  } else {
+    const loc = location.trim().toLowerCase().replace(/\s+/g, '-');
+    baseUrl = `https://www.naukri.com/${kw}-jobs-in-${loc}${pageSuffix}`;
+  }
+
+  return `${baseUrl}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
 }
 
 // ── Inject Naukri session cookies ─────────────────────────────────────────────

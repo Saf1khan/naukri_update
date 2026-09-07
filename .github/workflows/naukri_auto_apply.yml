@@ -56,8 +56,10 @@ jobs:
         env:
           NAUK_RT: ${{ secrets.NAUK_RT }}
           NAUK_SID: ${{ secrets.NAUK_SID }}
-          JOB_KEYWORDS: "React Developer,Full Stack Developer,Software Engineer,AI Engineer,Frontend Engineer"
-          JOB_LOCATIONS: "Bangalore,Hyderabad,Remote"
+          # Keywords and Locations intentionally NOT set here so the script uses
+          # its own full priority-ordered list (Tier 1 preferred + Tier 2 broader tech roles,
+          # Bangalore > Hyderabad > Pan India > Remote).
+          # To override, set JOB_KEYWORDS / JOB_LOCATIONS as GitHub repo variables.
           JOB_EXPERIENCE_MIN: "1"
           JOB_EXPERIENCE_MAX: "3"
           MAX_APPLIES_PER_RUN: "25"   # Hard daily cap — never exceeds this
