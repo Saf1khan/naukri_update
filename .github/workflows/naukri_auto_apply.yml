@@ -1,22 +1,36 @@
-name: Daily Naukri Auto-Apply
+name: Daily Naukri Auto-Apply (Hourly Real-Time Mode)
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Runs every ~hour during Indian business hours (Mon–Fri) so you are among
+# the FIRST applicants whenever a new job matching your profile is posted.
+#
+# Schedule:  6 windows × 5 per batch = 30 potential slots (capped at 25/day)
+# IST times: 8:47 | 10:17 | 11:47 | 1:17 PM | 2:47 PM | 4:17 PM
+#
+# The script internally enforces a MAX_APPLIES=25 daily cap using IST date
+# tracking, so even if all 6 runs fire it will never apply more than 25/day.
+# ─────────────────────────────────────────────────────────────────────────────
 
 on:
   schedule:
-    # Multiple triggers on non-peak minutes to avoid GitHub Actions queue delays
-    # 8:47 AM IST = 3:17 AM UTC (Mon-Fri) - Primary early morning run
+    # 8:47 AM IST  = 3:17 AM UTC  — Morning opener (catches overnight posts)
     - cron: '17 3 * * 1-5'
-    # 9:35 AM IST = 4:05 AM UTC (Mon-Fri) - Peak recruiter hours backup
-    - cron: '5 4 * * 1-5'
-    # 11:15 AM IST = 5:45 AM UTC (Mon-Fri) - Mid-morning backup
-    - cron: '45 5 * * 1-5'
-    # 1:15 PM IST = 7:45 AM UTC (Mon-Fri) - Afternoon backup
-    - cron: '45 7 * * 1-5'
+    # 10:17 AM IST = 4:47 AM UTC  — Peak recruiter shortlisting window
+    - cron: '47 4 * * 1-5'
+    # 11:47 AM IST = 6:17 AM UTC  — Pre-lunch new postings
+    - cron: '17 6 * * 1-5'
+    # 1:17 PM IST  = 7:47 AM UTC  — Post-lunch fresh batch
+    - cron: '47 7 * * 1-5'
+    # 2:47 PM IST  = 9:17 AM UTC  — Afternoon new postings
+    - cron: '17 9 * * 1-5'
+    # 4:17 PM IST  = 10:47 AM UTC — End-of-day sweep
+    - cron: '47 10 * * 1-5'
   workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
 
 jobs:
   auto-apply:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 15  # Each batch of 5 should finish well within 10 min
 
     permissions:
       contents: write  # Needed to commit applied-jobs.json back to repo
@@ -38,7 +52,7 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Run Auto-Apply Script
+      - name: Run Auto-Apply Script (batch of 5)
         env:
           NAUK_RT: ${{ secrets.NAUK_RT }}
           NAUK_SID: ${{ secrets.NAUK_SID }}
@@ -46,27 +60,29 @@ jobs:
           JOB_LOCATIONS: "Bangalore,Hyderabad,Remote"
           JOB_EXPERIENCE_MIN: "1"
           JOB_EXPERIENCE_MAX: "3"
-          MAX_APPLIES_PER_RUN: "25"
+          MAX_APPLIES_PER_RUN: "25"   # Hard daily cap — never exceeds this
+          BATCH_SIZE_PER_RUN: "5"     # Applications per hourly run (6 runs × 5 = 30, capped at 25)
           NOTICE_PERIOD: "15 days"
           CURRENT_CTC: "3"
           EXPECTED_CTC: "6"
           LOCATION: "Manipal, Udupi"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukri-auto-apply.js
 
-      - name: Commit applied-jobs.json (persist applied job IDs)
-        if: always()  # Always commit even if script had partial success
+      - name: Commit applied-jobs.json (persist state)
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin main || true
           git add applied-jobs.json || true
           git diff --staged --quiet || git commit -m "chore: update applied-jobs.json [skip ci]"
           git push || true
 
-      - name: Upload Run Log
+      - name: Upload Run Log (visible in Actions UI)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: apply-run-log
+          name: apply-run-log-${{ github.run_id }}
           path: naukri-apply.log
           if-no-files-found: ignore
 
@@ -74,6 +90,6 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: apply-error-screenshot
+          name: apply-error-screenshot-${{ github.run_id }}
           path: naukri-apply-error*.png
           if-no-files-found: ignore

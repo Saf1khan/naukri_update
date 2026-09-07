@@ -1,16 +1,20 @@
 /**
- * Naukri Auto-Apply Script (Enhanced & Verified)
+ * Naukri Auto-Apply Script — Real-Time First Applicant Mode
  * ─────────────────────────────────────────────────────────────────────────────
- * Searches Naukri for freshly posted jobs matching your target roles and
- * applies to up to MAX_APPLIES_PER_RUN Easy-Apply listings per day.
+ * Runs hourly during Indian business hours (9 AM – 5:30 PM IST, Mon–Fri).
+ * On every run it searches for the FRESHEST jobs first (sorted by &sort=f)
+ * and instantly applies so you land as one of the very first applicants.
  *
  * Key features:
- *   - Strictly verifies application success (no false positives)
- *   - Paginates search results (page 1, 2, 3) to reach full daily quota
- *   - Tracks daily count in IST timezone (prevents duplicate runs on same day)
- *   - Handles quick forms and auto-fills notice, CTC, location & Yes/No prompts
- *   - Skips external company redirects and complex multi-page questionnaires
- *   - Idempotent: safe to run multiple times per day (exits if quota already met)
+ *   - sort=f → jobs are sorted newest-first so you apply IMMEDIATELY to new postings
+ *   - Hourly polling across 6 windows throughout the workday
+ *   - Batch cap per run (BATCH_SIZE_PER_RUN) so each run applies a small slice
+ *   - Daily cap (MAX_APPLIES) prevents over-application (25/day)
+ *   - Idempotent: if daily quota already met, exits instantly (< 2 sec)
+ *   - Strict success verification (no false positives counted toward quota)
+ *   - Auto-fills notice period, CTC, location, and Yes/No radio prompts
+ *   - Paginates up to 3 pages per search if needed to fill the batch
+ *   - External-site jobs are skipped and never counted toward quota
  */
 
 const { chromium } = require('playwright');
@@ -35,7 +39,8 @@ const LOCATIONS = (process.env.JOB_LOCATIONS || 'Bangalore,Hyderabad,Remote')
 
 const EXP_MIN = parseInt(process.env.JOB_EXPERIENCE_MIN || '1', 10);
 const EXP_MAX = parseInt(process.env.JOB_EXPERIENCE_MAX || '3', 10);
-const MAX_APPLIES = parseInt(process.env.MAX_APPLIES_PER_RUN || '25', 10);
+const MAX_APPLIES     = parseInt(process.env.MAX_APPLIES_PER_RUN  || '25', 10); // daily cap
+const BATCH_PER_RUN   = parseInt(process.env.BATCH_SIZE_PER_RUN   || '5',  10); // max per hourly run
 
 const NOTICE_PERIOD = process.env.NOTICE_PERIOD || '15 days';
 const CURRENT_CTC   = process.env.CURRENT_CTC   || '3';
@@ -74,12 +79,14 @@ const cleanVal = (v) => (v ? String(v).replace(/[\r\n"']/g, '').trim() : '');
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const humanDelay = () => sleep(1500 + Math.random() * 2000); // 1.5–3.5 s
 
-// ── Build Naukri search URL with pagination ───────────────────────────────────
+// ── Build Naukri search URL — sorted FRESH first ────────────────────────────
+// sort=f   → reverse-chronological (newest jobs at the top)
+// jobAge=0 → all jobs, not just last 24h (combined with sort=f = freshest globally)
 function buildSearchUrl(keyword, location, pageNo = 1) {
-  const kw  = encodeURIComponent(keyword.trim());
-  const loc = encodeURIComponent(location.trim());
+  const kw  = keyword.trim().toLowerCase().replace(/\s+/g, '-');
+  const loc = location.trim().toLowerCase().replace(/\s+/g, '-');
   const pageSuffix = pageNo > 1 ? `-${pageNo}` : '';
-  return `https://www.naukri.com/${kw.toLowerCase().replace(/%20/g, '-')}-jobs-in-${loc.toLowerCase().replace(/%20/g, '-')}${pageSuffix}?jobAge=1&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
+  return `https://www.naukri.com/${kw}-jobs-in-${loc}${pageSuffix}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
 }
 
 // ── Inject Naukri session cookies ─────────────────────────────────────────────
@@ -264,18 +271,22 @@ async function collectJobLinks(page) {
     typeof item === 'object' && item.date === todayIST && item.status === 'applied'
   ).length;
 
-  log(`=== Naukri Auto-Apply started | Date: ${todayIST} | Current Today Count: ${appliedTodayCount}/${MAX_APPLIES} ===`);
+  log(`=== Naukri Auto-Apply | ${todayIST} ${getISTTime()} IST | Today: ${appliedTodayCount}/${MAX_APPLIES} | Batch cap: ${BATCH_PER_RUN} ===`);
 
   if (appliedTodayCount >= MAX_APPLIES) {
-    log(`Daily quota of ${MAX_APPLIES} applications already fulfilled today (${todayIST}). Exiting.`);
+    log(`✅ Daily quota of ${MAX_APPLIES} already fulfilled today. Nothing to do.`);
     process.exit(0);
   }
 
   let totalAppliedThisRun = 0;
   let totalSkippedThisRun = 0;
-  const remainingQuota = MAX_APPLIES - appliedTodayCount;
 
-  log(`Target applications to make in this run: ${remainingQuota}`);
+  // Per-run batch: apply at most BATCH_PER_RUN this run (spread across day)
+  // Also never exceed the remaining daily quota
+  const remainingQuota = MAX_APPLIES - appliedTodayCount;
+  const batchTarget = Math.min(BATCH_PER_RUN, remainingQuota);
+
+  log(`🎯 Batch target for this run: ${batchTarget} applications (${remainingQuota} remaining toward daily cap of ${MAX_APPLIES})`);   
 
   const browser = await chromium.launch({
     headless: false,
@@ -314,12 +325,12 @@ async function collectJobLinks(page) {
   outerLoop:
   for (const keyword of KEYWORDS) {
     for (const location of LOCATIONS) {
-      // Search up to 3 pages per keyword/location to find enough real Easy Apply jobs
+      // Paginate up to 3 pages per keyword/location to fill the batch
       for (let pageNo = 1; pageNo <= 3; pageNo++) {
-        if (totalAppliedThisRun >= remainingQuota) break outerLoop;
+        if (totalAppliedThisRun >= batchTarget) break outerLoop;
 
         const searchUrl = buildSearchUrl(keyword, location, pageNo);
-        log(`\nSearching: "${keyword}" in ${location} (Page ${pageNo})`);
+        log(`\n🔍 Searching: "${keyword}" in ${location} (Page ${pageNo}) → ${searchUrl}`);
 
         try {
           await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
@@ -339,7 +350,7 @@ async function collectJobLinks(page) {
           }
 
           for (const job of jobs) {
-            if (totalAppliedThisRun >= remainingQuota) break outerLoop;
+            if (totalAppliedThisRun >= batchTarget) break outerLoop;
 
             // Skip if already processed in past or today
             if (seenIds.has(job.jobId)) {
@@ -372,7 +383,7 @@ async function collectJobLinks(page) {
 
             if (result.status === 'applied') {
               totalAppliedThisRun++;
-              log(`  >>> Total Applied Today: ${appliedTodayCount + totalAppliedThisRun}/${MAX_APPLIES}`);
+              log(`  ✅ Applied ${totalAppliedThisRun}/${batchTarget} this run | Total today: ${appliedTodayCount + totalAppliedThisRun}/${MAX_APPLIES}`);
             } else {
               totalSkippedThisRun++;
             }
@@ -395,5 +406,6 @@ async function collectJobLinks(page) {
   await browser.close();
 
   const finalTodayTotal = appliedTodayCount + totalAppliedThisRun;
-  log(`\n=== Run finished: ${totalAppliedThisRun} newly applied, ${totalSkippedThisRun} skipped/seen. Total for ${todayIST}: ${finalTodayTotal}/${MAX_APPLIES} ===`);
+  const remaining = MAX_APPLIES - finalTodayTotal;
+  log(`\n=== Run done: +${totalAppliedThisRun} applied this run | ${finalTodayTotal}/${MAX_APPLIES} today | ${remaining} remaining for next run ===`);
 })();
