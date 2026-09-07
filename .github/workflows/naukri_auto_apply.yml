@@ -30,7 +30,7 @@ on:
 jobs:
   auto-apply:
     runs-on: ubuntu-latest
-    timeout-minutes: 15  # Each batch of 5 should finish well within 10 min
+    timeout-minutes: 25  # Batch of 5 takes ~5-8 min; 25 min gives safe headroom
 
     permissions:
       contents: write  # Needed to commit applied-jobs.json back to repo

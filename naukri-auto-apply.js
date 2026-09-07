@@ -106,7 +106,8 @@ function saveAppliedData(records) {
 
 const cleanVal = (v) => (v ? String(v).replace(/[\r\n"']/g, '').trim() : '');
 const sleep = (ms) => new Promise(r => setTimeout(r, ms));
-const humanDelay = () => sleep(1500 + Math.random() * 2000); // 1.5–3.5 s
+const humanDelay = () => sleep(800 + Math.random() * 1200);  // 0.8–2.0 s (fast but human-looking)
+const shortDelay = () => sleep(400 + Math.random() * 400);   // 0.4–0.8 s (between lightweight checks)
 
 // ── Build Naukri search URL — sorted FRESH first ────────────────────────────
 // sort=f   → reverse-chronological (newest jobs at the top)
@@ -434,11 +435,9 @@ async function collectJobLinks(page) {
               totalSkippedThisRun++;
             }
 
-            await humanDelay();
-
-            // Return to search results
-            await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
-            await humanDelay();
+            await shortDelay();
+            // No need to reload search results — we already have all job links in memory.
+            // The next iteration of the for-loop will navigate directly to the next job page.
           }
 
         } catch (err) {
