@@ -2,8 +2,15 @@ name: Daily Naukri Auto-Apply
 
 on:
   schedule:
-    # 9:00 AM IST = 3:30 AM UTC, Monday–Friday only
-    - cron: '30 3 * * 1-5'
+    # Multiple triggers on non-peak minutes to avoid GitHub Actions queue delays
+    # 8:47 AM IST = 3:17 AM UTC (Mon-Fri) - Primary early morning run
+    - cron: '17 3 * * 1-5'
+    # 9:35 AM IST = 4:05 AM UTC (Mon-Fri) - Peak recruiter hours backup
+    - cron: '5 4 * * 1-5'
+    # 11:15 AM IST = 5:45 AM UTC (Mon-Fri) - Mid-morning backup
+    - cron: '45 5 * * 1-5'
+    # 1:15 PM IST = 7:45 AM UTC (Mon-Fri) - Afternoon backup
+    - cron: '45 7 * * 1-5'
   workflow_dispatch:  # Allow manual trigger from GitHub Actions UI
 
 jobs:
@@ -43,6 +50,7 @@ jobs:
           NOTICE_PERIOD: "15 days"
           CURRENT_CTC: "3"
           EXPECTED_CTC: "6"
+          LOCATION: "Manipal, Udupi"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukri-auto-apply.js
 
       - name: Commit applied-jobs.json (persist applied job IDs)
@@ -50,9 +58,17 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add applied-jobs.json naukri-apply.log || true
-          git diff --staged --quiet || git commit -m "chore: update applied-jobs.json and log [skip ci]"
+          git add applied-jobs.json || true
+          git diff --staged --quiet || git commit -m "chore: update applied-jobs.json [skip ci]"
           git push || true
+
+      - name: Upload Run Log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: apply-run-log
+          path: naukri-apply.log
+          if-no-files-found: ignore
 
       - name: Upload Debug Screenshot on Failure
         if: failure()
