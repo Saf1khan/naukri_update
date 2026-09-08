@@ -315,20 +315,34 @@ async function applyToJob(page, jobId, title, company) {
 }
 
 // ── Collect job links from a search results page ──────────────────────────────
-async function collectJobLinks(page) {
-  await page.waitForSelector('.jobTupleHeader, .job-tuple-header, article.jobTuple, .cust-job-tuple, div[class*="jobTuple"]', { timeout: 15000 }).catch(() => {});
+async function collectJobLinks(page, expMax) {
+  await page.waitForSelector(
+    '.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]',
+    { timeout: 15000 }
+  ).catch(() => {});
 
-  const jobs = await page.evaluate(() => {
-    const cards = document.querySelectorAll('article.jobTuple, .jobTuple, .cust-job-tuple, [class*="jobTuple"]');
+  const jobs = await page.evaluate((expMax) => {
+    const cards = document.querySelectorAll('.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]');
     return [...cards].map(card => {
-      const link = card.querySelector('a[href*="/job-listings-"], a[href*="naukri.com/"]');
-      const title = card.querySelector('.title, .jobTitle, h2 a')?.textContent?.trim() || '';
-      const company = card.querySelector('.comp-name, .companyInfo a, .company')?.textContent?.trim() || '';
-      const href = link?.href || '';
-      const idMatch = href.match(/-(\d{6,})[\?$]/);
-      return { href, title, company, jobId: idMatch?.[1] || href.slice(-12) };
-    }).filter(j => j.href && j.jobId);
-  });
+      const link    = card.querySelector('a[href*="/job-listings-"]');
+      const title   = card.querySelector('.title, .jobTitle, h2 a')?.textContent?.trim() || '';
+      const company = card.querySelector('.comp-name, .companyInfo a, .company, .client-company-name')?.textContent?.trim() || '';
+      const href    = link?.href || '';
+
+      // Extract job ID from URL (last 12-digit number segment)
+      const idMatch = href.match(/-(\d{10,})(?:[?]|$)/);
+      const jobId   = idMatch?.[1] || href.slice(-12);
+
+      // Extract experience required from the card (e.g. "4-9 Yrs", "1 - 3 Yrs")
+      const expText = card.querySelector('.expwdth, .job-details, [class*="experience"], [class*="exp-"]')?.textContent?.trim() || '';
+      const expNums = expText.match(/(\d+)(?:\s*[-–to]+\s*(\d+))?\s*Yr/i);
+      const minExp  = expNums ? parseInt(expNums[1], 10) : 0;
+
+      return { href, title, company, jobId, minExp };
+    })
+    .filter(j => j.href && j.jobId)
+    .filter(j => j.minExp <= expMax);  // ← Skip senior roles exceeding experience cap
+  }, expMax);
 
   return jobs;
 }
@@ -338,8 +352,14 @@ async function collectJobLinks(page) {
   const todayIST = getISTDate();
   const rawRecords = loadAppliedData();
 
-  // Parse existing IDs (supports backward compatibility with string array)
-  const seenIds = new Set(rawRecords.map(item => (typeof item === 'string' ? item : item.id)));
+  // Only track CONFIRMED APPLICATIONS in seenIds.
+  // Skipped/error jobs are NOT added — they will be retried on future runs
+  // (e.g. an external-site job might add Easy Apply later, or a page error was transient).
+  const seenIds = new Set(
+    rawRecords
+      .filter(item => item.status === 'applied' || typeof item === 'string')
+      .map(item => (typeof item === 'string' ? item : item.id))
+  );
 
   // Count confirmed applications already made today
   const appliedTodayCount = rawRecords.filter(item =>
@@ -416,51 +436,41 @@ async function collectJobLinks(page) {
             break outerLoop;
           }
 
-          const jobs = await collectJobLinks(page);
-          log(`  Found ${jobs.length} listings on page ${pageNo}`);
+          const jobs = await collectJobLinks(page, EXP_MAX);
+          const filtered = jobs.filter(j => !seenIds.has(j.jobId));
+          log(`  Found ${jobs.length} listings on page ${pageNo} (${jobs.length - filtered.length} already seen or over-experience, ${filtered.length} fresh)`);
 
-          if (jobs.length === 0) {
-            // No more jobs for this keyword/location
-            break;
+          if (filtered.length === 0) {
+            // No new unseen jobs on this page — check next page
+            if (jobs.length === 0) break; // Actually no jobs at all → stop pagination
+            continue;
           }
 
-          for (const job of jobs) {
-            if (totalAppliedThisRun >= batchTarget) break outerLoop;
-
-            // Skip if already processed in past or today
-            if (seenIds.has(job.jobId)) {
-              continue;
-            }
-
-            if (!job.href) continue;
+          for (const job of filtered) {
 
             // Open job page
             await page.goto(job.href, { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
             await humanDelay();
 
-            const result = await applyToJob(page, job.jobId, job.title, job.company);
-
-            // Record job in seenIds so we never touch it again
-            seenIds.add(job.jobId);
-
-            const record = {
-              id: job.jobId,
-              date: todayIST,
-              time: getISTTime(),
-              title: job.title,
-              company: job.company,
-              status: result.status,
-              ...(result.reason ? { reason: result.reason } : {})
-            };
-
-            rawRecords.push(record);
-            saveAppliedData(rawRecords);
-
+            // Only persist APPLIED jobs to JSON (keeps file small and seenIds clean).
+            // Skipped/error jobs are intentionally NOT saved — they will be retried tomorrow.
             if (result.status === 'applied') {
+              const record = {
+                id: job.jobId,
+                date: todayIST,
+                time: getISTTime(),
+                title: job.title,
+                company: job.company,
+                status: 'applied',
+              };
+              rawRecords.push(record);
+              saveAppliedData(rawRecords);
+              seenIds.add(job.jobId); // Prevent re-applying in same run
               totalAppliedThisRun++;
               log(`  ✅ Applied ${totalAppliedThisRun}/${batchTarget} this run | Total today: ${appliedTodayCount + totalAppliedThisRun}/${MAX_APPLIES}`);
             } else {
               totalSkippedThisRun++;
+              log(`  SKIP (${result.reason || result.status}): ${job.title} @ ${job.company}`);
             }
 
             await shortDelay();
