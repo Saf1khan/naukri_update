@@ -2898,5 +2898,1885 @@
     "company": "dext ai",
     "status": "skipped",
     "reason": "unconfirmed"
+  },
+  {
+    "id": "230226015591",
+    "date": "2026-09-08",
+    "time": "2:38:55 pm",
+    "title": "Devops Engineer",
+    "company": "Litmus7 Systems Consulting",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020088",
+    "date": "2026-09-08",
+    "time": "2:38:58 pm",
+    "title": "Mainframe Developer",
+    "company": "Hexaware Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019907",
+    "date": "2026-09-08",
+    "time": "2:39:02 pm",
+    "title": "Senior Java Developer (Bangalore F2F on 12th September)",
+    "company": "Bounteous",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019826",
+    "date": "2026-09-08",
+    "time": "2:39:06 pm",
+    "title": "SDET Engineer",
+    "company": "Piramal Finance",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019777",
+    "date": "2026-09-08",
+    "time": "2:39:10 pm",
+    "title": "React JS Developer",
+    "company": "Capgemini",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019685",
+    "date": "2026-09-08",
+    "time": "2:39:13 pm",
+    "title": "Development Lead",
+    "company": "LanceSoft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019548",
+    "date": "2026-09-08",
+    "time": "2:39:17 pm",
+    "title": "Senior DotNet Fullstack Developer",
+    "company": "Aziro",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019527",
+    "date": "2026-09-08",
+    "time": "2:39:21 pm",
+    "title": "Sr. Associate - Software Engineer (walk-me)",
+    "company": "Careernet",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019505",
+    "date": "2026-09-08",
+    "time": "2:39:25 pm",
+    "title": "Fullstack Developer-Node.JS",
+    "company": "N J Suresh And Associates",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926020028",
+    "date": "2026-09-08",
+    "time": "2:39:28 pm",
+    "title": "Azure Data Engineer- In person Interview-Bengaluru--12 Sept (Saturday)",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926019762",
+    "date": "2026-09-08",
+    "time": "2:39:31 pm",
+    "title": "AWS Data Engineer- In person Interview-Bengaluru--12 Sept (Saturday)",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019459",
+    "date": "2026-09-08",
+    "time": "2:39:35 pm",
+    "title": "Workday Finance Integration Lead",
+    "company": "Cerebra",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919157",
+    "date": "2026-09-08",
+    "time": "2:39:38 pm",
+    "title": "Markets Leadership Executive",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919154",
+    "date": "2026-09-08",
+    "time": "2:39:41 pm",
+    "title": "Java Full Stack Developer - Angular",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019130",
+    "date": "2026-09-08",
+    "time": "2:39:44 pm",
+    "title": "SRE",
+    "company": "Tekion",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919111",
+    "date": "2026-09-08",
+    "time": "2:39:48 pm",
+    "title": "Senior SailPoint ISC Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919102",
+    "date": "2026-09-08",
+    "time": "2:39:53 pm",
+    "title": "Senior Associate-RMS Digital RM-Data Analytics",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018956",
+    "date": "2026-09-08",
+    "time": "2:39:58 pm",
+    "title": "Technical Lead",
+    "company": "Thyrocare",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018898",
+    "date": "2026-09-08",
+    "time": "2:40:02 pm",
+    "title": "Senior Node Js Developer",
+    "company": "Carnera Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918846",
+    "date": "2026-09-08",
+    "time": "2:40:06 pm",
+    "title": "Forensics Discovery Analyst",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918796",
+    "date": "2026-09-08",
+    "time": "2:40:11 pm",
+    "title": "Senior SailPoint IIQ Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "240426028417",
+    "date": "2026-09-08",
+    "time": "2:40:16 pm",
+    "title": "Engineering Manager / Senior Engineering Manager",
+    "company": "LeadSquared",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018743",
+    "date": "2026-09-08",
+    "time": "2:40:20 pm",
+    "title": "Software Engineer",
+    "company": "Coforge",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926033789",
+    "date": "2026-09-08",
+    "time": "2:40:25 pm",
+    "title": "Java FullStack (Java + React+ Aws / Azure)",
+    "company": "Innova Solutions",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018634",
+    "date": "2026-09-08",
+    "time": "2:40:29 pm",
+    "title": "Java Developer",
+    "company": "3across",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018616",
+    "date": "2026-09-08",
+    "time": "2:40:33 pm",
+    "title": "Python Api Developer",
+    "company": "Hexaware Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018606",
+    "date": "2026-09-08",
+    "time": "2:40:36 pm",
+    "title": "Full Stack Development",
+    "company": "Acesoft Labs",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "270726027049",
+    "date": "2026-09-08",
+    "time": "2:40:40 pm",
+    "title": "Associate Cloud SQL Database Administrator",
+    "company": "Client of Augusta",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "010926009148",
+    "date": "2026-09-08",
+    "time": "2:40:44 pm",
+    "title": "Java Technical Lead",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018409",
+    "date": "2026-09-08",
+    "time": "2:40:48 pm",
+    "title": "Fresher - Software Developer (Apprentice - 12 Months)",
+    "company": "Allegis Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018403",
+    "date": "2026-09-08",
+    "time": "2:40:52 pm",
+    "title": "Enterprise App Programmer",
+    "company": "NetApp",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019620",
+    "date": "2026-09-08",
+    "time": "2:41:01 pm",
+    "title": "Kubernetes L3 Engineer",
+    "company": "Siro Clinpharm",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019480",
+    "date": "2026-09-08",
+    "time": "2:41:05 pm",
+    "title": "Solution Architect",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919464",
+    "date": "2026-09-08",
+    "time": "2:41:09 pm",
+    "title": "Transfer Pricing Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919428",
+    "date": "2026-09-08",
+    "time": "2:41:13 pm",
+    "title": "Senior Blockchain & DAML Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919138",
+    "date": "2026-09-08",
+    "time": "2:41:18 pm",
+    "title": "Senior Transfer Pricing Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919115",
+    "date": "2026-09-08",
+    "time": "2:41:22 pm",
+    "title": "Senior Technology Strategy Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919024",
+    "date": "2026-09-08",
+    "time": "2:41:27 pm",
+    "title": "Senior Technology Strategy Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918997",
+    "date": "2026-09-08",
+    "time": "2:41:31 pm",
+    "title": "Senior Technology Strategy Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019000",
+    "date": "2026-09-08",
+    "time": "2:41:35 pm",
+    "title": "Java Micro services",
+    "company": "Virtusa",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "110826020416",
+    "date": "2026-09-08",
+    "time": "2:41:39 pm",
+    "title": "React JS Developer",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018415",
+    "date": "2026-09-08",
+    "time": "2:41:42 pm",
+    "title": "Service Now Support Engineer",
+    "company": "Siro Clinpharm",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020465",
+    "date": "2026-09-08",
+    "time": "2:41:53 pm",
+    "title": "API Engineer",
+    "company": "LanceSoft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020432",
+    "date": "2026-09-08",
+    "time": "2:41:57 pm",
+    "title": "Senior Software Engineer || Remote || Node.js + Vue.js",
+    "company": "Profex Tech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020117",
+    "date": "2026-09-08",
+    "time": "2:42:01 pm",
+    "title": "Business Analyst - State Integration",
+    "company": "National e-Governance Division (NeGD), Digital India Corporation",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020108",
+    "date": "2026-09-08",
+    "time": "2:42:06 pm",
+    "title": "Quantitative Developer",
+    "company": "DHX Adlertech pvt ltd",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020083",
+    "date": "2026-09-08",
+    "time": "2:42:10 pm",
+    "title": "Artificial Intelligence Consultant",
+    "company": "HCLTech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "160925037785",
+    "date": "2026-09-08",
+    "time": "2:42:14 pm",
+    "title": "Java Fullstack Developer+AWS/Azure/GCP",
+    "company": "V2soft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "171225027284",
+    "date": "2026-09-08",
+    "time": "2:42:18 pm",
+    "title": "Machine Learning Engineering Senior Engineer",
+    "company": "V2soft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "231225038417",
+    "date": "2026-09-08",
+    "time": "2:42:23 pm",
+    "title": "Data Engineering Engineer 2",
+    "company": "V2soft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "231225038221",
+    "date": "2026-09-08",
+    "time": "2:42:27 pm",
+    "title": "Data Science and Machine Learning Senior Associate",
+    "company": "V2soft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019819",
+    "date": "2026-09-08",
+    "time": "2:42:31 pm",
+    "title": "Java Architect",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019762",
+    "date": "2026-09-08",
+    "time": "2:42:35 pm",
+    "title": "Data Analysis Executive (Ecom,Qcom)",
+    "company": "Parle",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019608",
+    "date": "2026-09-08",
+    "time": "2:42:39 pm",
+    "title": "Client Service Specialist",
+    "company": "Principal Financial Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019532",
+    "date": "2026-09-08",
+    "time": "2:42:43 pm",
+    "title": "Senior ETL Tester",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919465",
+    "date": "2026-09-08",
+    "time": "2:42:49 pm",
+    "title": "Learning Deployment Specialist Senior Associate-EY Germany",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919457",
+    "date": "2026-09-08",
+    "time": "2:42:52 pm",
+    "title": "TTT - Fiori Plus UI5 Plus Full Stack - Staff",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919445",
+    "date": "2026-09-08",
+    "time": "2:42:56 pm",
+    "title": "Associate Consultant - Forensics Investigations",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919426",
+    "date": "2026-09-08",
+    "time": "2:43:00 pm",
+    "title": "Consultant - Risk Process & Controls",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919420",
+    "date": "2026-09-08",
+    "time": "2:43:04 pm",
+    "title": "Senior Global Compliance & Reporting Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919402",
+    "date": "2026-09-08",
+    "time": "2:43:08 pm",
+    "title": "ServiceNow Moveworks AI Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919391",
+    "date": "2026-09-08",
+    "time": "2:43:12 pm",
+    "title": "Senior Transformation Delivery Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919360",
+    "date": "2026-09-08",
+    "time": "2:43:16 pm",
+    "title": "Senior Microsoft Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019347",
+    "date": "2026-09-08",
+    "time": "2:43:20 pm",
+    "title": "Senior Python Developer (AWS Lambda)",
+    "company": "R Systems International",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019325",
+    "date": "2026-09-08",
+    "time": "2:43:24 pm",
+    "title": "AI ML Software Developer Medical Imaging",
+    "company": "Neuranics Lab",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919314",
+    "date": "2026-09-08",
+    "time": "2:43:30 pm",
+    "title": "Senior Project Manager - Infrastructure Advisory",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919302",
+    "date": "2026-09-08",
+    "time": "2:43:35 pm",
+    "title": "Consultant - Risk & Controls",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919301",
+    "date": "2026-09-08",
+    "time": "2:43:39 pm",
+    "title": "Associate Consultant - Forensics Investigations",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919271",
+    "date": "2026-09-08",
+    "time": "2:43:43 pm",
+    "title": "Senior Consultant - Risk & Controls",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919270",
+    "date": "2026-09-08",
+    "time": "2:43:47 pm",
+    "title": "Senior Technology Strategy Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919256",
+    "date": "2026-09-08",
+    "time": "2:43:51 pm",
+    "title": "Senior Transfer Pricing Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919222",
+    "date": "2026-09-08",
+    "time": "2:43:55 pm",
+    "title": "Senior Forensics Analyst",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919184",
+    "date": "2026-09-08",
+    "time": "2:43:58 pm",
+    "title": "Risk Consulting - FSRM - ICAAP - Senior Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919178",
+    "date": "2026-09-08",
+    "time": "2:44:03 pm",
+    "title": "Senior Project Consultant - Transformation Delivery",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019176",
+    "date": "2026-09-08",
+    "time": "2:44:07 pm",
+    "title": "Lead/Senior Lead – IT, SFDC Delivery",
+    "company": "Bajaj Finance",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919149",
+    "date": "2026-09-08",
+    "time": "2:44:10 pm",
+    "title": "Project Consultant - Transformation Delivery",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919145",
+    "date": "2026-09-08",
+    "time": "2:44:13 pm",
+    "title": "Associate - Capital & Debt Advisory",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919143",
+    "date": "2026-09-08",
+    "time": "2:44:17 pm",
+    "title": "Senior Consultant - Risk Process & Controls",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919121",
+    "date": "2026-09-08",
+    "time": "2:44:21 pm",
+    "title": "Indirect Tax Global Trade Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "020926029253",
+    "date": "2026-09-08",
+    "time": "2:44:46 pm",
+    "title": "Fullstack Web Developer",
+    "company": "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020662",
+    "date": "2026-09-08",
+    "time": "2:44:50 pm",
+    "title": "Java Developer",
+    "company": "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020539",
+    "date": "2026-09-08",
+    "time": "2:44:54 pm",
+    "title": "System Test Execution",
+    "company": "Cyient",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020161",
+    "date": "2026-09-08",
+    "time": "2:44:57 pm",
+    "title": "AEP developer",
+    "company": "SRS Infoway",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919400",
+    "date": "2026-09-08",
+    "time": "2:45:02 pm",
+    "title": "Testing Insurance Functional-Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918937",
+    "date": "2026-09-08",
+    "time": "2:45:09 pm",
+    "title": "Tax Senior - .NET Full Stack & Azure OpenAI",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918838",
+    "date": "2026-09-08",
+    "time": "2:45:13 pm",
+    "title": "SAP BTP Fullstack Developer",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918827",
+    "date": "2026-09-08",
+    "time": "2:45:17 pm",
+    "title": "Power Platform Developer-Senior",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018394",
+    "date": "2026-09-08",
+    "time": "2:45:21 pm",
+    "title": ".Net + Angular - Client interview face To face",
+    "company": "HCLTech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "110626013014",
+    "date": "2026-09-08",
+    "time": "2:45:28 pm",
+    "title": "Senior Quality Engineer 2",
+    "company": "Tanla Platforms",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020744",
+    "date": "2026-09-08",
+    "time": "2:45:32 pm",
+    "title": "Playwright",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "100726011130",
+    "date": "2026-09-08",
+    "time": "2:45:36 pm",
+    "title": "Opening with EY_ .Net with React and SQL",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "020926028400",
+    "date": "2026-09-08",
+    "time": "2:45:49 pm",
+    "title": "Manual Tester",
+    "company": "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020807",
+    "date": "2026-09-08",
+    "time": "2:45:53 pm",
+    "title": "Automation Architect",
+    "company": "Evoke HR",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926018437",
+    "date": "2026-09-08",
+    "time": "2:45:58 pm",
+    "title": "Automation Test Lead",
+    "company": "TENARAI TECHNOLOGIES PRIVATE LIMITED",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020801",
+    "date": "2026-09-08",
+    "time": "2:46:02 pm",
+    "title": "Java or Python Using Agentic AI",
+    "company": "Cognizant",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020731",
+    "date": "2026-09-08",
+    "time": "2:46:06 pm",
+    "title": "Qa Engineer",
+    "company": "VIPSA TALENT SOLUTIONS",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020546",
+    "date": "2026-09-08",
+    "time": "2:46:10 pm",
+    "title": "Dot Net Developer",
+    "company": "Winjit Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "280726034098",
+    "date": "2026-09-08",
+    "time": "2:46:14 pm",
+    "title": "Senior/Software Engineer - Mobile Monetization (Data Analytics)",
+    "company": "PubMatic",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919820",
+    "date": "2026-09-08",
+    "time": "2:46:20 pm",
+    "title": "Senior Forensics Discovery Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919482",
+    "date": "2026-09-08",
+    "time": "2:46:24 pm",
+    "title": "Opportunity Engagement Specialist",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919467",
+    "date": "2026-09-08",
+    "time": "2:46:31 pm",
+    "title": "Senior Associate - Resource Management",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919363",
+    "date": "2026-09-08",
+    "time": "2:46:35 pm",
+    "title": "Project Consultant - Infrastructure Advisory",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919322",
+    "date": "2026-09-08",
+    "time": "2:46:39 pm",
+    "title": "Senior .NET Angular Full Stack Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "220626014663",
+    "date": "2026-09-08",
+    "time": "2:47:02 pm",
+    "title": "API Automation , Selenium, Java",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "220626014520",
+    "date": "2026-09-08",
+    "time": "2:47:05 pm",
+    "title": "Java Playwright Testing",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "270726032450",
+    "date": "2026-09-08",
+    "time": "2:47:08 pm",
+    "title": "Testing Openings - 5 To 10 Years",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "010726018250",
+    "date": "2026-09-08",
+    "time": "2:47:11 pm",
+    "title": "JAVA Selenium - 5 To 10 Years",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919904",
+    "date": "2026-09-08",
+    "time": "2:47:15 pm",
+    "title": "Senior TTT Consulting Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "020726002634",
+    "date": "2026-09-08",
+    "time": "2:47:26 pm",
+    "title": "Python Testing - 5 To 10 YEARS",
+    "company": "Quess",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919810",
+    "date": "2026-09-08",
+    "time": "2:47:29 pm",
+    "title": "Forensics Discovery Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021008",
+    "date": "2026-09-08",
+    "time": "2:47:43 pm",
+    "title": "Java Full Stack Developer",
+    "company": "US MNC",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020980",
+    "date": "2026-09-08",
+    "time": "2:47:48 pm",
+    "title": "Senior Software Developer",
+    "company": "I-record Infotech Solutions",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020944",
+    "date": "2026-09-08",
+    "time": "2:47:51 pm",
+    "title": "Support CLM HCGA WML",
+    "company": "Welspun World",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030826012988",
+    "date": "2026-09-08",
+    "time": "2:47:55 pm",
+    "title": "AI Engineer (Manufacturing AI & Vision AI)",
+    "company": "Samkwang India Electronic",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919890",
+    "date": "2026-09-08",
+    "time": "2:48:01 pm",
+    "title": "Supervising Associate-EDS-DataScience",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919886",
+    "date": "2026-09-08",
+    "time": "2:48:05 pm",
+    "title": "Senior Business Analyst - Aladdin EFront",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919859",
+    "date": "2026-09-08",
+    "time": "2:48:09 pm",
+    "title": "Risk & Controls Analyst",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919843",
+    "date": "2026-09-08",
+    "time": "2:48:14 pm",
+    "title": "RC-REGULATORY COMPLIANCE-PV-CA-Argus-Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920039",
+    "date": "2026-09-08",
+    "time": "2:48:39 pm",
+    "title": "Senior Actuarial Consultant - Axis",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920071",
+    "date": "2026-09-08",
+    "time": "2:49:01 pm",
+    "title": "Senior Marketing, Sales & Service Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021011",
+    "date": "2026-09-08",
+    "time": "2:49:26 pm",
+    "title": "SAP ABAP Consultant For TECH M Bengaluru",
+    "company": "Tech Mahindra",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919874",
+    "date": "2026-09-08",
+    "time": "2:49:30 pm",
+    "title": "TTT - Data Science - Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919156",
+    "date": "2026-09-08",
+    "time": "2:49:36 pm",
+    "title": "Senior SAP Fiori Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926918914",
+    "date": "2026-09-08",
+    "time": "2:49:40 pm",
+    "title": "MS-FDL-Sr AI Engineer-Senior - E",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "250726013222",
+    "date": "2026-09-08",
+    "time": "2:49:59 pm",
+    "title": "Engineer",
+    "company": "Perto",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920041",
+    "date": "2026-09-08",
+    "time": "2:50:06 pm",
+    "title": "CRM & Invoicing Support Specialist",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919991",
+    "date": "2026-09-08",
+    "time": "2:50:11 pm",
+    "title": "Tax Compliance Executive",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919972",
+    "date": "2026-09-08",
+    "time": "2:50:17 pm",
+    "title": "GRC-SAP-PC-ITAC-Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919888",
+    "date": "2026-09-08",
+    "time": "2:50:21 pm",
+    "title": "Indirect Tax Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "010426016160",
+    "date": "2026-09-08",
+    "time": "2:50:25 pm",
+    "title": "Senior ServiceNow Developer (ITOM)",
+    "company": "ETS India",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021246",
+    "date": "2026-09-08",
+    "time": "2:50:47 pm",
+    "title": "IICS developers with Python & Databricks - 10th Sep (Thurs) - Video",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919782",
+    "date": "2026-09-08",
+    "time": "2:50:55 pm",
+    "title": "GDS Cyber - DPP - Staff - AI Data Protection Engineering",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919454",
+    "date": "2026-09-08",
+    "time": "2:50:58 pm",
+    "title": "DE-Cloud  Native AI and Data Engineer-GCP-GDSN02",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919175",
+    "date": "2026-09-08",
+    "time": "2:51:02 pm",
+    "title": "Senior AI Data Platform Engineer - Snowflake",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "050826030618",
+    "date": "2026-09-08",
+    "time": "2:51:10 pm",
+    "title": "Ai Ml Engineer",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "070526030907",
+    "date": "2026-09-08",
+    "time": "2:51:17 pm",
+    "title": "Senior Data Engineer",
+    "company": "Tanla Platforms",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919919",
+    "date": "2026-09-08",
+    "time": "2:51:21 pm",
+    "title": "Senior AI Data Platform Engineer - Databricks",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919483",
+    "date": "2026-09-08",
+    "time": "2:51:25 pm",
+    "title": "Senior Manager - GenAI",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919328",
+    "date": "2026-09-08",
+    "time": "2:51:28 pm",
+    "title": "EY - GDS Consulting - AI And DATA -Semantic Data Architect- Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919198",
+    "date": "2026-09-08",
+    "time": "2:51:30 pm",
+    "title": "DE-Data Scientist-VG-W4-CDAO0217",
+    "company": "EY",
+    "status": "already_applied"
+  },
+  {
+    "id": "080926021211",
+    "date": "2026-09-08",
+    "time": "2:51:43 pm",
+    "title": "Data Scientist",
+    "company": "Bajaj Finance",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020599",
+    "date": "2026-09-08",
+    "time": "2:51:50 pm",
+    "title": "Senior AI Engineer",
+    "company": "Rytsense Lifestyle",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920332",
+    "date": "2026-09-08",
+    "time": "2:51:53 pm",
+    "title": "Agentic Orchestration Lead",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920324",
+    "date": "2026-09-08",
+    "time": "2:51:58 pm",
+    "title": "ServiceNow Architect -SOMT-Manger",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920304",
+    "date": "2026-09-08",
+    "time": "2:52:00 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920296",
+    "date": "2026-09-08",
+    "time": "2:52:03 pm",
+    "title": "Web Developer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920227",
+    "date": "2026-09-08",
+    "time": "2:52:06 pm",
+    "title": "Senior Agentic AI Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920169",
+    "date": "2026-09-08",
+    "time": "2:52:08 pm",
+    "title": "Cloud Services Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920146",
+    "date": "2026-09-08",
+    "time": "2:52:13 pm",
+    "title": "Integration Lead",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919846",
+    "date": "2026-09-08",
+    "time": "2:52:19 pm",
+    "title": "RC-REGULATORY COMPLIANCE-GxP AI Model Consultant-Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919827",
+    "date": "2026-09-08",
+    "time": "2:52:23 pm",
+    "title": "IDT-VAT-Reconciliation-Assistant Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919929",
+    "date": "2026-09-08",
+    "time": "2:54:36 pm",
+    "title": "TTT Development Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021534",
+    "date": "2026-09-08",
+    "time": "2:54:58 pm",
+    "title": "Senior Observability Engineer - LogicMonitor",
+    "company": "Stratogent",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920311",
+    "date": "2026-09-08",
+    "time": "2:55:09 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920136",
+    "date": "2026-09-08",
+    "time": "2:55:13 pm",
+    "title": "EYP-RE-Assistant Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926020100",
+    "date": "2026-09-08",
+    "time": "2:55:17 pm",
+    "title": "Salesforce Developer",
+    "company": "Capital Numbers Infotech",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919990",
+    "date": "2026-09-08",
+    "time": "2:55:20 pm",
+    "title": "EYP - VME - Associate Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "030926021901",
+    "date": "2026-09-08",
+    "time": "2:55:24 pm",
+    "title": "Sen.Dev - Winforms and Blazor exp.-5to8yrs-Hyderabad face To face only",
+    "company": "Arcelormittal",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019701",
+    "date": "2026-09-08",
+    "time": "2:55:28 pm",
+    "title": "Process Executive Hiring",
+    "company": "Cognizant",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019668",
+    "date": "2026-09-08",
+    "time": "2:55:32 pm",
+    "title": "Snowflake Developer",
+    "company": "Ibexlabs",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919407",
+    "date": "2026-09-08",
+    "time": "2:55:35 pm",
+    "title": "Jr. QA Analyst",
+    "company": "Greenman Investments",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "290426018013",
+    "date": "2026-09-08",
+    "time": "2:55:40 pm",
+    "title": "Game Testing Engineer",
+    "company": "Side",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926019022",
+    "date": "2026-09-08",
+    "time": "2:55:43 pm",
+    "title": "Workday Extend Solution Lead / Architect",
+    "company": "Cerebra",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926018775",
+    "date": "2026-09-08",
+    "time": "2:55:47 pm",
+    "title": "Microsoft Endpoint Management SME",
+    "company": "Siro Clinpharm",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021607",
+    "date": "2026-09-08",
+    "time": "2:55:53 pm",
+    "title": "Senior AI application developer",
+    "company": "GCC",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021563",
+    "date": "2026-09-08",
+    "time": "2:55:57 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Virtusa",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920347",
+    "date": "2026-09-08",
+    "time": "2:56:00 pm",
+    "title": "Forensics Discovery Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021512",
+    "date": "2026-09-08",
+    "time": "2:56:09 pm",
+    "title": "Sr. Software Engineer B3",
+    "company": "Cognizant",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920534",
+    "date": "2026-09-08",
+    "time": "2:56:15 pm",
+    "title": "Assistant Manager - Leadership Programs",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920458",
+    "date": "2026-09-08",
+    "time": "2:56:17 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920440",
+    "date": "2026-09-08",
+    "time": "2:56:19 pm",
+    "title": "Packaged/Saas Application Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920423",
+    "date": "2026-09-08",
+    "time": "2:56:22 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920331",
+    "date": "2026-09-08",
+    "time": "2:56:27 pm",
+    "title": "Senior Informatica IDMC Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919875",
+    "date": "2026-09-08",
+    "time": "2:56:53 pm",
+    "title": "TTT Consulting Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920065",
+    "date": "2026-09-08",
+    "time": "2:57:16 pm",
+    "title": "Senior Project Manager",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920010",
+    "date": "2026-09-08",
+    "time": "2:57:22 pm",
+    "title": "Senior Workforce Advisory Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926919816",
+    "date": "2026-09-08",
+    "time": "2:57:26 pm",
+    "title": "Project Consultant - Infrastructure Advisory",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021857",
+    "date": "2026-09-08",
+    "time": "2:57:49 pm",
+    "title": "UI Lead",
+    "company": "Lancesoft",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "110826016999",
+    "date": "2026-09-08",
+    "time": "2:57:53 pm",
+    "title": "SAP ABAP / Fiori Backend Developer",
+    "company": "Orcapod Consulting Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920493",
+    "date": "2026-09-08",
+    "time": "2:57:55 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920295",
+    "date": "2026-09-08",
+    "time": "2:58:01 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920232",
+    "date": "2026-09-08",
+    "time": "2:58:03 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920186",
+    "date": "2026-09-08",
+    "time": "2:58:05 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920518",
+    "date": "2026-09-08",
+    "time": "2:58:13 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920475",
+    "date": "2026-09-08",
+    "time": "2:58:27 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920306",
+    "date": "2026-09-08",
+    "time": "2:58:32 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920298",
+    "date": "2026-09-08",
+    "time": "2:58:35 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920280",
+    "date": "2026-09-08",
+    "time": "2:58:38 pm",
+    "title": "Senior TTT Consulting Consultant",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920279",
+    "date": "2026-09-08",
+    "time": "2:58:40 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920269",
+    "date": "2026-09-08",
+    "time": "2:58:42 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920194",
+    "date": "2026-09-08",
+    "time": "2:58:44 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920177",
+    "date": "2026-09-08",
+    "time": "2:58:47 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920141",
+    "date": "2026-09-08",
+    "time": "2:58:49 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920137",
+    "date": "2026-09-08",
+    "time": "2:58:53 pm",
+    "title": "Tax Compliance Executive",
+    "company": "EY",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022065",
+    "date": "2026-09-08",
+    "time": "2:59:24 pm",
+    "title": "Senior Engineer Java/Springboot",
+    "company": "Avexa Systems Hyderabad",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022088",
+    "date": "2026-09-08",
+    "time": "2:59:36 pm",
+    "title": "Ms Sql Database Administrator",
+    "company": "LTM",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "180919001623",
+    "date": "2026-09-08",
+    "time": "2:59:39 pm",
+    "title": "Hiring For Full Stack Developer || Loc - Gurgaon ||",
+    "company": "Hyperdart Technologies",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "160426022244",
+    "date": "2026-09-08",
+    "time": "2:59:44 pm",
+    "title": "Technical Team Lead (AI & ML)",
+    "company": "Synapseindia",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021582",
+    "date": "2026-09-08",
+    "time": "2:59:48 pm",
+    "title": "Drupal Developer",
+    "company": "Nirvana Dynamics Llp",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "120126027725",
+    "date": "2026-09-08",
+    "time": "3:00:17 pm",
+    "title": "Mis Executive",
+    "company": "Money View",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022174",
+    "date": "2026-09-08",
+    "time": "3:00:21 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Tata Consultancy Services",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022234",
+    "date": "2026-09-08",
+    "time": "3:00:34 pm",
+    "title": "Data Scientist - Mumbai/ Hyderabad",
+    "company": "Allcargo Logistics",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022299",
+    "date": "2026-09-08",
+    "time": "3:00:48 pm",
+    "title": "Site HR Operation - Partner",
+    "company": "Adani Group",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926022212",
+    "date": "2026-09-08",
+    "time": "3:00:51 pm",
+    "title": "Fareportal Hiring For Lead Engineer (Full Stack)",
+    "company": "Fareportal",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926920723",
+    "date": "2026-09-08",
+    "time": "3:00:56 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920607",
+    "date": "2026-09-08",
+    "time": "3:00:58 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926920453",
+    "date": "2026-09-08",
+    "time": "3:01:05 pm",
+    "title": "Custom Software Engineer",
+    "company": "Accenture",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "080926022370",
+    "date": "2026-09-08",
+    "time": "3:01:28 pm",
+    "title": "Mobile Application Developer-Senior Associate",
+    "company": "PwC",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "080926021554",
+    "date": "2026-09-08",
+    "time": "3:01:51 pm",
+    "title": "Senior AI Engineer",
+    "company": "Dugar Housing",
+    "status": "skipped",
+    "reason": "unconfirmed"
   }
 ]
