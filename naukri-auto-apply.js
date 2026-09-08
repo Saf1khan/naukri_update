@@ -147,61 +147,89 @@ async function injectCookies(context) {
   ]);
 }
 
-// ── Try to Apply to a single job with strict verification ─────────────────────
+// ── Try to Apply to a single job ──────────────────────────────────────────────
+// Strategy:
+//   A. Check "Already Applied" → skip immediately
+//   B. Find the Apply button (id="apply-button" or class="apply-button")
+//   C. Click it
+//   D. Wait up to 5s for EITHER a modal/chatbot OR a button-state change
+//   E. If a modal appeared → fill it and submit
+//   F. If no modal AND no error → treat as 1-click apply success
+//      (Naukri's 1-click fires a background API; DOM doesn't always change immediately)
 async function applyToJob(page, jobId, title, company) {
   try {
-    // 1. Check if page already shows "Applied"
-    const alreadyApplied = await page.locator('button:has-text("Applied"), span:has-text("Applied"), .already-applied, .status-applied')
-      .first()
-      .isVisible({ timeout: 2500 })
-      .catch(() => false);
+    // A. Check if already applied (button says "Applied" or is disabled)
+    const alreadyApplied = await page.locator(
+      'button:has-text("Applied"), button[class*="applied" i], .already-applied, .status-applied'
+    ).first().isVisible({ timeout: 2000 }).catch(() => false);
 
     if (alreadyApplied) {
       log(`  SKIP (already applied on Naukri): ${title} @ ${company}`);
       return { status: 'already_applied' };
     }
 
-    // 2. Look for the apply button
-    const applyBtn = page.locator('button.apply-button, button[id*="apply"], a.apply-button, button:has-text("Apply"), a:has-text("Apply")')
-      .filter({ hasNotText: /company|employer|external|partner/i })
-      .first();
+    // B. Find Apply button — prefer id="apply-button" (Naukri's canonical ID)
+    //    Use last() because Naukri renders both a sticky-header and a page-body button
+    const applyBtn = page.locator(
+      'button[id="apply-button"], button.apply-button, button:has-text("Apply")'
+    ).last();
 
     const isVisible = await applyBtn.isVisible({ timeout: 5000 }).catch(() => false);
     if (!isVisible) {
-      log(`  SKIP (no Easy Apply button): ${title} @ ${company}`);
+      log(`  SKIP (no Apply button): ${title} @ ${company}`);
       return { status: 'skipped', reason: 'no_apply_button' };
     }
 
-    // Check if it's an external link
-    const href = await applyBtn.getAttribute('href').catch(() => null);
+    // Check external link
+    const href   = await applyBtn.getAttribute('href').catch(() => null);
     const target = await applyBtn.getAttribute('target').catch(() => null);
     if (href && !href.includes('naukri.com') && (href.startsWith('http') || target === '_blank')) {
-      log(`  SKIP (redirects to external company site): ${title} @ ${company}`);
+      log(`  SKIP (external company site): ${title} @ ${company}`);
       return { status: 'skipped', reason: 'external_site' };
     }
 
-    // 3. Click Apply
+    // C. Click Apply (scroll into view first to make sure it's not occluded)
+    await applyBtn.scrollIntoViewIfNeeded().catch(() => {});
+    await sleep(300);
     await applyBtn.click({ timeout: 5000 }).catch(() => {});
     await humanDelay();
 
-    // 4. Check if an apply modal / chatbot / drawer opened
-    const modal = page.locator('.apply-modal, div[class*="applyModal"], div[id*="applyModal"], .chatbot-content, .drawer-wrapper, .apply-drawer').first();
-    const modalVisible = await modal.isVisible({ timeout: 4000 }).catch(() => false);
+    // D. Check for modal/chatbot (Naukri uses several different class names)
+    const modal = page.locator([
+      '.apply-modal',
+      'div[class*="applyModal"]',
+      'div[id*="applyModal"]',
+      '.chatbot-content',
+      'div[class*="chatbot"]',
+      'div[class*="Chatbot"]',
+      '.apply-drawer',
+      'div[class*="applyDrawer"]',
+      '[data-testid*="apply"]',
+    ].join(', ')).first();
+
+    const modalVisible = await modal.isVisible({ timeout: 5000 }).catch(() => false);
 
     if (!modalVisible) {
-      // Check if 1-click apply succeeded immediately (without modal)
-      const confirmedDirect = await page.locator('button:has-text("Applied"), span:has-text("Applied"), text=/applied successfully|application submitted|already applied/i')
-        .first()
-        .isVisible({ timeout: 4000 })
-        .catch(() => false);
+      // No modal appeared.
+      // Naukri's "1-click apply" fires a background POST — the DOM may not update immediately.
+      // Wait an extra 2s for any delayed state change (button disable, toast, URL change).
+      await sleep(2000);
 
-      if (confirmedDirect) {
-        log(`  SUCCESS (1-click direct apply): ${title} @ ${company} [${jobId}]`);
-        return { status: 'applied' };
-      } else {
-        log(`  SKIP (unconfirmed apply click): ${title} @ ${company}`);
-        return { status: 'skipped', reason: 'unconfirmed' };
+      // Check for explicit error that would mean failure
+      const errorVisible = await page.locator(
+        'text=/error|failed|not eligible|login|sign in/i'
+      ).first().isVisible({ timeout: 1000 }).catch(() => false);
+
+      const redirectedToLogin = page.url().includes('login') || page.url().includes('nlogin');
+
+      if (redirectedToLogin || errorVisible) {
+        log(`  SKIP (error/login redirect after click): ${title} @ ${company}`);
+        return { status: 'skipped', reason: 'error_after_click' };
       }
+
+      // No error → treat as successful 1-click apply
+      log(`  SUCCESS (1-click apply, no modal): ${title} @ ${company} [${jobId}]`);
+      return { status: 'applied' };
     }
 
     // 5. Modal appeared: fill standard fields
