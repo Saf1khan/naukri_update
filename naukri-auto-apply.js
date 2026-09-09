@@ -68,6 +68,10 @@ const LOCATIONS = (process.env.JOB_LOCATIONS || 'Bangalore,Hyderabad,Pan India,R
 
 const EXP_MIN = parseInt(process.env.JOB_EXPERIENCE_MIN || '1', 10);
 const EXP_MAX = parseInt(process.env.JOB_EXPERIENCE_MAX || '3', 10);
+// EXP_FILTER_MAX: card-level senior-role gate (more lenient than URL filter).
+// Blocks jobs where the MINIMUM years required > this value.
+// 5 = skip roles requiring 5+ years minimum (clearly senior).
+const EXP_FILTER_MAX = parseInt(process.env.EXP_FILTER_MAX || '4', 10);
 const MAX_APPLIES     = parseInt(process.env.MAX_APPLIES_PER_RUN  || '25', 10); // daily cap
 const BATCH_PER_RUN   = parseInt(process.env.BATCH_SIZE_PER_RUN   || '5',  10); // max per hourly run
 
@@ -315,13 +319,13 @@ async function applyToJob(page, jobId, title, company) {
 }
 
 // ── Collect job links from a search results page ──────────────────────────────
-async function collectJobLinks(page, expMax) {
+async function collectJobLinks(page, expFilterMax) {
   await page.waitForSelector(
     '.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]',
     { timeout: 15000 }
   ).catch(() => {});
 
-  const jobs = await page.evaluate((expMax) => {
+  const jobs = await page.evaluate((expFilterMax) => {
     const cards = document.querySelectorAll('.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]');
     return [...cards].map(card => {
       const link    = card.querySelector('a[href*="/job-listings-"]');
@@ -333,16 +337,23 @@ async function collectJobLinks(page, expMax) {
       const idMatch = href.match(/-(\d{10,})(?:[?]|$)/);
       const jobId   = idMatch?.[1] || href.slice(-12);
 
-      // Extract experience required from the card (e.g. "4-9 Yrs", "1 - 3 Yrs")
-      const expText = card.querySelector('.expwdth, .job-details, [class*="experience"], [class*="exp-"]')?.textContent?.trim() || '';
-      const expNums = expText.match(/(\d+)(?:\s*[-–to]+\s*(\d+))?\s*Yr/i);
+      // Extract experience required from the card.
+      // .expwdth is Naukri's specific experience cell class — most reliable.
+      // Fall back to extracting from full card text if not found.
+      const expEl   = card.querySelector('.expwdth');
+      const expText = expEl?.textContent?.trim() || '';
+      // Regex: match "1 - 3 Yrs" or "4-9 Yrs" or "0 to 2 Yrs"
+      const expNums = expText.match(/(\d+)(?:\s*[-\u2013to]+\s*(\d+))?\s*Yr/i);
+      // If exp text not found in .expwdth, default minExp to 0 (don't block)
       const minExp  = expNums ? parseInt(expNums[1], 10) : 0;
 
-      return { href, title, company, jobId, minExp };
+      return { href, title, company, jobId, minExp, expText };
     })
     .filter(j => j.href && j.jobId)
-    .filter(j => j.minExp <= expMax);  // ← Skip senior roles exceeding experience cap
-  }, expMax);
+    // Only block CLEARLY senior roles (min experience > EXP_FILTER_MAX)
+    // e.g. EXP_FILTER_MAX=4 blocks jobs requiring 5+ years minimum
+    .filter(j => j.minExp <= expFilterMax);
+  }, expFilterMax);
 
   return jobs;
 }
@@ -436,17 +447,17 @@ async function collectJobLinks(page, expMax) {
             break outerLoop;
           }
 
-          const jobs = await collectJobLinks(page, EXP_MAX);
+          const jobs = await collectJobLinks(page, EXP_FILTER_MAX);
           const filtered = jobs.filter(j => !seenIds.has(j.jobId));
-          log(`  Found ${jobs.length} listings on page ${pageNo} (${jobs.length - filtered.length} already seen or over-experience, ${filtered.length} fresh)`);
+          log(`  Found ${jobs.length} listings on page ${pageNo} (${filtered.length} fresh, ${jobs.length - filtered.length} already seen)`);
 
           if (filtered.length === 0) {
-            // No new unseen jobs on this page — check next page
-            if (jobs.length === 0) break; // Actually no jobs at all → stop pagination
-            continue;
+            if (jobs.length === 0) break; // No jobs at all → stop pagination
+            continue;                     // All seen → try next page
           }
 
           for (const job of filtered) {
+            if (totalAppliedThisRun >= batchTarget) break outerLoop; // Batch cap guard
 
             // Open job page
             await page.goto(job.href, { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
