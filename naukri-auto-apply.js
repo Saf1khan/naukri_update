@@ -172,13 +172,19 @@ async function applyToJob(page, jobId, title, company) {
       return { status: 'already_applied' };
     }
 
-    // B. Find Apply button — prefer id="apply-button" (Naukri's canonical ID)
-    //    Use last() because Naukri renders both a sticky-header and a page-body button
-    const applyBtn = page.locator(
-      'button[id="apply-button"], button.apply-button, button:has-text("Apply")'
-    ).last();
+    // B. Find Apply button
+    // Naukri renders 2 Apply buttons:
+    //   1st: in the job card content area (always visible on page load)
+    //   2nd: in a sticky footer (only visible after scrolling — initially hidden)
+    // We must use the FIRST visible one. Using .last() broke because it picks
+    // the hidden sticky button. Use button[id="apply-button"] + waitFor visible.
+    const applyBtn = page.locator('button[id="apply-button"], button.apply-button').first();
 
-    const isVisible = await applyBtn.isVisible({ timeout: 5000 }).catch(() => false);
+    // Wait for the button to actually become visible (up to 5s)
+    const isVisible = await applyBtn.waitFor({ state: 'visible', timeout: 5000 })
+      .then(() => true)
+      .catch(() => false);
+
     if (!isVisible) {
       log(`  SKIP (no Apply button): ${title} @ ${company}`);
       return { status: 'skipped', reason: 'no_apply_button' };
