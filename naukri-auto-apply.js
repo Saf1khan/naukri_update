@@ -469,6 +469,8 @@ async function collectJobLinks(page, expFilterMax) {
             await page.goto(job.href, { waitUntil: 'domcontentloaded', timeout: 30000 }).catch(() => {});
             await humanDelay();
 
+            const result = await applyToJob(page, job.jobId, job.title, job.company);
+
             // Only persist APPLIED jobs to JSON (keeps file small and seenIds clean).
             // Skipped/error jobs are intentionally NOT saved — they will be retried tomorrow.
             if (result.status === 'applied') {
