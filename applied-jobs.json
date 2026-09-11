@@ -290,5 +290,45 @@
     "title": "Fullstack Developer",
     "company": "Nova5 Techonologies",
     "status": "applied"
+  },
+  {
+    "id": "020926034338",
+    "date": "2026-09-11",
+    "time": "7:03:39 pm",
+    "title": "Java Developer (2-9 y)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "090926034257",
+    "date": "2026-09-11",
+    "time": "7:03:45 pm",
+    "title": "Java Spring boot Microse (2-9 years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "110926022522",
+    "date": "2026-09-11",
+    "time": "7:04:16 pm",
+    "title": "PCIe Design Verification Engineer",
+    "company": "Lookup It Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "110926021967",
+    "date": "2026-09-11",
+    "time": "7:04:37 pm",
+    "title": "AI/ML Engineer  GenAI & LLM",
+    "company": "Lookup It Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "110926920816",
+    "date": "2026-09-11",
+    "time": "7:04:56 pm",
+    "title": "Relationship Officer-SBE-Small Business Enterprise-Sales",
+    "company": "Kotak Life Insurance",
+    "status": "applied"
   }
 ]
