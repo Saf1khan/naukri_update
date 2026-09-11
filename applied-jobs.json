@@ -210,5 +210,45 @@
     "title": "Java Developer",
     "company": "Kfin Technologies",
     "status": "applied"
+  },
+  {
+    "id": "210526026899",
+    "date": "2026-09-11",
+    "time": "4:57:16 pm",
+    "title": "Data Entry operator vacancies in MNC Pharma",
+    "company": "Adecco Group",
+    "status": "applied"
+  },
+  {
+    "id": "210826037884",
+    "date": "2026-09-11",
+    "time": "4:58:14 pm",
+    "title": "Virtual Assistant - Project Management",
+    "company": "Wishup",
+    "status": "applied"
+  },
+  {
+    "id": "110926016721",
+    "date": "2026-09-11",
+    "time": "4:59:08 pm",
+    "title": "Business Analyst",
+    "company": "Amazon",
+    "status": "applied"
+  },
+  {
+    "id": "110926014527",
+    "date": "2026-09-11",
+    "time": "5:00:59 pm",
+    "title": "Ortems Developer & Support Engineer",
+    "company": "Onzestt Services",
+    "status": "applied"
+  },
+  {
+    "id": "110926017826",
+    "date": "2026-09-11",
+    "time": "5:02:06 pm",
+    "title": "Senior Data Scientist - Media Mix Modelling (MMM)",
+    "company": "Blend360 India",
+    "status": "applied"
   }
 ]
