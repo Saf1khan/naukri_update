@@ -170,5 +170,45 @@
     "title": "Apprentice - Software Engineer",
     "company": "Symphonyincubator Business Services",
     "status": "applied"
+  },
+  {
+    "id": "110926012270",
+    "date": "2026-09-11",
+    "time": "2:41:56 pm",
+    "title": "Data Engineer Trainer",
+    "company": "Ibrowsejobs Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "210726029129",
+    "date": "2026-09-11",
+    "time": "2:42:06 pm",
+    "title": "Java Full Stack Developer(REACT) INF",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "230726035025",
+    "date": "2026-09-11",
+    "time": "2:42:11 pm",
+    "title": "JAVA + REACT - INF (2 - 3 YRS)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "110926011903",
+    "date": "2026-09-11",
+    "time": "2:42:17 pm",
+    "title": "Software Engineer 3",
+    "company": "Peritus",
+    "status": "applied"
+  },
+  {
+    "id": "110926010504",
+    "date": "2026-09-11",
+    "time": "2:42:41 pm",
+    "title": "Java Developer",
+    "company": "Kfin Technologies",
+    "status": "applied"
   }
 ]
