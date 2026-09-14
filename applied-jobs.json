@@ -410,5 +410,45 @@
     "title": "Software Developer",
     "company": "ai Fjoa",
     "status": "applied"
+  },
+  {
+    "id": "140926020303",
+    "date": "2026-09-14",
+    "time": "6:24:24 pm",
+    "title": "Cognizant hiring For .NET Fullstack Developer",
+    "company": "Cognizant",
+    "status": "applied"
+  },
+  {
+    "id": "140926916336",
+    "date": "2026-09-14",
+    "time": "6:24:49 pm",
+    "title": "Software Engineer-Dynamics CRM",
+    "company": "Ecolab Global Services",
+    "status": "applied"
+  },
+  {
+    "id": "140926916298",
+    "date": "2026-09-14",
+    "time": "6:24:55 pm",
+    "title": "Software Engineer-Dynamics CRM",
+    "company": "Ecolab Global Services",
+    "status": "applied"
+  },
+  {
+    "id": "140926916203",
+    "date": "2026-09-14",
+    "time": "6:25:09 pm",
+    "title": "R&D Senior Software Test Engineer - IDC",
+    "company": "Hitachi Energy",
+    "status": "applied"
+  },
+  {
+    "id": "140926916143",
+    "date": "2026-09-14",
+    "time": "6:25:27 pm",
+    "title": "Lead Platform Engineer",
+    "company": "Symphonyincubator Business Services",
+    "status": "applied"
   }
 ]
