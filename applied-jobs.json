@@ -330,5 +330,45 @@
     "title": "Relationship Officer-SBE-Small Business Enterprise-Sales",
     "company": "Kotak Life Insurance",
     "status": "applied"
+  },
+  {
+    "id": "140926010813",
+    "date": "2026-09-14",
+    "time": "2:33:43 pm",
+    "title": "Aws Data Engineer",
+    "company": "Tata Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "140926010278",
+    "date": "2026-09-14",
+    "time": "2:33:53 pm",
+    "title": "AEM Developer",
+    "company": "Client of The Hiring Xpert",
+    "status": "applied"
+  },
+  {
+    "id": "140926909506",
+    "date": "2026-09-14",
+    "time": "2:33:59 pm",
+    "title": "Application Developer Intern",
+    "company": "Gremot Mobility",
+    "status": "applied"
+  },
+  {
+    "id": "140926909453",
+    "date": "2026-09-14",
+    "time": "2:34:06 pm",
+    "title": "Software Engineer 1",
+    "company": "Workspherelife",
+    "status": "applied"
+  },
+  {
+    "id": "140926909267",
+    "date": "2026-09-14",
+    "time": "2:34:12 pm",
+    "title": "Net /C# developer",
+    "company": "Stanch Solutions",
+    "status": "applied"
   }
 ]
