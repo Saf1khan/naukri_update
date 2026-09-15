@@ -530,5 +530,45 @@
     "title": "AI Infrastructure Engineer",
     "company": "Axiom Global Technologies",
     "status": "applied"
+  },
+  {
+    "id": "200826027878",
+    "date": "2026-09-15",
+    "time": "2:17:26 pm",
+    "title": "ETL Tester with Automation Testing",
+    "company": "EY",
+    "status": "applied"
+  },
+  {
+    "id": "150926014686",
+    "date": "2026-09-15",
+    "time": "2:17:32 pm",
+    "title": "Aws Data Engineer",
+    "company": "CloudRise Solutions Pvt Ltd",
+    "status": "applied"
+  },
+  {
+    "id": "150926014579",
+    "date": "2026-09-15",
+    "time": "2:17:44 pm",
+    "title": "Full Stack Developer Python & React.js",
+    "company": "El-Shaddai Recruitment and ITES",
+    "status": "applied"
+  },
+  {
+    "id": "150926913627",
+    "date": "2026-09-15",
+    "time": "2:18:51 pm",
+    "title": "Data Scientist",
+    "company": "Koch Industries",
+    "status": "applied"
+  },
+  {
+    "id": "150926013348",
+    "date": "2026-09-15",
+    "time": "2:20:08 pm",
+    "title": "Procurement Business Analyst",
+    "company": "Schneider Electric",
+    "status": "applied"
   }
 ]
