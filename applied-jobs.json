@@ -570,5 +570,45 @@
     "title": "Procurement Business Analyst",
     "company": "Schneider Electric",
     "status": "applied"
+  },
+  {
+    "id": "150926016638",
+    "date": "2026-09-15",
+    "time": "3:08:10 pm",
+    "title": "Data Scientist",
+    "company": "EXL",
+    "status": "applied"
+  },
+  {
+    "id": "200826026365",
+    "date": "2026-09-15",
+    "time": "3:08:27 pm",
+    "title": "Dot Net Developer - INF",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "140726033952",
+    "date": "2026-09-15",
+    "time": "3:08:35 pm",
+    "title": ".Net +Angular. (2-3 Years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "110926024482",
+    "date": "2026-09-15",
+    "time": "3:08:49 pm",
+    "title": "AI Engineer",
+    "company": "Teknuova",
+    "status": "applied"
+  },
+  {
+    "id": "090924014779",
+    "date": "2026-09-15",
+    "time": "3:08:55 pm",
+    "title": "Leading Software Company - Web Developers",
+    "company": "Leading MNC Client",
+    "status": "applied"
   }
 ]
