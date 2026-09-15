@@ -610,5 +610,45 @@
     "title": "Leading Software Company - Web Developers",
     "company": "Leading MNC Client",
     "status": "applied"
+  },
+  {
+    "id": "150926025109",
+    "date": "2026-09-15",
+    "time": "5:19:21 pm",
+    "title": "SRE (Site Reliability Engineer) at Bangalore",
+    "company": "Smart Ims",
+    "status": "applied"
+  },
+  {
+    "id": "150926922008",
+    "date": "2026-09-15",
+    "time": "5:19:41 pm",
+    "title": "Physics MSc. Expert (Freelancer)",
+    "company": "Soul Ai",
+    "status": "applied"
+  },
+  {
+    "id": "150926921997",
+    "date": "2026-09-15",
+    "time": "5:19:47 pm",
+    "title": "Physics PhD Expert (Freelance)",
+    "company": "Soul Ai",
+    "status": "applied"
+  },
+  {
+    "id": "150926921930",
+    "date": "2026-09-15",
+    "time": "5:19:53 pm",
+    "title": "Chemistry PhD Expert",
+    "company": "Soul Ai",
+    "status": "applied"
+  },
+  {
+    "id": "150926921851",
+    "date": "2026-09-15",
+    "time": "5:20:04 pm",
+    "title": "PHP Developer",
+    "company": "Soul Ai",
+    "status": "applied"
   }
 ]
