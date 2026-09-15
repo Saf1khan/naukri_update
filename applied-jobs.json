@@ -650,5 +650,45 @@
     "title": "PHP Developer",
     "company": "Soul Ai",
     "status": "applied"
+  },
+  {
+    "id": "150926035616",
+    "date": "2026-09-15",
+    "time": "6:25:09 pm",
+    "title": "QA Automation Engineer",
+    "company": "TSIT Digital",
+    "status": "applied"
+  },
+  {
+    "id": "260526022034",
+    "date": "2026-09-15",
+    "time": "6:25:23 pm",
+    "title": "Sr java/.net Full Stack Developer",
+    "company": "Deloitte US-India Offices",
+    "status": "applied"
+  },
+  {
+    "id": "290826009326",
+    "date": "2026-09-15",
+    "time": "6:25:35 pm",
+    "title": "Java Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "200726024760",
+    "date": "2026-09-15",
+    "time": "6:25:44 pm",
+    "title": "Computer Vision, MLOps, Python",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "020726005307",
+    "date": "2026-09-15",
+    "time": "6:25:49 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
