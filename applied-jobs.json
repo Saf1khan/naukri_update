@@ -690,5 +690,45 @@
     "title": "Java Full Stack Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "080926006952",
+    "date": "2026-09-15",
+    "time": "7:49:34 pm",
+    "title": "REACT JS + NODE JS -INF (2-9) YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "080926030718",
+    "date": "2026-09-15",
+    "time": "7:49:41 pm",
+    "title": "Dot Net Developer-INF (2 -9) YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "110826019037",
+    "date": "2026-09-15",
+    "time": "7:49:47 pm",
+    "title": "React JS Developer-INF (2-3)YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "150926035627",
+    "date": "2026-09-15",
+    "time": "7:50:06 pm",
+    "title": "Data Engineer",
+    "company": "Evoke HR solution",
+    "status": "applied"
+  },
+  {
+    "id": "150926033632",
+    "date": "2026-09-15",
+    "time": "7:50:25 pm",
+    "title": "Generative AI Software Engineer",
+    "company": "PwC",
+    "status": "applied"
   }
 ]
