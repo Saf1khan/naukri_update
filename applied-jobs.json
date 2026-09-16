@@ -850,5 +850,45 @@
     "title": "Assistant Professor  Computer Science & Engineering",
     "company": "RV Educational Institutions",
     "status": "applied"
+  },
+  {
+    "id": "160926043965",
+    "date": "2026-09-16",
+    "time": "6:22:35 pm",
+    "title": "Gen AI Engineer",
+    "company": "HCLTech",
+    "status": "applied"
+  },
+  {
+    "id": "160926043534",
+    "date": "2026-09-16",
+    "time": "6:22:54 pm",
+    "title": "Model Based Developer",
+    "company": "Coforge",
+    "status": "applied"
+  },
+  {
+    "id": "160926043290",
+    "date": "2026-09-16",
+    "time": "6:23:03 pm",
+    "title": "Business Development Executive",
+    "company": "Mins Global",
+    "status": "applied"
+  },
+  {
+    "id": "240625025518",
+    "date": "2026-09-16",
+    "time": "6:23:36 pm",
+    "title": "AI/Python Engineer",
+    "company": "Deloitte US-India Offices",
+    "status": "applied"
+  },
+  {
+    "id": "180726012102",
+    "date": "2026-09-16",
+    "time": "6:23:42 pm",
+    "title": "Gen AI (Agentic AI) Engineer",
+    "company": "Deloitte US-India Offices",
+    "status": "applied"
   }
 ]
