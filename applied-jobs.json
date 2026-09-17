@@ -1050,5 +1050,45 @@
     "title": "Office Coordinator",
     "company": "Taxxin Jurist International (opc)",
     "status": "applied"
+  },
+  {
+    "id": "170926033066",
+    "date": "2026-09-17",
+    "time": "6:18:47 pm",
+    "title": "JAVA+Angular Developer - INF (2-15) YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "170926032578",
+    "date": "2026-09-17",
+    "time": "6:18:57 pm",
+    "title": "JAVA+Angular Developer - INF (2-15) YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "170926932095",
+    "date": "2026-09-17",
+    "time": "6:19:21 pm",
+    "title": "Assistant Instructor  Electronics and Communication Engineering (ECE)",
+    "company": "RV Educational Institutions",
+    "status": "applied"
+  },
+  {
+    "id": "170926932090",
+    "date": "2026-09-17",
+    "time": "6:19:28 pm",
+    "title": "Assistant Instructor Computer Science & Engineering (CSE)",
+    "company": "RV Educational Institutions",
+    "status": "applied"
+  },
+  {
+    "id": "170926031105",
+    "date": "2026-09-17",
+    "time": "6:19:43 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Erudio Technologies",
+    "status": "applied"
   }
 ]
