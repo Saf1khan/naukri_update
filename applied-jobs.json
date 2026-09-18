@@ -1130,5 +1130,45 @@
     "title": "Lab Administrator - Cloud Infrastructure Management",
     "company": "RV Educational Institutions",
     "status": "applied"
+  },
+  {
+    "id": "180926019350",
+    "date": "2026-09-18",
+    "time": "1:51:15 pm",
+    "title": "Dot Net Developer",
+    "company": "Qualitrix Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "180926918322",
+    "date": "2026-09-18",
+    "time": "1:51:33 pm",
+    "title": "O9 Senior Developer",
+    "company": "O9 Senior Developer",
+    "status": "applied"
+  },
+  {
+    "id": "180926918039",
+    "date": "2026-09-18",
+    "time": "1:51:40 pm",
+    "title": "Network Developer",
+    "company": "Acesoft",
+    "status": "applied"
+  },
+  {
+    "id": "180926918032",
+    "date": "2026-09-18",
+    "time": "1:51:46 pm",
+    "title": "Automation Tester with Playwright",
+    "company": "It Services",
+    "status": "applied"
+  },
+  {
+    "id": "180926917938",
+    "date": "2026-09-18",
+    "time": "1:51:54 pm",
+    "title": "Full Stack Developer (Contract)",
+    "company": "Automotive Company",
+    "status": "applied"
   }
 ]
