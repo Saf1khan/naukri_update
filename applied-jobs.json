@@ -1210,5 +1210,45 @@
     "title": "Dashboard Developer - Power BI",
     "company": "ASL",
     "status": "applied"
+  },
+  {
+    "id": "180926025221",
+    "date": "2026-09-18",
+    "time": "4:50:35 pm",
+    "title": "Senior Devops Engineer",
+    "company": "INFINX",
+    "status": "applied"
+  },
+  {
+    "id": "180926025154",
+    "date": "2026-09-18",
+    "time": "4:50:45 pm",
+    "title": "Senior Site Reliability Engineer",
+    "company": "INFINX",
+    "status": "applied"
+  },
+  {
+    "id": "180926023872",
+    "date": "2026-09-18",
+    "time": "4:52:02 pm",
+    "title": "AI and Cloud Full Stack - Manager",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "230326014625",
+    "date": "2026-09-18",
+    "time": "4:52:13 pm",
+    "title": "Embedded Software Engineer",
+    "company": "Em Electronix",
+    "status": "applied"
+  },
+  {
+    "id": "180926023333",
+    "date": "2026-09-18",
+    "time": "4:52:26 pm",
+    "title": "L3 Developer",
+    "company": "Capgemini",
+    "status": "applied"
   }
 ]
