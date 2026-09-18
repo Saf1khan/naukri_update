@@ -1170,5 +1170,45 @@
     "title": "Full Stack Developer (Contract)",
     "company": "Automotive Company",
     "status": "applied"
+  },
+  {
+    "id": "180926020170",
+    "date": "2026-09-18",
+    "time": "2:45:02 pm",
+    "title": "Wms Consultant",
+    "company": "TecQubes Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "180926019935",
+    "date": "2026-09-18",
+    "time": "2:45:09 pm",
+    "title": "Aws Data Engineer",
+    "company": "Tata Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "180926919051",
+    "date": "2026-09-18",
+    "time": "2:46:12 pm",
+    "title": "Dashboard Developer and Database Management",
+    "company": "acesoft",
+    "status": "applied"
+  },
+  {
+    "id": "180926919043",
+    "date": "2026-09-18",
+    "time": "2:46:18 pm",
+    "title": "Automation Test Engineer",
+    "company": "ASL",
+    "status": "applied"
+  },
+  {
+    "id": "180926919033",
+    "date": "2026-09-18",
+    "time": "2:46:23 pm",
+    "title": "Dashboard Developer - Power BI",
+    "company": "ASL",
+    "status": "applied"
   }
 ]
