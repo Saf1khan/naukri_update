@@ -1410,5 +1410,45 @@
     "title": "Dot Net Developer - {PAN INDIA}",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "210926026174",
+    "date": "2026-09-21",
+    "time": "6:24:18 pm",
+    "title": "Automation Test Engineer",
+    "company": "Erudio Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "210926025578",
+    "date": "2026-09-21",
+    "time": "6:25:34 pm",
+    "title": "Frontend Web Developer",
+    "company": "Hackajob",
+    "status": "applied"
+  },
+  {
+    "id": "210926025240",
+    "date": "2026-09-21",
+    "time": "6:25:51 pm",
+    "title": "ETL Data Testing Engineer",
+    "company": "Careernet",
+    "status": "applied"
+  },
+  {
+    "id": "210926025030",
+    "date": "2026-09-21",
+    "time": "6:26:13 pm",
+    "title": "Edge AI Engineer",
+    "company": "Vedya Labs",
+    "status": "applied"
+  },
+  {
+    "id": "210926024942",
+    "date": "2026-09-21",
+    "time": "6:26:22 pm",
+    "title": "Fullstack Developer",
+    "company": "Hackajob",
+    "status": "applied"
   }
 ]
