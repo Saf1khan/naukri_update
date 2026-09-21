@@ -1490,5 +1490,45 @@
     "title": "Associate Product Manager",
     "company": "Confidential Indian Wearables Giant",
     "status": "applied"
+  },
+  {
+    "id": "140826914689",
+    "date": "2026-09-21",
+    "time": "9:23:54 pm",
+    "title": "Java Angular Lead",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "130826920370",
+    "date": "2026-09-21",
+    "time": "9:24:01 pm",
+    "title": "Java + Azure Professional",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "130826920372",
+    "date": "2026-09-21",
+    "time": "9:24:08 pm",
+    "title": "Java + AWS Professional",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "130826920367",
+    "date": "2026-09-21",
+    "time": "9:24:14 pm",
+    "title": "Java Azure Lead",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "140826931196",
+    "date": "2026-09-21",
+    "time": "9:24:21 pm",
+    "title": "Java Fullstack(Angular) Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
