@@ -1650,5 +1650,45 @@
     "title": "Ai Ml Engineer",
     "company": "PwC",
     "status": "applied"
+  },
+  {
+    "id": "220926047767",
+    "date": "2026-09-22",
+    "time": "6:21:51 pm",
+    "title": "Web Developer (Full Stack)",
+    "company": "Contour Education",
+    "status": "applied"
+  },
+  {
+    "id": "220926045039",
+    "date": "2026-09-22",
+    "time": "6:23:03 pm",
+    "title": "Talent Acquisition Lead (India)",
+    "company": "Contour Education",
+    "status": "applied"
+  },
+  {
+    "id": "220926042084",
+    "date": "2026-09-22",
+    "time": "6:23:14 pm",
+    "title": "Cloud Engineer/ Support Engineer - Cloud",
+    "company": "Ascendion Engineering",
+    "status": "applied"
+  },
+  {
+    "id": "220926040800",
+    "date": "2026-09-22",
+    "time": "6:23:26 pm",
+    "title": "Computer Vision + Robotics",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "100926019608",
+    "date": "2026-09-22",
+    "time": "6:23:40 pm",
+    "title": "Java Developer @ Big 4",
+    "company": "Embarkgcc Services",
+    "status": "applied"
   }
 ]
