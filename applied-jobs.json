@@ -1570,5 +1570,45 @@
     "title": "Software Engineer",
     "company": "Hackajob",
     "status": "applied"
+  },
+  {
+    "id": "220926020115",
+    "date": "2026-09-22",
+    "time": "3:01:18 pm",
+    "title": "Lead Databricks Engineer (Databricks)",
+    "company": "KPI Partners",
+    "status": "applied"
+  },
+  {
+    "id": "220926919193",
+    "date": "2026-09-22",
+    "time": "3:01:29 pm",
+    "title": "Prompt Engineer",
+    "company": "Leading Client",
+    "status": "applied"
+  },
+  {
+    "id": "220926919100",
+    "date": "2026-09-22",
+    "time": "3:01:35 pm",
+    "title": "Senior Data Engineer - IT Consulting MNC",
+    "company": "Leading Client",
+    "status": "applied"
+  },
+  {
+    "id": "220926919046",
+    "date": "2026-09-22",
+    "time": "3:01:42 pm",
+    "title": "UI/UX Designer",
+    "company": "Leading Client",
+    "status": "applied"
+  },
+  {
+    "id": "220926919037",
+    "date": "2026-09-22",
+    "time": "3:01:48 pm",
+    "title": "Operations Executive",
+    "company": "Leading Client",
+    "status": "applied"
   }
 ]
