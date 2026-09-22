@@ -1530,5 +1530,45 @@
     "title": "Java Fullstack(Angular) Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "220926016205",
+    "date": "2026-09-22",
+    "time": "2:09:11 pm",
+    "title": "Azure DevOps Engineer",
+    "company": "Xencia Technology Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "220926016081",
+    "date": "2026-09-22",
+    "time": "2:09:17 pm",
+    "title": "Site Reliability Engineer",
+    "company": "Hackajob",
+    "status": "applied"
+  },
+  {
+    "id": "220926015250",
+    "date": "2026-09-22",
+    "time": "2:09:42 pm",
+    "title": "Full Stack Developer_ Java + Angular JS",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "190325017504",
+    "date": "2026-09-22",
+    "time": "2:10:09 pm",
+    "title": "Senior Accounts Executive",
+    "company": "Kongovi",
+    "status": "applied"
+  },
+  {
+    "id": "220926013126",
+    "date": "2026-09-22",
+    "time": "2:10:20 pm",
+    "title": "Software Engineer",
+    "company": "Hackajob",
+    "status": "applied"
   }
 ]
