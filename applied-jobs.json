@@ -1610,5 +1610,45 @@
     "title": "Operations Executive",
     "company": "Leading Client",
     "status": "applied"
+  },
+  {
+    "id": "220926038419",
+    "date": "2026-09-22",
+    "time": "5:14:22 pm",
+    "title": "Data Analyst",
+    "company": "M2M Media Network Llp",
+    "status": "applied"
+  },
+  {
+    "id": "220926037279",
+    "date": "2026-09-22",
+    "time": "5:14:33 pm",
+    "title": "Marketing Executive",
+    "company": ".",
+    "status": "applied"
+  },
+  {
+    "id": "060826024742",
+    "date": "2026-09-22",
+    "time": "5:14:46 pm",
+    "title": "Fullstack Developer",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "060826025089",
+    "date": "2026-09-22",
+    "time": "5:14:58 pm",
+    "title": "LLMOps DevOps Engineer",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "240726024512",
+    "date": "2026-09-22",
+    "time": "5:15:04 pm",
+    "title": "Ai Ml Engineer",
+    "company": "PwC",
+    "status": "applied"
   }
 ]
