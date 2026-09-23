@@ -1850,5 +1850,45 @@
     "title": "Full stack Developer ASP.NET, C#, VB.NET, MS SQL, Crystal Report",
     "company": "Smart Identification",
     "status": "applied"
+  },
+  {
+    "id": "230926035290",
+    "date": "2026-09-23",
+    "time": "6:34:37 pm",
+    "title": "Java Lead",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "230926038716",
+    "date": "2026-09-23",
+    "time": "6:37:51 pm",
+    "title": "Software Development Engineer 3",
+    "company": "Aerem",
+    "status": "applied"
+  },
+  {
+    "id": "230926038405",
+    "date": "2026-09-23",
+    "time": "6:38:06 pm",
+    "title": "Data Analyst",
+    "company": "First American",
+    "status": "applied"
+  },
+  {
+    "id": "230926038331",
+    "date": "2026-09-23",
+    "time": "6:38:16 pm",
+    "title": "Artificial Intelligence Engineer",
+    "company": "Mindspace Outsourcing Services",
+    "status": "applied"
+  },
+  {
+    "id": "230926037986",
+    "date": "2026-09-23",
+    "time": "6:38:29 pm",
+    "title": "Dot Net Developer",
+    "company": "Kotak Mahindra Bank",
+    "status": "applied"
   }
 ]
