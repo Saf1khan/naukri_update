@@ -1890,5 +1890,45 @@
     "title": "Dot Net Developer",
     "company": "Kotak Mahindra Bank",
     "status": "applied"
+  },
+  {
+    "id": "230926041202",
+    "date": "2026-09-23",
+    "time": "7:43:54 pm",
+    "title": "Fullstack Developer",
+    "company": "Indium Software",
+    "status": "applied"
+  },
+  {
+    "id": "180226038730",
+    "date": "2026-09-23",
+    "time": "7:44:18 pm",
+    "title": "Java Full stack with angular",
+    "company": "Tata Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "121225916063",
+    "date": "2026-09-23",
+    "time": "7:44:29 pm",
+    "title": "MS Dynamics CRM Support Professional",
+    "company": "Tata Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "230926039795",
+    "date": "2026-09-23",
+    "time": "7:44:35 pm",
+    "title": "Java Backend developers",
+    "company": "Indium Software",
+    "status": "applied"
+  },
+  {
+    "id": "060826036854",
+    "date": "2026-09-23",
+    "time": "7:44:49 pm",
+    "title": "Python Developer + AI (2-3 YRS)-INF",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
