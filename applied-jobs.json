@@ -2210,5 +2210,45 @@
     "title": "Hiring AI Engineer",
     "company": "Urbanrise Constructions",
     "status": "applied"
+  },
+  {
+    "id": "250926030190",
+    "date": "2026-09-25",
+    "time": "5:24:59 pm",
+    "title": "Veeva Database Programmer (Clinical Data Management)",
+    "company": "Clinical Research Organization",
+    "status": "applied"
+  },
+  {
+    "id": "280826008971",
+    "date": "2026-09-25",
+    "time": "5:26:15 pm",
+    "title": "Automation Test Engineer",
+    "company": "Erudio Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "250926029537",
+    "date": "2026-09-25",
+    "time": "5:26:22 pm",
+    "title": "Software Engineer-EIABA",
+    "company": "Bounteous",
+    "status": "applied"
+  },
+  {
+    "id": "250926027899",
+    "date": "2026-09-25",
+    "time": "5:27:10 pm",
+    "title": "Senior Data Scientist",
+    "company": "Reputed Client of PMS Consulting",
+    "status": "applied"
+  },
+  {
+    "id": "250926027694",
+    "date": "2026-09-25",
+    "time": "5:27:16 pm",
+    "title": "Software Engineer",
+    "company": "Safran Engineering Services",
+    "status": "applied"
   }
 ]
