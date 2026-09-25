@@ -2250,5 +2250,45 @@
     "title": "Software Engineer",
     "company": "Safran Engineering Services",
     "status": "applied"
+  },
+  {
+    "id": "250926034602",
+    "date": "2026-09-25",
+    "time": "6:32:30 pm",
+    "title": "Software Developer",
+    "company": "https://magselan.com/",
+    "status": "applied"
+  },
+  {
+    "id": "250926032761",
+    "date": "2026-09-25",
+    "time": "6:33:32 pm",
+    "title": "Sr Developer - Java",
+    "company": "Drink Prime",
+    "status": "applied"
+  },
+  {
+    "id": "090926023005",
+    "date": "2026-09-25",
+    "time": "6:34:47 pm",
+    "title": "Pharmacovigilance Associate",
+    "company": "Airvin Skills",
+    "status": "applied"
+  },
+  {
+    "id": "250926027148",
+    "date": "2026-09-25",
+    "time": "6:34:54 pm",
+    "title": "Java FSD - Bangalore (WFO) - Fulltime - MNC",
+    "company": "Elabs Infotech",
+    "status": "applied"
+  },
+  {
+    "id": "280426038121",
+    "date": "2026-09-25",
+    "time": "6:35:56 pm",
+    "title": "JAVA Selenium TESTING_HYDERABAD",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
