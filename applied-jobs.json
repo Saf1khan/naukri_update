@@ -2330,5 +2330,45 @@
     "title": "Mis Executive",
     "company": "Green Vista Realty",
     "status": "applied"
+  },
+  {
+    "id": "280926014947",
+    "date": "2026-09-28",
+    "time": "3:26:22 pm",
+    "title": "Senior Backend Software Engineer",
+    "company": "LTM",
+    "status": "applied"
+  },
+  {
+    "id": "280926914361",
+    "date": "2026-09-28",
+    "time": "3:28:01 pm",
+    "title": "Back-End Developer",
+    "company": "QCS Dc Labs",
+    "status": "applied"
+  },
+  {
+    "id": "280926914333",
+    "date": "2026-09-28",
+    "time": "3:28:07 pm",
+    "title": "Front-End Developer",
+    "company": "QCS Dc Labs",
+    "status": "applied"
+  },
+  {
+    "id": "280926914157",
+    "date": "2026-09-28",
+    "time": "3:28:17 pm",
+    "title": "AI/ML Engineer - OpenShift AI & MLOps",
+    "company": "QCS Dc Labs",
+    "status": "applied"
+  },
+  {
+    "id": "280926013773",
+    "date": "2026-09-28",
+    "time": "3:28:23 pm",
+    "title": "Database Administration",
+    "company": "Eagle Software India",
+    "status": "applied"
   }
 ]
