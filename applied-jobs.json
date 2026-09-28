@@ -2490,5 +2490,45 @@
     "title": "EDQA profile-Python, Data bricks, SQL, ADF- Hyderabad",
     "company": "Tech Mahindra",
     "status": "applied"
+  },
+  {
+    "id": "280926032244",
+    "date": "2026-09-28",
+    "time": "11:08:36 pm",
+    "title": "Artificial Intelligence Engineer",
+    "company": "Stage-x Engineering Services",
+    "status": "applied"
+  },
+  {
+    "id": "150726038400",
+    "date": "2026-09-28",
+    "time": "11:09:08 pm",
+    "title": "Java Selenium_Pan India_Infy",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280926031673",
+    "date": "2026-09-28",
+    "time": "11:10:02 pm",
+    "title": ".NET + Azure Mongo DB",
+    "company": "Cognizant",
+    "status": "applied"
+  },
+  {
+    "id": "200926014654",
+    "date": "2026-09-28",
+    "time": "11:10:23 pm",
+    "title": "React JS + Node JS Developer-S",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "180926000032",
+    "date": "2026-09-28",
+    "time": "11:10:34 pm",
+    "title": "Site Reliability Engineer (SRE) - Unix/Linux",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
