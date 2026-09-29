@@ -2610,5 +2610,45 @@
     "title": "Client Relationship Manager",
     "company": "Talent Corner HR Services",
     "status": "applied"
+  },
+  {
+    "id": "290926037031",
+    "date": "2026-09-29",
+    "time": "6:28:50 pm",
+    "title": "Data Engineer",
+    "company": "Evoke HR solution",
+    "status": "applied"
+  },
+  {
+    "id": "290926935281",
+    "date": "2026-09-29",
+    "time": "6:29:06 pm",
+    "title": "Staff AI Software Engineer",
+    "company": "GE VERNOVA",
+    "status": "applied"
+  },
+  {
+    "id": "290926935119",
+    "date": "2026-09-29",
+    "time": "6:29:17 pm",
+    "title": "Quality Assurance Engineering Specialist",
+    "company": "GE VERNOVA",
+    "status": "applied"
+  },
+  {
+    "id": "290926935050",
+    "date": "2026-09-29",
+    "time": "6:29:23 pm",
+    "title": "Software Engineer- Java",
+    "company": "GE VERNOVA",
+    "status": "applied"
+  },
+  {
+    "id": "290926934999",
+    "date": "2026-09-29",
+    "time": "6:29:29 pm",
+    "title": "Data Analyst",
+    "company": "GE VERNOVA",
+    "status": "applied"
   }
 ]
