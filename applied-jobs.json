@@ -2890,5 +2890,45 @@
     "title": "Sales Team Leader- Meesho",
     "company": "Leading Client",
     "status": "applied"
+  },
+  {
+    "id": "300926036006",
+    "date": "2026-09-30",
+    "time": "9:24:33 pm",
+    "title": "Oracle DBA",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "300926036000",
+    "date": "2026-09-30",
+    "time": "9:24:39 pm",
+    "title": "Oracle DBA",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "300926035864",
+    "date": "2026-09-30",
+    "time": "9:24:46 pm",
+    "title": "Java Developer",
+    "company": "Insemi Technology Services",
+    "status": "applied"
+  },
+  {
+    "id": "300926035687",
+    "date": "2026-09-30",
+    "time": "9:24:57 pm",
+    "title": "Test Data Management (TDM) Engineer / Consultant",
+    "company": "Ascendion Engineering",
+    "status": "applied"
+  },
+  {
+    "id": "300926033575",
+    "date": "2026-09-30",
+    "time": "9:25:29 pm",
+    "title": "Customer Service Officer, Savings IND",
+    "company": "OSB India",
+    "status": "applied"
   }
 ]
