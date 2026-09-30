@@ -2770,5 +2770,45 @@
     "title": "Tele Collection Professional",
     "company": "Leading Client",
     "status": "applied"
+  },
+  {
+    "id": "300926027751",
+    "date": "2026-09-30",
+    "time": "4:16:36 pm",
+    "title": "AWS Devops, Terraform",
+    "company": "IT company",
+    "status": "applied"
+  },
+  {
+    "id": "300926027589",
+    "date": "2026-09-30",
+    "time": "4:16:43 pm",
+    "title": "Security Engineer Ai security",
+    "company": "Leading Client of The Glove",
+    "status": "applied"
+  },
+  {
+    "id": "300926027519",
+    "date": "2026-09-30",
+    "time": "4:16:55 pm",
+    "title": "Data scientist - Generative AI",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "300926026686",
+    "date": "2026-09-30",
+    "time": "4:17:01 pm",
+    "title": "Fund Operations Associate",
+    "company": "Myraid",
+    "status": "applied"
+  },
+  {
+    "id": "300926026246",
+    "date": "2026-09-30",
+    "time": "4:17:12 pm",
+    "title": "AWS + Snowflake Data Engineer",
+    "company": "Crescendo Global",
+    "status": "applied"
   }
 ]
