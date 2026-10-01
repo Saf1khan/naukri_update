@@ -2930,5 +2930,45 @@
     "title": "Customer Service Officer, Savings IND",
     "company": "OSB India",
     "status": "applied"
+  },
+  {
+    "id": "011026022676",
+    "date": "2026-10-01",
+    "time": "3:46:06 pm",
+    "title": "Java React Fullstack Developer - Bangalore Hybrid",
+    "company": "Coforge",
+    "status": "applied"
+  },
+  {
+    "id": "011026020137",
+    "date": "2026-10-01",
+    "time": "3:46:40 pm",
+    "title": "Python Developer Lead",
+    "company": "Synechron",
+    "status": "applied"
+  },
+  {
+    "id": "011026019919",
+    "date": "2026-10-01",
+    "time": "3:46:48 pm",
+    "title": "Senior Backend Software Engineer",
+    "company": "Topgear Consultants",
+    "status": "applied"
+  },
+  {
+    "id": "011026018947",
+    "date": "2026-10-01",
+    "time": "3:47:48 pm",
+    "title": "Embedded Edge AI Engineer",
+    "company": "Testcore It Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "011026023317",
+    "date": "2026-10-01",
+    "time": "3:49:06 pm",
+    "title": "Software Engineer",
+    "company": "GUS Global Services India",
+    "status": "applied"
   }
 ]
