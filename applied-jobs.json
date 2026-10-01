@@ -3090,5 +3090,29 @@
     "title": "Java Developer",
     "company": "Leading Client",
     "status": "applied"
+  },
+  {
+    "id": "011026038706",
+    "date": "2026-10-01",
+    "time": "9:56:10 pm",
+    "title": "Payroll Executive",
+    "company": "Schneider Electric",
+    "status": "applied"
+  },
+  {
+    "id": "011026931462",
+    "date": "2026-10-01",
+    "time": "9:57:39 pm",
+    "title": "Data Analyst",
+    "company": "The House of Abhinandan Lodha",
+    "status": "applied"
+  },
+  {
+    "id": "011026038160",
+    "date": "2026-10-01",
+    "time": "10:07:31 pm",
+    "title": "Backend Engineer Lead",
+    "company": "Gradnode",
+    "status": "applied"
   }
 ]
