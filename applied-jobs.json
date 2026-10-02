@@ -3250,5 +3250,45 @@
     "title": "Fullstack Developer",
     "company": "Authentic Staffing Agency",
     "status": "applied"
+  },
+  {
+    "id": "021026011997",
+    "date": "2026-10-02",
+    "time": "7:43:13 pm",
+    "title": "Full Stack Trainer",
+    "company": "NareshIT",
+    "status": "applied"
+  },
+  {
+    "id": "021026013328",
+    "date": "2026-10-02",
+    "time": "7:45:00 pm",
+    "title": "Financial Analyst | Immediate Hiring",
+    "company": "Arise Solution",
+    "status": "applied"
+  },
+  {
+    "id": "021026012940",
+    "date": "2026-10-02",
+    "time": "7:45:23 pm",
+    "title": "Devops Engineer",
+    "company": "Tansci Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "021026012540",
+    "date": "2026-10-02",
+    "time": "7:45:46 pm",
+    "title": "Automation Tester",
+    "company": "Desicrew Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "021026012510",
+    "date": "2026-10-02",
+    "time": "7:45:59 pm",
+    "title": "Snr. Linux Server Administrator",
+    "company": "Webspiders Interweb Pvt Ltd (WIPL)",
+    "status": "applied"
   }
 ]
