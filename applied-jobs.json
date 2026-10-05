@@ -3410,5 +3410,45 @@
     "title": "Java Spring boot Microservice (2-15 years)",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "051026040880",
+    "date": "2026-10-05",
+    "time": "8:17:38 pm",
+    "title": "Data Engineer",
+    "company": "AuthorAsist",
+    "status": "applied"
+  },
+  {
+    "id": "051026040751",
+    "date": "2026-10-05",
+    "time": "8:17:45 pm",
+    "title": "Software Engineer",
+    "company": "Cognizant",
+    "status": "applied"
+  },
+  {
+    "id": "190826037067",
+    "date": "2026-10-05",
+    "time": "8:17:56 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "200826026820",
+    "date": "2026-10-05",
+    "time": "8:18:05 pm",
+    "title": "Java + Angular Developer(3-9 years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "051026040506",
+    "date": "2026-10-05",
+    "time": "8:18:16 pm",
+    "title": "Google Developer(Conversational AI)",
+    "company": "BOT Tech",
+    "status": "applied"
   }
 ]
