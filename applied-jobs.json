@@ -3490,5 +3490,45 @@
     "title": "Angular +Node developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "051026042826",
+    "date": "2026-10-05",
+    "time": "11:54:28 pm",
+    "title": "Python GenAi",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "200926014684",
+    "date": "2026-10-05",
+    "time": "11:54:46 pm",
+    "title": "Java React Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "080826015529",
+    "date": "2026-10-05",
+    "time": "11:55:39 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280826012171",
+    "date": "2026-10-05",
+    "time": "11:55:46 pm",
+    "title": "Java GCP Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "080826015516",
+    "date": "2026-10-05",
+    "time": "11:56:02 pm",
+    "title": "Java Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
