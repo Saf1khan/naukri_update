@@ -3370,5 +3370,45 @@
     "title": "Executive( Procurement)",
     "company": "Swami Rama Himalayan University(SRHU)",
     "status": "applied"
+  },
+  {
+    "id": "051026029122",
+    "date": "2026-10-05",
+    "time": "5:22:45 pm",
+    "title": "Senior Qa Engineer",
+    "company": "Client of Hungry Bird IT Consulting Services Pvt Ltd - IT Services",
+    "status": "applied"
+  },
+  {
+    "id": "060625026859",
+    "date": "2026-10-05",
+    "time": "5:24:02 pm",
+    "title": "Java Developer - ADM(P)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280526030778",
+    "date": "2026-10-05",
+    "time": "5:24:15 pm",
+    "title": "Java Full Stack Developer (React)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "190926020505",
+    "date": "2026-10-05",
+    "time": "5:24:22 pm",
+    "title": "Java Springboot Microservices @ Infosys",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "110926023319",
+    "date": "2026-10-05",
+    "time": "5:24:28 pm",
+    "title": "Java Spring boot Microservice (2-15 years)",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
