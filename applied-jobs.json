@@ -3530,5 +3530,45 @@
     "title": "Java Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "240826031625",
+    "date": "2026-10-06",
+    "time": "1:00:48 am",
+    "title": "PostgreSQL Database Administrator",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "061026000031",
+    "date": "2026-10-06",
+    "time": "1:02:46 am",
+    "title": "Software Developer",
+    "company": "MNC",
+    "status": "applied"
+  },
+  {
+    "id": "061026000021",
+    "date": "2026-10-06",
+    "time": "1:02:53 am",
+    "title": "Data Analyst",
+    "company": "MNC",
+    "status": "applied"
+  },
+  {
+    "id": "080926017717",
+    "date": "2026-10-06",
+    "time": "1:07:30 am",
+    "title": "Saviynt Developer",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "120626023202",
+    "date": "2026-10-06",
+    "time": "1:07:41 am",
+    "title": "Gcp Data Engineer",
+    "company": "Altimetrik",
+    "status": "applied"
   }
 ]
