@@ -3610,5 +3610,45 @@
     "title": "OneStream Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "051026041152",
+    "date": "2026-10-06",
+    "time": "5:05:18 pm",
+    "title": "Database Administrator",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "061026022353",
+    "date": "2026-10-06",
+    "time": "5:05:28 pm",
+    "title": "Software Developer - Servicenow",
+    "company": "Technozis",
+    "status": "applied"
+  },
+  {
+    "id": "061026021392",
+    "date": "2026-10-06",
+    "time": "5:05:40 pm",
+    "title": "GCP Data Engineer - US MNC (analytics)",
+    "company": "US MNC (analytics)",
+    "status": "applied"
+  },
+  {
+    "id": "061026024464",
+    "date": "2026-10-06",
+    "time": "5:07:30 pm",
+    "title": "InsureMO Platform Engineer / QA requirement",
+    "company": "Dynasty Hr Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "061026023842",
+    "date": "2026-10-06",
+    "time": "5:07:53 pm",
+    "title": "Artificial Intelligence Developer",
+    "company": "Iboss Tech Solutions",
+    "status": "applied"
   }
 ]
