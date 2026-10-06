@@ -3570,5 +3570,45 @@
     "title": "Gcp Data Engineer",
     "company": "Altimetrik",
     "status": "applied"
+  },
+  {
+    "id": "061026917761",
+    "date": "2026-10-06",
+    "time": "3:59:12 pm",
+    "title": "Lead Software Engineer",
+    "company": "Capgemini",
+    "status": "applied"
+  },
+  {
+    "id": "061026917715",
+    "date": "2026-10-06",
+    "time": "3:59:20 pm",
+    "title": "Python Consultant",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "061026917592",
+    "date": "2026-10-06",
+    "time": "3:59:25 pm",
+    "title": "Healthcare-Data Analyst",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "061026917211",
+    "date": "2026-10-06",
+    "time": "3:59:36 pm",
+    "title": ".Net Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "061026917187",
+    "date": "2026-10-06",
+    "time": "3:59:42 pm",
+    "title": "OneStream Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
