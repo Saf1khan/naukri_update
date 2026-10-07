@@ -3810,5 +3810,45 @@
     "title": "Ethernet Engineer",
     "company": "Leading Client",
     "status": "applied"
+  },
+  {
+    "id": "071026046838",
+    "date": "2026-10-07",
+    "time": "7:00:15 pm",
+    "title": "Program Manager",
+    "company": "ETERNAL",
+    "status": "applied"
+  },
+  {
+    "id": "110826036685",
+    "date": "2026-10-07",
+    "time": "7:00:35 pm",
+    "title": "Node Js Developer-INF (2-3)YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "260826028955",
+    "date": "2026-10-07",
+    "time": "7:00:47 pm",
+    "title": "Node Js Developer-INF (2-3) YRS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "170626025629",
+    "date": "2026-10-07",
+    "time": "7:01:25 pm",
+    "title": "Technical Manager Solar & BESS",
+    "company": "Sukruthi Innovations Pvt Ltd",
+    "status": "applied"
+  },
+  {
+    "id": "071026047475",
+    "date": "2026-10-07",
+    "time": "7:02:55 pm",
+    "title": "Python Software Developer",
+    "company": "Honeybee Tech Solutions",
+    "status": "applied"
   }
 ]
