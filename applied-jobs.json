@@ -4010,5 +4010,45 @@
     "title": "QA Automation",
     "company": "Tekskills",
     "status": "applied"
+  },
+  {
+    "id": "081026049964",
+    "date": "2026-10-08",
+    "time": "8:29:23 pm",
+    "title": "Snowflake Developer",
+    "company": "Randomtrees",
+    "status": "applied"
+  },
+  {
+    "id": "081026049603",
+    "date": "2026-10-08",
+    "time": "8:29:37 pm",
+    "title": "Java Springboot Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "080826011415",
+    "date": "2026-10-08",
+    "time": "8:29:53 pm",
+    "title": "JAVA Full stack REACT/Angular",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "080826011410",
+    "date": "2026-10-08",
+    "time": "8:29:58 pm",
+    "title": "JAVA Full stack REACT/Angular",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "081026047002",
+    "date": "2026-10-08",
+    "time": "8:30:22 pm",
+    "title": "Hiring For AI/ML Engineer with Gen & Agentic AI- ZF Group- Hyderabad",
+    "company": "ZF",
+    "status": "applied"
   }
 ]
