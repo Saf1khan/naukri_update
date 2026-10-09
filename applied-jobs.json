@@ -4130,5 +4130,45 @@
     "title": "UNIX SQL (2-3yrs) @ Infosys",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "091026925166",
+    "date": "2026-10-09",
+    "time": "4:13:03 pm",
+    "title": "GCP Data Engineer",
+    "company": "Leading Client",
+    "status": "applied"
+  },
+  {
+    "id": "091026024712",
+    "date": "2026-10-09",
+    "time": "4:13:27 pm",
+    "title": "Databricks & AI Engineer",
+    "company": "Tekskills",
+    "status": "applied"
+  },
+  {
+    "id": "091026024231",
+    "date": "2026-10-09",
+    "time": "4:13:55 pm",
+    "title": "Fullstack Developer",
+    "company": "Wissen Technology",
+    "status": "applied"
+  },
+  {
+    "id": "091026024003",
+    "date": "2026-10-09",
+    "time": "4:14:37 pm",
+    "title": "Test Analyst",
+    "company": "Careernet",
+    "status": "applied"
+  },
+  {
+    "id": "091026923948",
+    "date": "2026-10-09",
+    "time": "4:14:44 pm",
+    "title": "AI/ML Engineer - OpenShift AI & MLOps",
+    "company": "QCS Dc Labs",
+    "status": "applied"
   }
 ]
