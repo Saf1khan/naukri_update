@@ -4562,5 +4562,45 @@
     "title": "GxP VSS Engineer",
     "company": "Net Connect",
     "status": "applied"
+  },
+  {
+    "id": "131026036033",
+    "date": "2026-10-13",
+    "time": "4:15:36 pm",
+    "title": "Java Fullstack",
+    "company": "Allstate India Private Limited",
+    "status": "applied"
+  },
+  {
+    "id": "071026022308",
+    "date": "2026-10-13",
+    "time": "4:15:42 pm",
+    "title": "Java Developer",
+    "company": "EdgeVerve Systems",
+    "status": "applied"
+  },
+  {
+    "id": "131026035961",
+    "date": "2026-10-13",
+    "time": "4:15:48 pm",
+    "title": "Java Full Stack Developer",
+    "company": "WebAxis Software Services",
+    "status": "applied"
+  },
+  {
+    "id": "081026050357",
+    "date": "2026-10-13",
+    "time": "4:18:30 pm",
+    "title": "Aws Devops Engineer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "250926031761",
+    "date": "2026-10-13",
+    "time": "4:19:16 pm",
+    "title": "Full Stack AI Engineer",
+    "company": "CT Automotive",
+    "status": "applied"
   }
 ]
