@@ -4730,5 +4730,45 @@
     "title": "Admin Executive",
     "company": "The Presidency Group of Institutions",
     "status": "applied"
+  },
+  {
+    "id": "141026928543",
+    "date": "2026-10-14",
+    "time": "3:16:33 pm",
+    "title": "Consultant - Digital Risk",
+    "company": "EY",
+    "status": "applied"
+  },
+  {
+    "id": "110826038688",
+    "date": "2026-10-14",
+    "time": "3:18:41 pm",
+    "title": "Java Aws Developer (2-3Y)(5-9Y)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280926030073",
+    "date": "2026-10-14",
+    "time": "3:18:47 pm",
+    "title": "Java Full Stack Developer(React/Angular)-(2-5y)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "300625018012",
+    "date": "2026-10-14",
+    "time": "3:18:53 pm",
+    "title": "Java Developer_ P",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280726031420",
+    "date": "2026-10-14",
+    "time": "3:18:59 pm",
+    "title": "Java Spring boot Microservice (3-5 years)",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
