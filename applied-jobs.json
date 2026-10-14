@@ -4850,5 +4850,45 @@
     "title": "Jr. Accountant",
     "company": "MACOM",
     "status": "applied"
+  },
+  {
+    "id": "141026039808",
+    "date": "2026-10-14",
+    "time": "8:00:04 pm",
+    "title": "Content Integrator",
+    "company": "Indium Software",
+    "status": "applied"
+  },
+  {
+    "id": "100826023702",
+    "date": "2026-10-14",
+    "time": "8:00:16 pm",
+    "title": "Java Developer-INF (3 -5 YRS)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "190826009541",
+    "date": "2026-10-14",
+    "time": "8:00:26 pm",
+    "title": "Java Full Stack Developer (React js)_ (2-3 Years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "030826024220",
+    "date": "2026-10-14",
+    "time": "8:00:33 pm",
+    "title": "Java Full Stack Developer(Angular/React)(2-3 years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "141026038858",
+    "date": "2026-10-14",
+    "time": "8:00:59 pm",
+    "title": "Java Developer",
+    "company": "Blutic India",
+    "status": "applied"
   }
 ]
