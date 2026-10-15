@@ -4890,5 +4890,45 @@
     "title": "Java Developer",
     "company": "Blutic India",
     "status": "applied"
+  },
+  {
+    "id": "121026006148",
+    "date": "2026-10-15",
+    "time": "1:55:31 pm",
+    "title": "Application Developer - Java & Web Technologies",
+    "company": "iBridge Techsoft",
+    "status": "applied"
+  },
+  {
+    "id": "190826036480",
+    "date": "2026-10-15",
+    "time": "1:55:45 pm",
+    "title": "Databricks Pyspark ETL Developer_Bangalore/Remote",
+    "company": "Vsquare Systems",
+    "status": "applied"
+  },
+  {
+    "id": "151026919436",
+    "date": "2026-10-15",
+    "time": "1:55:50 pm",
+    "title": "Full Stack Developer - .Net / React.js",
+    "company": "Forward Eye Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "151026919392",
+    "date": "2026-10-15",
+    "time": "1:55:57 pm",
+    "title": "Senior Machine Learning Engineer - Python",
+    "company": "Forward Eye Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "151026919365",
+    "date": "2026-10-15",
+    "time": "1:56:03 pm",
+    "title": "Data Governance Specialist",
+    "company": "Forward Eye Technologies",
+    "status": "applied"
   }
 ]
