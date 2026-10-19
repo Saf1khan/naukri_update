@@ -5290,5 +5290,45 @@
     "title": "PLSQL Developer",
     "company": "Evolvus Solutions",
     "status": "applied"
+  },
+  {
+    "id": "191026008651",
+    "date": "2026-10-19",
+    "time": "2:33:33 pm",
+    "title": "Apprentice - AI",
+    "company": "Arrow Electronics",
+    "status": "applied"
+  },
+  {
+    "id": "290726012040",
+    "date": "2026-10-19",
+    "time": "2:33:43 pm",
+    "title": "Platform Engineer",
+    "company": "Netcore Cloud",
+    "status": "applied"
+  },
+  {
+    "id": "191026008343",
+    "date": "2026-10-19",
+    "time": "2:33:49 pm",
+    "title": "Custom Software Engineer",
+    "company": "Hackajob",
+    "status": "applied"
+  },
+  {
+    "id": "191026908225",
+    "date": "2026-10-19",
+    "time": "2:34:04 pm",
+    "title": "AI Engineer - .NET / Azure OpenAI",
+    "company": "Displays And Beyond",
+    "status": "applied"
+  },
+  {
+    "id": "161026026287",
+    "date": "2026-10-19",
+    "time": "2:34:09 pm",
+    "title": "Java Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
