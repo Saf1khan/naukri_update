@@ -5450,5 +5450,45 @@
     "title": "Java / Springboot Developer",
     "company": "Talentstream",
     "status": "applied"
+  },
+  {
+    "id": "191026018424",
+    "date": "2026-10-19",
+    "time": "9:57:53 pm",
+    "title": "Software Engineer  Freshers",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "191026018253",
+    "date": "2026-10-19",
+    "time": "9:58:26 pm",
+    "title": "Java Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "191026020275",
+    "date": "2026-10-19",
+    "time": "9:59:40 pm",
+    "title": "HRGIS Consultant",
+    "company": "Franklin Templeton",
+    "status": "applied"
+  },
+  {
+    "id": "210926922928",
+    "date": "2026-10-19",
+    "time": "9:59:47 pm",
+    "title": "AWS Bedrock Developer + Python + Terraform",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "210926922925",
+    "date": "2026-10-19",
+    "time": "9:59:53 pm",
+    "title": "AWS Bedrock Developer-Terraform-Python",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
