@@ -5410,5 +5410,45 @@
     "title": "Data / AI Analyst",
     "company": "CGI Information Systems and Management Consultants",
     "status": "applied"
+  },
+  {
+    "id": "191026020088",
+    "date": "2026-10-19",
+    "time": "8:30:59 pm",
+    "title": "Angular Developer",
+    "company": "Talentstream",
+    "status": "applied"
+  },
+  {
+    "id": "191026020078",
+    "date": "2026-10-19",
+    "time": "8:31:05 pm",
+    "title": "SDE 3 at A FinTech Company",
+    "company": "Talentzo Delhi",
+    "status": "applied"
+  },
+  {
+    "id": "191026020019",
+    "date": "2026-10-19",
+    "time": "8:31:10 pm",
+    "title": "Senior Frontend Web Developer",
+    "company": "Talentstream",
+    "status": "applied"
+  },
+  {
+    "id": "191026019985",
+    "date": "2026-10-19",
+    "time": "8:31:16 pm",
+    "title": "Senior Backend Engineer at A FinTech Company",
+    "company": "Talentzo Delhi",
+    "status": "applied"
+  },
+  {
+    "id": "191026019918",
+    "date": "2026-10-19",
+    "time": "8:31:22 pm",
+    "title": "Java / Springboot Developer",
+    "company": "Talentstream",
+    "status": "applied"
   }
 ]
