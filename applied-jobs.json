@@ -5330,5 +5330,45 @@
     "title": "Java Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "191026911012",
+    "date": "2026-10-19",
+    "time": "3:50:22 pm",
+    "title": "Junior Site Executive",
+    "company": "Cushman & Wakefield",
+    "status": "applied"
+  },
+  {
+    "id": "191026910912",
+    "date": "2026-10-19",
+    "time": "3:50:28 pm",
+    "title": "Technical Team Lead",
+    "company": "Infosys BPM",
+    "status": "applied"
+  },
+  {
+    "id": "141026040566",
+    "date": "2026-10-19",
+    "time": "3:51:09 pm",
+    "title": "Java Spring Boot Microservices",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "191026010114",
+    "date": "2026-10-19",
+    "time": "3:51:16 pm",
+    "title": "Cybersecurity Apprentice - Security Operations",
+    "company": "Arrow Electronics",
+    "status": "applied"
+  },
+  {
+    "id": "191026010059",
+    "date": "2026-10-19",
+    "time": "3:51:23 pm",
+    "title": "IT Security Apprentice – AI Red Teaming & AI Risk Assessment",
+    "company": "Arrow Electronics",
+    "status": "applied"
   }
 ]
