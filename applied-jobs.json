@@ -5490,5 +5490,45 @@
     "title": "AWS Bedrock Developer-Terraform-Python",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "201026008018",
+    "date": "2026-10-20",
+    "time": "2:11:20 pm",
+    "title": "DevOps Engineer (4 To 10 Years)",
+    "company": "Erudio Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "201026007959",
+    "date": "2026-10-20",
+    "time": "2:11:26 pm",
+    "title": "Automation Test Engineer (4 To 10 years)",
+    "company": "Erudio Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "280926920761",
+    "date": "2026-10-20",
+    "time": "2:11:58 pm",
+    "title": "Python Django Lead",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280926920759",
+    "date": "2026-10-20",
+    "time": "2:12:04 pm",
+    "title": "Python React Lead",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "201026007890",
+    "date": "2026-10-20",
+    "time": "2:14:24 pm",
+    "title": "Generative Ai ( 3 To 10 Years )",
+    "company": "Erudio Technologies",
+    "status": "applied"
   }
 ]
