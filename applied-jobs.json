@@ -5730,5 +5730,45 @@
     "title": "Python Automation Engineer",
     "company": "Syntrex Technology",
     "status": "applied"
+  },
+  {
+    "id": "211026014139",
+    "date": "2026-10-21",
+    "time": "3:11:58 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Erudio Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "211026014527",
+    "date": "2026-10-21",
+    "time": "3:18:09 pm",
+    "title": "Receptionist",
+    "company": "Green Fortune Communications",
+    "status": "applied"
+  },
+  {
+    "id": "211026014108",
+    "date": "2026-10-21",
+    "time": "3:18:44 pm",
+    "title": "Power Bi Developer",
+    "company": "McCoy",
+    "status": "applied"
+  },
+  {
+    "id": "211026014061",
+    "date": "2026-10-21",
+    "time": "3:18:50 pm",
+    "title": "Agentic AI Manager",
+    "company": "Vlink",
+    "status": "applied"
+  },
+  {
+    "id": "211026013802",
+    "date": "2026-10-21",
+    "time": "3:19:13 pm",
+    "title": "Senior Automation Engineer",
+    "company": "Platform 3",
+    "status": "applied"
   }
 ]
