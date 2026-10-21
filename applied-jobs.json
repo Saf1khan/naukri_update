@@ -5770,5 +5770,45 @@
     "title": "Senior Automation Engineer",
     "company": "Platform 3",
     "status": "applied"
+  },
+  {
+    "id": "211026918949",
+    "date": "2026-10-21",
+    "time": "5:25:57 pm",
+    "title": "Data Scientist & AI Developer",
+    "company": "TE Connectivity",
+    "status": "applied"
+  },
+  {
+    "id": "211026918845",
+    "date": "2026-10-21",
+    "time": "5:26:09 pm",
+    "title": "Java Production Support Engineer",
+    "company": "FIS",
+    "status": "applied"
+  },
+  {
+    "id": "211026918809",
+    "date": "2026-10-21",
+    "time": "5:26:17 pm",
+    "title": "Java Developer (Java,Springboot,Hibernate)",
+    "company": "FIS",
+    "status": "applied"
+  },
+  {
+    "id": "211026918788",
+    "date": "2026-10-21",
+    "time": "5:26:24 pm",
+    "title": "Guidewire Test Engineer",
+    "company": "Capgemini",
+    "status": "applied"
+  },
+  {
+    "id": "211026016304",
+    "date": "2026-10-21",
+    "time": "5:27:15 pm",
+    "title": "Snowflake Data Engineer",
+    "company": "Kryon Publishing",
+    "status": "applied"
   }
 ]
