@@ -5970,5 +5970,45 @@
     "title": "Services Consultant (MES)",
     "company": "Aveva",
     "status": "applied"
+  },
+  {
+    "id": "221026024802",
+    "date": "2026-10-22",
+    "time": "5:29:41 pm",
+    "title": "Salesforce Commerce Cloud Backend Developer",
+    "company": "Fabutech",
+    "status": "applied"
+  },
+  {
+    "id": "221026923663",
+    "date": "2026-10-22",
+    "time": "5:30:09 pm",
+    "title": "Python Developer",
+    "company": "Clouwood Studio",
+    "status": "applied"
+  },
+  {
+    "id": "221026927344",
+    "date": "2026-10-22",
+    "time": "5:30:47 pm",
+    "title": "Senior Executive - Debt Management Services - SME",
+    "company": "Bajaj Finance",
+    "status": "applied"
+  },
+  {
+    "id": "221026926228",
+    "date": "2026-10-22",
+    "time": "5:31:03 pm",
+    "title": "Senior Executive - Operations and Service",
+    "company": "Bajaj Finance",
+    "status": "applied"
+  },
+  {
+    "id": "221026927664",
+    "date": "2026-10-22",
+    "time": "5:31:22 pm",
+    "title": "Assistant Manager - Debt Management Services - SME",
+    "company": "Bajaj Finance",
+    "status": "applied"
   }
 ]
