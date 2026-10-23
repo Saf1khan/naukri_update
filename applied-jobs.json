@@ -6210,5 +6210,45 @@
     "title": "Automation Tester",
     "company": "Honeybee Tech Solutions",
     "status": "applied"
+  },
+  {
+    "id": "231026930682",
+    "date": "2026-10-23",
+    "time": "6:23:14 pm",
+    "title": "dotNet + Angular Professional",
+    "company": "Capgemini",
+    "status": "applied"
+  },
+  {
+    "id": "231026930652",
+    "date": "2026-10-23",
+    "time": "6:23:21 pm",
+    "title": "Java Developer",
+    "company": "Capgemini",
+    "status": "applied"
+  },
+  {
+    "id": "231026930559",
+    "date": "2026-10-23",
+    "time": "6:23:27 pm",
+    "title": "Software Developer - Java / J2EE",
+    "company": "Kalki Communication Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "231026930151",
+    "date": "2026-10-23",
+    "time": "6:23:53 pm",
+    "title": ".Net Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "231026030790",
+    "date": "2026-10-23",
+    "time": "6:28:00 pm",
+    "title": "Network Automation Engineer",
+    "company": "HCA Healthcare",
+    "status": "applied"
   }
 ]
