@@ -6250,5 +6250,45 @@
     "title": "Network Automation Engineer",
     "company": "HCA Healthcare",
     "status": "applied"
+  },
+  {
+    "id": "191026019491",
+    "date": "2026-10-23",
+    "time": "7:55:17 pm",
+    "title": "Data Analyst Fresher , Data Analytics",
+    "company": "Nova Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "171026008671",
+    "date": "2026-10-23",
+    "time": "7:58:24 pm",
+    "title": "Data Entry Executive",
+    "company": "RECRUIT DIARY",
+    "status": "applied"
+  },
+  {
+    "id": "231026932188",
+    "date": "2026-10-23",
+    "time": "7:58:30 pm",
+    "title": "Azure + GCP DevOps Engineer",
+    "company": "Honeybee Tech Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "231026932162",
+    "date": "2026-10-23",
+    "time": "7:58:35 pm",
+    "title": "React Native Developer",
+    "company": "Honeybee Tech Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "231026932135",
+    "date": "2026-10-23",
+    "time": "7:58:42 pm",
+    "title": "React Native Developer",
+    "company": "Honeybee Tech Solutions",
+    "status": "applied"
   }
 ]
