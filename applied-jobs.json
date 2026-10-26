@@ -6370,5 +6370,45 @@
     "title": "Software Developer",
     "company": "Info Edge",
     "status": "applied"
+  },
+  {
+    "id": "261026027775",
+    "date": "2026-10-26",
+    "time": "6:42:45 pm",
+    "title": "Associate Manager - Business Valuation",
+    "company": "Big4",
+    "status": "applied"
+  },
+  {
+    "id": "261026027300",
+    "date": "2026-10-26",
+    "time": "6:42:54 pm",
+    "title": "Junior Data Analyst",
+    "company": "SDI BUSINESS SERVICES",
+    "status": "applied"
+  },
+  {
+    "id": "261026024915",
+    "date": "2026-10-26",
+    "time": "6:43:51 pm",
+    "title": "Azure Data Engineer",
+    "company": "EY",
+    "status": "applied"
+  },
+  {
+    "id": "261026024629",
+    "date": "2026-10-26",
+    "time": "6:43:57 pm",
+    "title": "Senior Full Stack Engineer",
+    "company": "SeaCross Recruitment Services",
+    "status": "applied"
+  },
+  {
+    "id": "261026023293",
+    "date": "2026-10-26",
+    "time": "6:44:27 pm",
+    "title": "Automation Engineer – Guidewire PolicyCenter",
+    "company": "Ascendion Engineering",
+    "status": "applied"
   }
 ]
