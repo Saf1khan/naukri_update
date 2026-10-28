@@ -6850,5 +6850,45 @@
     "title": "Executive Assistant",
     "company": "Talentstream",
     "status": "applied"
+  },
+  {
+    "id": "281026034032",
+    "date": "2026-10-28",
+    "time": "9:29:35 pm",
+    "title": "Job Opening For SEO & Digital Marketing",
+    "company": "Synmac Consultants Pvt. Ltd.",
+    "status": "applied"
+  },
+  {
+    "id": "281026033134",
+    "date": "2026-10-28",
+    "time": "9:30:00 pm",
+    "title": "Python AI Engineer  LLM & Agentic AI (Finance Data Platform)",
+    "company": "Wissen Technology",
+    "status": "applied"
+  },
+  {
+    "id": "281026032441",
+    "date": "2026-10-28",
+    "time": "9:30:23 pm",
+    "title": "Software Developer-VoIP",
+    "company": "Talent Corner HR Services",
+    "status": "applied"
+  },
+  {
+    "id": "061026916714",
+    "date": "2026-10-28",
+    "time": "9:30:31 pm",
+    "title": "GenAI Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "081026946960",
+    "date": "2026-10-28",
+    "time": "9:30:37 pm",
+    "title": "GenAI Developer",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
