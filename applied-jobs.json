@@ -6770,5 +6770,45 @@
     "title": "Asp.Net Developer",
     "company": "Onzestt Services",
     "status": "applied"
+  },
+  {
+    "id": "281026031556",
+    "date": "2026-10-28",
+    "time": "6:30:32 pm",
+    "title": "Analyst, Planning & Scheduling",
+    "company": "Hiresquad",
+    "status": "applied"
+  },
+  {
+    "id": "281026022827",
+    "date": "2026-10-28",
+    "time": "6:31:54 pm",
+    "title": "GenAI Full Stack Engineer",
+    "company": "PwC",
+    "status": "applied"
+  },
+  {
+    "id": "130526045201",
+    "date": "2026-10-28",
+    "time": "6:32:15 pm",
+    "title": "Automation Tester_Hyderabad",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "281026031758",
+    "date": "2026-10-28",
+    "time": "6:34:23 pm",
+    "title": "Data Science  PHD   Chennai / Bangalore",
+    "company": "teamplus staffing solution",
+    "status": "applied"
+  },
+  {
+    "id": "281026031744",
+    "date": "2026-10-28",
+    "time": "6:34:32 pm",
+    "title": "Java Full Stack Developer (4+ Years of Experience)",
+    "company": "TVM Infotech Private Limited",
+    "status": "applied"
   }
 ]
