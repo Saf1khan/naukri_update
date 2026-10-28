@@ -6730,5 +6730,45 @@
     "title": "Data Engineer",
     "company": "Dun & Bradstreet",
     "status": "applied"
+  },
+  {
+    "id": "281026011561",
+    "date": "2026-10-28",
+    "time": "4:24:06 pm",
+    "title": "Testing Engineer I",
+    "company": "Schneider Electric",
+    "status": "applied"
+  },
+  {
+    "id": "281026017859",
+    "date": "2026-10-28",
+    "time": "4:27:11 pm",
+    "title": "Full-Stack Software Developer",
+    "company": "Shyam Sundar Co Jewellers",
+    "status": "applied"
+  },
+  {
+    "id": "281026017517",
+    "date": "2026-10-28",
+    "time": "4:28:06 pm",
+    "title": "Junior AI Engineer Intern",
+    "company": "Jamaru App Factory",
+    "status": "applied"
+  },
+  {
+    "id": "281026016642",
+    "date": "2026-10-28",
+    "time": "4:28:42 pm",
+    "title": "QA Automation Engineer",
+    "company": "Vikruthi Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "281026015467",
+    "date": "2026-10-28",
+    "time": "4:30:59 pm",
+    "title": "Asp.Net Developer",
+    "company": "Onzestt Services",
+    "status": "applied"
   }
 ]
