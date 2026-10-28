@@ -6690,5 +6690,45 @@
     "title": "Mainframe Developer",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "300926025833",
+    "date": "2026-10-28",
+    "time": "3:20:38 pm",
+    "title": "Application Developer",
+    "company": "Net Connect",
+    "status": "applied"
+  },
+  {
+    "id": "260926006528",
+    "date": "2026-10-28",
+    "time": "3:20:46 pm",
+    "title": "Sql Database Administrator",
+    "company": "Cognizant",
+    "status": "applied"
+  },
+  {
+    "id": "280926012462",
+    "date": "2026-10-28",
+    "time": "3:20:53 pm",
+    "title": "Data Scientist",
+    "company": "PRODUCT BASED COMPANY",
+    "status": "applied"
+  },
+  {
+    "id": "281026011952",
+    "date": "2026-10-28",
+    "time": "3:22:46 pm",
+    "title": "Python Software Developer",
+    "company": "Epam Systems",
+    "status": "applied"
+  },
+  {
+    "id": "281026011532",
+    "date": "2026-10-28",
+    "time": "3:23:32 pm",
+    "title": "Data Engineer",
+    "company": "Dun & Bradstreet",
+    "status": "applied"
   }
 ]
