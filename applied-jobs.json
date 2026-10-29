@@ -7010,5 +7010,45 @@
     "title": "Dot Net Developer",
     "company": "Orcapod Consulting Services",
     "status": "applied"
+  },
+  {
+    "id": "080726035644",
+    "date": "2026-10-29",
+    "time": "8:11:07 pm",
+    "title": "Java + React js. (2-5 Years)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "260426004474",
+    "date": "2026-10-29",
+    "time": "8:11:34 pm",
+    "title": "Java Spring boot Developer with AWS",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "230525031848",
+    "date": "2026-10-29",
+    "time": "8:11:47 pm",
+    "title": "Java Developer_Pan India",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "020726025175",
+    "date": "2026-10-29",
+    "time": "8:12:02 pm",
+    "title": "Java Full Stack Developer(Angular)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "290726029995",
+    "date": "2026-10-29",
+    "time": "8:12:22 pm",
+    "title": "Java_Springboot_Microservice (3-5 Years)",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
