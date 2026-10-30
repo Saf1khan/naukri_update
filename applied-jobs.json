@@ -7170,5 +7170,45 @@
     "title": "Qa Engineer",
     "company": "Dun & Bradstreet",
     "status": "applied"
+  },
+  {
+    "id": "301026030534",
+    "date": "2026-10-30",
+    "time": "6:31:04 pm",
+    "title": "Data Analyst",
+    "company": "Doosrigaadi Services",
+    "status": "applied"
+  },
+  {
+    "id": "301026030393",
+    "date": "2026-10-30",
+    "time": "6:31:10 pm",
+    "title": "Fullstack Developer",
+    "company": "RITWIK IT SERVICES PRIVATE LIMITED",
+    "status": "applied"
+  },
+  {
+    "id": "301026029218",
+    "date": "2026-10-30",
+    "time": "6:32:10 pm",
+    "title": "Quality Engineer-Mainframe Testing",
+    "company": "IBM",
+    "status": "applied"
+  },
+  {
+    "id": "301026030669",
+    "date": "2026-10-30",
+    "time": "6:33:02 pm",
+    "title": "Dsa",
+    "company": "Certed technologies",
+    "status": "applied"
+  },
+  {
+    "id": "301026029944",
+    "date": "2026-10-30",
+    "time": "6:34:14 pm",
+    "title": "Client Servicing Executive Leading Fintech Company",
+    "company": "Smart Source",
+    "status": "applied"
   }
 ]
