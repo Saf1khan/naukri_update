@@ -7130,5 +7130,45 @@
     "title": "Cybersecurity Engineer",
     "company": "Alstom Transportation",
     "status": "applied"
+  },
+  {
+    "id": "301026018641",
+    "date": "2026-10-30",
+    "time": "4:33:59 pm",
+    "title": "Python Developer - Intern",
+    "company": "Eigenrisk",
+    "status": "applied"
+  },
+  {
+    "id": "301026918403",
+    "date": "2026-10-30",
+    "time": "4:34:05 pm",
+    "title": "Teradata Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "301026024907",
+    "date": "2026-10-30",
+    "time": "4:34:22 pm",
+    "title": "Devops Engineer",
+    "company": "Snapper Future Tech",
+    "status": "applied"
+  },
+  {
+    "id": "301026024476",
+    "date": "2026-10-30",
+    "time": "4:34:28 pm",
+    "title": "Python Fullstack Developer",
+    "company": "Nxtwave Disruptive Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "301026020520",
+    "date": "2026-10-30",
+    "time": "4:34:34 pm",
+    "title": "Qa Engineer",
+    "company": "Dun & Bradstreet",
+    "status": "applied"
   }
 ]
