@@ -7530,5 +7530,45 @@
     "title": "Devops Consultant_2026",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "030726929724",
+    "date": "2026-11-03",
+    "time": "4:30:26 pm",
+    "title": "Site Reliability Engineer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "191026018517",
+    "date": "2026-11-03",
+    "time": "4:30:49 pm",
+    "title": "Python and Django Developer",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "031126021363",
+    "date": "2026-11-03",
+    "time": "4:30:55 pm",
+    "title": "Customer Success Manager",
+    "company": "Pazcare",
+    "status": "applied"
+  },
+  {
+    "id": "031126021357",
+    "date": "2026-11-03",
+    "time": "4:31:02 pm",
+    "title": "Data Analyst",
+    "company": "E Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "290626928600",
+    "date": "2026-11-03",
+    "time": "4:31:11 pm",
+    "title": "Java AI",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
