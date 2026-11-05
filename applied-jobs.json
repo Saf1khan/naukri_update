@@ -7906,5 +7906,45 @@
     "title": "Junior Process Associate",
     "company": "Optum",
     "status": "applied"
+  },
+  {
+    "id": "051126038153",
+    "date": "2026-11-05",
+    "time": "9:22:20 pm",
+    "title": "Java Developer",
+    "company": "Jugla Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "140826016532",
+    "date": "2026-11-05",
+    "time": "9:27:11 pm",
+    "title": "Fullstack Developer",
+    "company": "Malomatia",
+    "status": "applied"
+  },
+  {
+    "id": "051126037535",
+    "date": "2026-11-05",
+    "time": "9:27:27 pm",
+    "title": "Moodle Developer",
+    "company": "AR Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "090926013721",
+    "date": "2026-11-05",
+    "time": "9:27:53 pm",
+    "title": "AI Agent Developer",
+    "company": "FCS Software Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "051126038250",
+    "date": "2026-11-05",
+    "time": "9:28:19 pm",
+    "title": "Data_EDW Developer",
+    "company": "Luxoft",
+    "status": "applied"
   }
 ]
