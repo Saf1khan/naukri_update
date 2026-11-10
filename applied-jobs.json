@@ -8410,5 +8410,45 @@
     "title": "Java Full Stack Developer",
     "company": "ADP Private Limited",
     "status": "applied"
+  },
+  {
+    "id": "101126013792",
+    "date": "2026-11-10",
+    "time": "6:32:29 pm",
+    "title": "Software Engineer",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "101126013723",
+    "date": "2026-11-10",
+    "time": "6:32:35 pm",
+    "title": "Software Engineer Freshers MBA/MCA",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "101126013596",
+    "date": "2026-11-10",
+    "time": "6:32:41 pm",
+    "title": "Software Engineer",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "101126013245",
+    "date": "2026-11-10",
+    "time": "6:32:50 pm",
+    "title": "Senior Full Stack Developer",
+    "company": "Net Connect",
+    "status": "applied"
+  },
+  {
+    "id": "101126012928",
+    "date": "2026-11-10",
+    "time": "6:33:06 pm",
+    "title": "Data Analysis - SQL + Core Domain Data skills",
+    "company": "PwC",
+    "status": "applied"
   }
 ]
