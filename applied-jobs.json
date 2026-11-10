@@ -8370,5 +8370,45 @@
     "title": "Automation Tester@ALL Location",
     "company": "Infosys",
     "status": "applied"
+  },
+  {
+    "id": "101126011397",
+    "date": "2026-11-10",
+    "time": "4:53:37 pm",
+    "title": "Automation Specialist/IBM Integratoin/IIB/Bangalore",
+    "company": "Talent Corner Hr Services",
+    "status": "applied"
+  },
+  {
+    "id": "101126009136",
+    "date": "2026-11-10",
+    "time": "4:54:58 pm",
+    "title": "Automation Tester",
+    "company": "Tata Consultancy Services",
+    "status": "applied"
+  },
+  {
+    "id": "101126008486",
+    "date": "2026-11-10",
+    "time": "4:55:07 pm",
+    "title": "Site Reliability Engineer ( Only from Product companies )",
+    "company": "TechnoGen",
+    "status": "applied"
+  },
+  {
+    "id": "101126008155",
+    "date": "2026-11-10",
+    "time": "4:55:17 pm",
+    "title": "AI Engineer - Python,FastAPI ,LLM,Voice AI",
+    "company": "Novizco Infotech",
+    "status": "applied"
+  },
+  {
+    "id": "101126011663",
+    "date": "2026-11-10",
+    "time": "4:55:42 pm",
+    "title": "Java Full Stack Developer",
+    "company": "ADP Private Limited",
+    "status": "applied"
   }
 ]
