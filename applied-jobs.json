@@ -8666,5 +8666,45 @@
     "title": "Senior Java Developer",
     "company": "Epam Systems",
     "status": "applied"
+  },
+  {
+    "id": "111126035299",
+    "date": "2026-11-11",
+    "time": "11:37:34 pm",
+    "title": "Artificial Intelligence Architect",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "111126035314",
+    "date": "2026-11-11",
+    "time": "11:43:28 pm",
+    "title": "Artificial Intelligence Architect_A",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "111126035148",
+    "date": "2026-11-11",
+    "time": "11:43:42 pm",
+    "title": "PMS Engineer - Marine PMS & Database Specialist",
+    "company": "Norsetech Marine Services",
+    "status": "applied"
+  },
+  {
+    "id": "111126035395",
+    "date": "2026-11-11",
+    "time": "11:55:04 pm",
+    "title": "Fullstack Engineer_Architect",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "111126034885",
+    "date": "2026-11-11",
+    "time": "11:57:33 pm",
+    "title": "Private Equity Operations Strategist",
+    "company": "Glynac",
+    "status": "applied"
   }
 ]
