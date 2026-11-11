@@ -8586,5 +8586,45 @@
     "title": "WB IPC_IE1_Aerospace",
     "company": "Alten",
     "status": "applied"
+  },
+  {
+    "id": "111126028330",
+    "date": "2026-11-11",
+    "time": "5:43:51 pm",
+    "title": "IT Manager_purchase",
+    "company": "Alten",
+    "status": "applied"
+  },
+  {
+    "id": "111126028176",
+    "date": "2026-11-11",
+    "time": "5:43:56 pm",
+    "title": "Software Engineer / Software Developer",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "111126027476",
+    "date": "2026-11-11",
+    "time": "5:44:10 pm",
+    "title": "Software Engineer / Associate Software Engineer",
+    "company": "NetM Corporate Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "111126026278",
+    "date": "2026-11-11",
+    "time": "5:44:25 pm",
+    "title": "Data Scientist",
+    "company": "Zeero",
+    "status": "applied"
+  },
+  {
+    "id": "111126025956",
+    "date": "2026-11-11",
+    "time": "5:44:31 pm",
+    "title": "Software Development Engineer",
+    "company": "Hiringwaves",
+    "status": "applied"
   }
 ]
