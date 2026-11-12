@@ -8786,5 +8786,45 @@
     "title": "Api Tester",
     "company": "Winfort",
     "status": "applied"
+  },
+  {
+    "id": "241125031755",
+    "date": "2026-11-12",
+    "time": "8:50:05 pm",
+    "title": "Web Designer",
+    "company": "BoostTech",
+    "status": "applied"
+  },
+  {
+    "id": "121126034354",
+    "date": "2026-11-12",
+    "time": "8:50:17 pm",
+    "title": "Data Engineer _Coalesce",
+    "company": "Assertive Business Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "121126034112",
+    "date": "2026-11-12",
+    "time": "8:50:35 pm",
+    "title": "Data Analyst",
+    "company": "Thompson and George",
+    "status": "applied"
+  },
+  {
+    "id": "020726025169",
+    "date": "2026-11-12",
+    "time": "8:50:49 pm",
+    "title": "Java Full Stack Developer(Angular)",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "280926928632",
+    "date": "2026-11-12",
+    "time": "8:51:02 pm",
+    "title": "Python ML /GenAI",
+    "company": "Infosys",
+    "status": "applied"
   }
 ]
