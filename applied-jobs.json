@@ -8962,5 +8962,45 @@
     "title": "Java Developer",
     "company": "Planet Ecom Solutions",
     "status": "applied"
+  },
+  {
+    "id": "131126030540",
+    "date": "2026-11-13",
+    "time": "6:10:32 pm",
+    "title": "Gen AI, LLM Consultant",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "131126030012",
+    "date": "2026-11-13",
+    "time": "6:10:45 pm",
+    "title": "Python Developer",
+    "company": "Datamatics",
+    "status": "applied"
+  },
+  {
+    "id": "131126924347",
+    "date": "2026-11-13",
+    "time": "6:12:12 pm",
+    "title": "Digital Marketing Specialist",
+    "company": "Platinus Technologies",
+    "status": "applied"
+  },
+  {
+    "id": "131126030551",
+    "date": "2026-11-13",
+    "time": "6:12:32 pm",
+    "title": "Gen AI, LLM Consultant",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "131126029332",
+    "date": "2026-11-13",
+    "time": "6:12:37 pm",
+    "title": "Oracle Database Administrator",
+    "company": "Team Computers",
+    "status": "applied"
   }
 ]
