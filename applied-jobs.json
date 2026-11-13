@@ -9002,5 +9002,45 @@
     "title": "Oracle Database Administrator",
     "company": "Team Computers",
     "status": "applied"
+  },
+  {
+    "id": "131126032571",
+    "date": "2026-11-13",
+    "time": "8:09:26 pm",
+    "title": "Aws Data Engineer",
+    "company": "Straive",
+    "status": "applied"
+  },
+  {
+    "id": "131126032094",
+    "date": "2026-11-13",
+    "time": "8:09:37 pm",
+    "title": "Engineer",
+    "company": "Bean Hr Consulting",
+    "status": "applied"
+  },
+  {
+    "id": "131126030962",
+    "date": "2026-11-13",
+    "time": "8:10:48 pm",
+    "title": "QA Automation+Playwright",
+    "company": "Symphoni Hr",
+    "status": "applied"
+  },
+  {
+    "id": "131126030774",
+    "date": "2026-11-13",
+    "time": "8:10:55 pm",
+    "title": "Gen AI, LLM Consultant",
+    "company": "Infosys",
+    "status": "applied"
+  },
+  {
+    "id": "131126032704",
+    "date": "2026-11-13",
+    "time": "8:11:36 pm",
+    "title": "Snowflake Data Engineer",
+    "company": "Kalpavruksh Systems",
+    "status": "applied"
   }
 ]
