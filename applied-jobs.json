@@ -9482,5 +9482,45 @@
     "title": "Food - Dry Store Executive / Supervisor",
     "company": "Restaurant Chain",
     "status": "applied"
+  },
+  {
+    "id": "171126934046",
+    "date": "2026-11-18",
+    "time": "12:02:21 am",
+    "title": "Food - Dry Store Executive / Supervisor",
+    "company": "Leading Client",
+    "status": "applied"
+  },
+  {
+    "id": "171126934040",
+    "date": "2026-11-18",
+    "time": "12:02:28 am",
+    "title": "Senior Backend Engineer – Node.js / Python / Golang",
+    "company": "Wits Innovation Lab",
+    "status": "applied"
+  },
+  {
+    "id": "171126934034",
+    "date": "2026-11-18",
+    "time": "12:02:34 am",
+    "title": "Junior Generative AI Engineer",
+    "company": "Evnek",
+    "status": "applied"
+  },
+  {
+    "id": "171126934017",
+    "date": "2026-11-18",
+    "time": "12:02:40 am",
+    "title": "Senior Backend Engineer – Node.js / Python / Golang",
+    "company": "Evnek",
+    "status": "applied"
+  },
+  {
+    "id": "171126934004",
+    "date": "2026-11-18",
+    "time": "12:02:47 am",
+    "title": "Junior Generative AI Engineer",
+    "company": "Sone India",
+    "status": "applied"
   }
 ]
