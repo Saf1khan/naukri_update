@@ -9802,5 +9802,45 @@
     "title": "Test Engineer",
     "company": "Bajaj Finance",
     "status": "applied"
+  },
+  {
+    "id": "191126035911",
+    "date": "2026-11-19",
+    "time": "10:20:33 pm",
+    "title": "Artificial Intelligence Engineer",
+    "company": "NovoTree Minds Consulting",
+    "status": "applied"
+  },
+  {
+    "id": "191126035314",
+    "date": "2026-11-19",
+    "time": "10:20:51 pm",
+    "title": "Sales Coordinator",
+    "company": "Originnel",
+    "status": "applied"
+  },
+  {
+    "id": "191126935252",
+    "date": "2026-11-19",
+    "time": "10:20:58 pm",
+    "title": "B-Application Support Engineer Tier 1A",
+    "company": "Alegeus",
+    "status": "applied"
+  },
+  {
+    "id": "191126935244",
+    "date": "2026-11-19",
+    "time": "10:21:03 pm",
+    "title": "Platform Engineer II - India",
+    "company": "CME Group",
+    "status": "applied"
+  },
+  {
+    "id": "191126935241",
+    "date": "2026-11-19",
+    "time": "10:21:09 pm",
+    "title": "Data Developer",
+    "company": "Axa Xl",
+    "status": "applied"
   }
 ]
