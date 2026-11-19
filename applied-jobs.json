@@ -9842,5 +9842,45 @@
     "title": "Data Developer",
     "company": "Axa Xl",
     "status": "applied"
+  },
+  {
+    "id": "191126035149",
+    "date": "2026-11-19",
+    "time": "11:44:50 pm",
+    "title": "Data Engineer",
+    "company": "Yatri Cloud",
+    "status": "applied"
+  },
+  {
+    "id": "191126035388",
+    "date": "2026-11-19",
+    "time": "11:45:53 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Scalable Systems",
+    "status": "applied"
+  },
+  {
+    "id": "191126036385",
+    "date": "2026-11-19",
+    "time": "11:47:19 pm",
+    "title": "Software Development Engineer",
+    "company": "Coox Online",
+    "status": "applied"
+  },
+  {
+    "id": "181126016691",
+    "date": "2026-11-19",
+    "time": "11:47:33 pm",
+    "title": "UiPath RPA Developer",
+    "company": "Cegeka",
+    "status": "applied"
+  },
+  {
+    "id": "191126036102",
+    "date": "2026-11-19",
+    "time": "11:47:40 pm",
+    "title": "Python + IoT Developer",
+    "company": "Prosper Infotech",
+    "status": "applied"
   }
 ]
