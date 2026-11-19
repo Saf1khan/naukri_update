@@ -9722,5 +9722,45 @@
     "title": "Software Engineer",
     "company": "Wissen Technology",
     "status": "applied"
+  },
+  {
+    "id": "191126928962",
+    "date": "2026-11-19",
+    "time": "5:21:11 pm",
+    "title": "Site Reliability Engineer I",
+    "company": "CME Group",
+    "status": "applied"
+  },
+  {
+    "id": "191126027866",
+    "date": "2026-11-19",
+    "time": "5:22:19 pm",
+    "title": "Social - Analyst",
+    "company": "Omnicom Global Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "191126027865",
+    "date": "2026-11-19",
+    "time": "5:22:25 pm",
+    "title": "Adops - Analyst",
+    "company": "Omnicom Global Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "011026009392",
+    "date": "2026-11-19",
+    "time": "5:22:31 pm",
+    "title": "Healthcare Analytics - Consultant",
+    "company": "Sdna Global",
+    "status": "applied"
+  },
+  {
+    "id": "191126926869",
+    "date": "2026-11-19",
+    "time": "5:23:00 pm",
+    "title": "OpenShift Engineer",
+    "company": "QCS Dc Labs",
+    "status": "applied"
   }
 ]
