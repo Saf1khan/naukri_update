@@ -10082,5 +10082,45 @@
     "title": "Azure Devops Engineer",
     "company": "Vilje Tech",
     "status": "applied"
+  },
+  {
+    "id": "201126030639",
+    "date": "2026-11-21",
+    "time": "12:22:41 am",
+    "title": "Java Full Stack Developer",
+    "company": "Deloitte US-India Offices",
+    "status": "applied"
+  },
+  {
+    "id": "201126030965",
+    "date": "2026-11-21",
+    "time": "12:26:31 am",
+    "title": "Trainers – Soft Skills, Aptitude & Technical",
+    "company": "Apttech Solutions",
+    "status": "applied"
+  },
+  {
+    "id": "211126000024",
+    "date": "2026-11-21",
+    "time": "12:33:51 am",
+    "title": "Java Full Stack Developer",
+    "company": "Capgemini",
+    "status": "applied"
+  },
+  {
+    "id": "171225034614",
+    "date": "2026-11-21",
+    "time": "12:38:21 am",
+    "title": "Seo Specialist",
+    "company": "Infogrowth",
+    "status": "applied"
+  },
+  {
+    "id": "201126030944",
+    "date": "2026-11-21",
+    "time": "12:38:50 am",
+    "title": "Java Full Stack Developer",
+    "company": "Capgemini",
+    "status": "applied"
   }
 ]
