@@ -23,21 +23,32 @@ if (!EMAIL || !PASSWORD) {
 
 // ── Job Search Config ─────────────────────────────────────────────────────────
 const KEYWORDS = (process.env.GULF_JOB_KEYWORDS || [
-  // Tier 1: Preferred roles
-  'Full Stack Developer',
-  'React Developer',
-  'Frontend Developer',
-  'Software Engineer',
+  // Tier 1: AI, GenAI, ML & Core Software Engineering roles
   'AI Engineer',
-  'MERN Stack Developer',
-  // Tier 2: Broader developer roles
+  'Artificial Intelligence',
+  'Generative AI',
+  'Machine Learning Engineer',
+  'Full Stack Developer',
+  'Software Engineer',
+  'React Developer',
+  'Python Developer',
+  'Frontend Developer',
+  'Backend Developer',
+  // Tier 2: Broader Tech, Data, Cloud & Development roles
   'Node.js Developer',
   'Next.js Developer',
+  'MERN Stack Developer',
   'JavaScript Developer',
-  'Python Developer',
-  'Backend Developer',
+  'TypeScript Developer',
+  'Data Scientist',
+  'Data Engineer',
+  'DevOps Engineer',
+  'Cloud Engineer',
+  'Mobile App Developer',
+  'Flutter Developer',
   'Web Developer',
   'Software Developer',
+  'IT Engineer',
 ].join(','))
   .split(',').map(k => k.trim()).filter(Boolean);
 
@@ -100,10 +111,10 @@ function buildSearchUrl(keyword, location, pageNo = 1) {
   return `https://www.naukrigulf.com/${kwSlug}-jobs-in-${locSlug}${pageSuffix}?sort=date`;
 }
 
-// ── Job Title Relevance Filter (Developer roles only) ─────────────────────────
-const RELEVANT_TITLE_RE = /\b(developer|engineer|engineering|sde\b|programmer|coder|architect|react|next\.?js|nextjs|node\.?js|nodejs|express|nest\.?js|nestjs|mern|mean|frontend|front[\s-]?end|backend|back[\s-]?end|full[\s-]?stack|fullstack|javascript|typescript|python|django|fastapi|flask|web\b|software|ai\b|ml\b|machine\s+learning|artificial\s+intelligence|genai|gen\s+ai|agentic|llm|rag\b|api\b)/i;
+// ── Job Title Relevance Filter (All Tech, Software & AI roles) ────────────────
+const RELEVANT_TITLE_RE = /\b(ai\b|a\.i\.|artificial\s+intelligence|machine\s+learning|\bml\b|deep\s+learning|genai|gen\s+ai|generative\s+ai|agentic|llm|nlp|computer\s+vision|data\s+scientist|data\s+science|data\s+engineer|mlops|prompt\s+engineer|developer|engineer|engineering|sde\b|programmer|coder|architect|technical|tech\b|software|full[\s-]?stack|fullstack|frontend|front[\s-]?end|backend|back[\s-]?end|web\b|react|next\.?js|nextjs|node\.?js|nodejs|express|nest\.?js|nestjs|mern|mean|angular|vue|javascript|typescript|python|django|fastapi|flask|java\b|spring|\.net|dotnet|\bc#\b|\bc\+\+|golang|rust|php|laravel|wordpress|shopify|ruby|scala|kotlin|swift|flutter|react\s+native|android|ios\b|mobile|cloud|devops|sre\b|platform|aws|azure|gcp|kubernetes|docker|cyber\s*security|infosec|security\s+engineer|blockchain|web3|automation|rpa|erp|crm|sap\b|salesforce|odoo|servicenow|api\b|database|sql|nosql|it\s+specialist|application|systems?\s+analyst)/i;
 
-const EXCLUDE_TITLE_RE = /(talent\s+acquisition|recruiter|recruitment|\bhr\b|human\s+resource|\bsales\b|marketing|\bseo\b|\bbpo\b|process\s+associate|customer\s+support|technical\s+support|application\s+support|desktop\s+support|helpdesk|it\s+support|voice\s+process|non[\s-]?voice|\bmis\b|data\s+entry|computer\s+operator|contract\s+management|incident\s+management|database\s+administrator|\bdba\b|mongodb\s+administrator|\bdb2\b|system\s+admin|linux\s+admin|network\s+admin|trainer|faculty|teacher|professor|\btesting\b|\btester\b|\bqa\b|quality\s+assurance|test\s+analyst|manual\s+test|data\s+analyst|business\s+analyst|financial\s+analyst|reporting\s+analyst|adops|workforce\s+planner|artist\s+manager|production\s+scheduling|jewellery|lab\s+coordinator|evaluator|civil\s+engineer|mechanical\s+engineer|electrical\s+engineer|chemical\s+engineer|HVAC|bim\b|MEP|structural\s+engineer|quantity\s+surveyor|site\s+engineer|project\s+engineer\s*[-–]?\s*(civil|construction|mep|oil|gas))/i;
+const EXCLUDE_TITLE_RE = /(talent\s+acquisition|recruiter|recruitment|\bhr\b|human\s+resource|\bsales\b|tele[\s-]?sales|account\s+executive|account\s+manager|business\s+development|\bbdm\b|\bbde\b|\bbpo\b|call\s+center|customer\s+service|customer\s+care|voice\s+process|receptionist|front\s+desk|secretary|cashier|accountant|auditor|bookkeeper|data\s+entry|office\s+boy|driver|cleaner|nurse|pharmacist|doctor|physician|chef|waiter|barista|real\s+estate|property\s+consultant|civil\s+engineer|mechanical\s+engineer|electrical\s+engineer|chemical\s+engineer|petroleum\s+engineer|drilling|hvac|bim\b|mep\b|structural\s+engineer|quantity\s+surveyor|land\s+surveyor|site\s+engineer|construction|piping\s+engineer|marine\s+engineer|metallurg|geolog|architectural\s+draft|interior\s+design|fashion\s+design|jewellery)/i;
 
 function isRelevantJobTitle(title) {
   if (!title) return false;
@@ -391,9 +402,11 @@ async function syncRecruiterActivity(page, rawRecords) {
   }
   log('Logged into NaukriGulf successfully.');
 
+  // Loop Location -> Keyword -> Page so each batch of 3 covers AI Engineer, Full Stack,
+  // Software Engineer, React, Python, Data/ML, Cloud/DevOps, and all tech roles across UAE & Gulf!
   outerLoop:
-  for (const keyword of KEYWORDS) {
-    for (const location of LOCATIONS) {
+  for (const location of LOCATIONS) {
+    for (const keyword of KEYWORDS) {
       for (let pageNo = 1; pageNo <= 2; pageNo++) {
         if (totalAppliedThisRun >= batchTarget) break outerLoop;
 
