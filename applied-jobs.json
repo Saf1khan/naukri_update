@@ -11812,5 +11812,41 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Mohali"
+  },
+  {
+    "id": "191126505368",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "160725500259",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "070726501198",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "290526507621",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "281025503044",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "031126000332",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
   }
 ]
