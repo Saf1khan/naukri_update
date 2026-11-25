@@ -990,7 +990,7 @@ body { margin: 0; padding: 0; }
       const indiaToday = indiaJobs.filter(j => j.date === today).length;
       const gulfToday = gulfJobs.filter(j => j.date === today).length;
       const todayApplies = platform === "india" ? indiaToday : platform === "gulf" ? gulfToday : indiaToday + gulfToday;
-      const dailyQuota = platform === "all" ? 50 : 25;
+      const dailyQuota = platform === "india" ? 25 : platform === "gulf" ? 15 : 40;
 
       const indM = indiaAct?.metrics || {};
       const glfM = gulfAct?.metrics || {};
@@ -1188,7 +1188,7 @@ body { margin: 0; padding: 0; }
                       h(Metric, { title: "Recruiter Actions", icon: h(Zap, null), value: recruiterActionsCount, change: "Live", detail: "CV views & invites", tone: "teal" }),
                       h(Metric, { title: "Search Appearances", icon: h(Users, null), value: searchAppearances, change: "+47%", detail: "last 90 days" }),
                       h(Metric, { title: "Profile Views & Downloads", icon: h(Eye, null), value: profileViews, change: "Active", detail: "direct CV opens", tone: "coral" }),
-                      h(Metric, { title: "Applied Today (IST)", icon: h(ListChecks, null), value: todayApplies, detail: `India: ${indiaToday}/25 · Gulf: ${gulfToday}/25` })
+                      h(Metric, { title: "Applied Today (IST)", icon: h(ListChecks, null), value: todayApplies, detail: `India: ${indiaToday}/25 · Gulf: ${gulfToday}/15` })
                     ),
 
                     h(Panel, {
@@ -1211,7 +1211,7 @@ body { margin: 0; padding: 0; }
                         ),
                         h("div", { className: "gd-capacity-label" },
                           h("span", null, h("strong", null, todayApplies), " applied today"),
-                          h("span", null, `${dailyQuota} daily cap (25 India + 25 Gulf)`)
+                          h("span", null, `${dailyQuota} daily cap (25 India + 15 Gulf)`)
                         )
                       ),
                       h(Panel, { title: "Recruiter Updates", subtitle: "Employers who viewed or contacted you", className: "gd-approvals" },

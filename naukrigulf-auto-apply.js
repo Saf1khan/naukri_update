@@ -47,8 +47,8 @@ const LOCATIONS = (process.env.GULF_JOB_LOCATIONS || 'UAE,Dubai,Abu Dhabi,Saudi 
   .split(',').map(l => l.trim()).filter(Boolean);
 
 const EXP_FILTER_MAX = parseInt(process.env.EXP_FILTER_MAX      || '4',  10);
-const MAX_APPLIES    = parseInt(process.env.MAX_APPLIES_PER_RUN || '25', 10); // daily cap
-const BATCH_PER_RUN  = parseInt(process.env.BATCH_SIZE_PER_RUN  || '5',  10); // per hourly run
+const MAX_APPLIES    = parseInt(process.env.MAX_APPLIES_PER_RUN || '15', 10); // daily cap (15/day for Gulf)
+const BATCH_PER_RUN  = parseInt(process.env.BATCH_SIZE_PER_RUN  || '3',  10); // per peak-hour run
 
 const NOTICE_PERIOD  = process.env.NOTICE_PERIOD || '15 days';
 const EXPECTED_AED   = process.env.EXPECTED_SALARY_AED || '6000';

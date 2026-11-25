@@ -1,25 +1,25 @@
 name: Daily NaukriGulf Auto-Apply (Hourly Real-Time Mode)
 
 # ─────────────────────────────────────────────────────────────────────────────
-# Runs across 6 windows during Gulf business hours (Mon–Fri) so you are among
-# the FIRST applicants whenever a new Gulf job matching your profile is posted.
-# Staggered 30 minutes away from Naukri India runs so git commits never collide.
+# Runs across 5 peak Gulf recruiter active windows during the Gulf workweek:
+#   - Monday to Friday (UAE & corporate Gulf workweek) + Sunday (Saudi/Qatar/Kuwait/Oman)
+#   - Timed specifically when Gulf recruiters post & shortlist (8:45 AM – 4:15 PM Dubai/GST)
+#   - 5 windows × 3 applications per batch = 15 applications/day cap
+#   - Staggered away from Naukri India runs so git commits never collide.
 # ─────────────────────────────────────────────────────────────────────────────
 
 on:
   schedule:
-    # 9:17 AM IST  (7:47 AM Dubai / 6:47 AM Riyadh) = 3:47 AM UTC
-    - cron: '47 3 * * 1-5'
-    # 10:47 AM IST (9:17 AM Dubai / 8:17 AM Riyadh) = 5:17 AM UTC
-    - cron: '17 5 * * 1-5'
-    # 12:17 PM IST (10:47 AM Dubai / 9:47 AM Riyadh) = 6:47 AM UTC
-    - cron: '47 6 * * 1-5'
-    # 1:47 PM IST  (12:17 PM Dubai / 11:17 AM Riyadh) = 8:17 AM UTC
-    - cron: '17 8 * * 1-5'
-    # 3:17 PM IST  (1:47 PM Dubai / 12:47 PM Riyadh) = 9:47 AM UTC
-    - cron: '47 9 * * 1-5'
-    # 4:47 PM IST  (3:17 PM Dubai / 2:17 PM Riyadh) = 11:17 AM UTC
-    - cron: '17 11 * * 1-5'
+    # 8:47 AM Dubai (7:47 AM Riyadh / 10:17 AM IST) = 4:47 AM UTC — Morning Gulf office login & first job posts
+    - cron: '47 4 * * 0-5'
+    # 10:17 AM Dubai (9:17 AM Riyadh / 11:47 AM IST) = 6:17 AM UTC — Peak morning recruiter shortlisting window
+    - cron: '17 6 * * 0-5'
+    # 11:47 AM Dubai (10:47 AM Riyadh / 1:17 PM IST) = 7:47 AM UTC — Pre-prayer / midday new job postings
+    - cron: '47 7 * * 0-5'
+    # 2:17 PM Dubai (1:17 PM Riyadh / 3:47 PM IST)   = 10:17 AM UTC — Post-lunch Gulf hiring manager review window
+    - cron: '17 10 * * 0-5'
+    # 4:17 PM Dubai (3:17 PM Riyadh / 5:47 PM IST)   = 12:17 PM UTC — Late afternoon Gulf wrap-up postings
+    - cron: '17 12 * * 0-5'
   workflow_dispatch:
 
 jobs:
@@ -47,13 +47,13 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps chromium
 
-      - name: Run NaukriGulf Auto-Apply Script (batch of 5)
+      - name: Run NaukriGulf Auto-Apply Script (batch of 3, daily cap 15)
         env:
           NAUKRIGULF_EMAIL: ${{ secrets.NAUKRIGULF_EMAIL }}
           NAUKRIGULF_PASSWORD: ${{ secrets.NAUKRIGULF_PASSWORD }}
           EXP_FILTER_MAX: "4"
-          MAX_APPLIES_PER_RUN: "25"
-          BATCH_SIZE_PER_RUN: "5"
+          MAX_APPLIES_PER_RUN: "15"
+          BATCH_SIZE_PER_RUN: "3"
           NOTICE_PERIOD: "15 days"
           EXPECTED_SALARY_AED: "6000"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukrigulf-auto-apply.js
