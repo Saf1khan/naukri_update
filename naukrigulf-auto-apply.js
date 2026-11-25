@@ -97,7 +97,7 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 const humanDelay = () => sleep(800 + Math.random() * 1200);
 const shortDelay = () => sleep(400 + Math.random() * 400);
 
-// ── Build NaukriGulf search URL — sorted FRESH first (?sort=date) ───────────
+// ── Build NaukriGulf search URL — sorted FRESH first (?sort=date&exp=2) ────
 function buildSearchUrl(keyword, location, pageNo = 1) {
   const kwSlug = keyword.trim().toLowerCase()
     .replace(/\.js\b/g, 'js')
@@ -108,7 +108,7 @@ function buildSearchUrl(keyword, location, pageNo = 1) {
     .replace(/^-+|-+$/g, '');
   const pageSuffix = pageNo > 1 ? `-${pageNo}` : '';
 
-  return `https://www.naukrigulf.com/${kwSlug}-jobs-in-${locSlug}${pageSuffix}?sort=date`;
+  return `https://www.naukrigulf.com/${kwSlug}-jobs-in-${locSlug}${pageSuffix}?sort=date&exp=2`;
 }
 
 // ── Job Title Relevance Filter (All Tech, Software & AI roles, NO Senior/3+ yr roles) ──
