@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-25 3:05:30 pm IST",
+  "lastSyncedAt": "2026-11-25 4:15:53 pm IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,30 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "Liferay Full Stack Developer",
+      "company": "BITECH",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": ".Net Fullstack Developer",
+      "company": "Confidential Company",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Dotflick Solutions",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Strapi Developer",
+      "company": "Dicetek LLC",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
     {
       "title": "Full stack Developer",
       "company": "Knot Host Fze",
@@ -36,6 +60,12 @@
       "title": "React / React Native Developer",
       "company": "Mintlayer",
       "location": "Abu Dhabi - United Arab Emirates",
+      "recruiterStatus": "Application Submitted 1 week ago"
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "company": "Emaratech",
+      "location": "Dubai - United Arab Emirates",
       "recruiterStatus": "Application Submitted 1 week ago"
     }
   ]
