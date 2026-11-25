@@ -1,13 +1,53 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-25 11:47:13 pm IST",
+  "lastSyncedAt": "2026-11-26 12:54:34 am IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
     "recruiterActionsOnApplies": 301,
-    "totalApplies90Days": 1957
+    "totalApplies90Days": 1962
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "121126916737",
+      "title": "Node js Developer",
+      "company": "Cybersify Cloud computing Pvt ltd",
+      "location": "Mohali",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 00:54:24"
+    },
+    {
+      "jobId": "251126503889",
+      "title": "Developer",
+      "company": "Buzzmeeh.com",
+      "location": "New Delhi",
+      "recruiterStatus": "Applied",
+      "modifiedDate": "2026-11-26 00:50:43"
+    },
+    {
+      "jobId": "121126503048",
+      "title": "React js Developer",
+      "company": "Ratnam Solutions Private Limited",
+      "location": "Hyderabad",
+      "recruiterStatus": "Applied",
+      "modifiedDate": "2026-11-26 00:49:55"
+    },
+    {
+      "jobId": "041126023620",
+      "title": "Dot Net Fullstack Developer(Pune)",
+      "company": "Transunion",
+      "location": "Pune",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 00:45:54"
+    },
+    {
+      "jobId": "251126036568",
+      "title": "Java Developer",
+      "company": "Synechron",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 00:43:51"
+    },
     {
       "jobId": "261026006307",
       "title": "React JS Developer",
@@ -47,46 +87,6 @@
       "location": "Bengaluru, Mangaluru, Mysuru",
       "recruiterStatus": "Not Shortlisted",
       "modifiedDate": "2026-11-25 23:22:14"
-    },
-    {
-      "jobId": "121224501334",
-      "title": "React JS Developer",
-      "company": "Programming.com",
-      "location": "Bengaluru",
-      "recruiterStatus": "Applied",
-      "modifiedDate": "2026-11-25 22:53:37"
-    },
-    {
-      "jobId": "231126914450",
-      "title": "Node JS Developer",
-      "company": "Shashwath Solution",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 22:52:45"
-    },
-    {
-      "jobId": "121126918941",
-      "title": "React.js Developer",
-      "company": "Twixor",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 22:52:26"
-    },
-    {
-      "jobId": "251126035673",
-      "title": "Engineer",
-      "company": "Jindal Infrastructures",
-      "location": "Surat",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 22:51:03"
-    },
-    {
-      "jobId": "251126035833",
-      "title": "Java Full Stack Developer",
-      "company": "Newmark CRE Services",
-      "location": "Hyderabad",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 22:48:29"
     }
   ]
 }

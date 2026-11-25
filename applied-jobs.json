@@ -11169,5 +11169,648 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Bengaluru"
+  },
+  {
+    "id": "251126035778",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126011503",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126036568",
+    "date": "2026-11-26",
+    "time": "12:43:54 am",
+    "title": "Java Developer",
+    "company": "Synechron",
+    "url": "https://www.naukri.com/job-listings-java-developer-synechron-bengaluru-3-to-6-years-251126036568",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "251126034505",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034444",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034087",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126033976",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126011874",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "300926035501",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "error_after_click"
+  },
+  {
+    "id": "251126012495",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126012149",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126035909",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "041126023620",
+    "date": "2026-11-26",
+    "time": "12:45:56 am",
+    "title": "Dot Net Fullstack Developer(Pune)",
+    "company": "Transunion",
+    "url": "https://www.naukri.com/job-listings-dot-net-fullstack-developer-pune-transunion-pune-3-to-6-years-041126023620",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Pune"
+  },
+  {
+    "id": "141026033340",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126036220",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "190826038463",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "301020500935",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "231026033772",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "181122502372",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "221026010347",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "020726025027",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "040826502027",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "250622500043",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "130526500362",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "210526506826",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "090724502315",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126503048",
+    "date": "2026-11-26",
+    "time": "12:49:57 am",
+    "title": "React js Developer",
+    "company": "Ratnam Solutions",
+    "url": "https://www.naukri.com/job-listings-react-js-developer-ratnam-solutions-private-limited-hyderabad-1-to-6-years-121126503048",
+    "status": "applied",
+    "recruiterStatus": "Applied",
+    "location": "Hyderabad"
+  },
+  {
+    "id": "281026501841",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "020817500765",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "210325505329",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "141026506307",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "100826501299",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "131221500537",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "251126503633",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "251126503629",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "171126502850",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "251124503760",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "251126503889",
+    "date": "2026-11-26",
+    "time": "12:50:45 am",
+    "title": "Developer",
+    "company": "Buzzmeeh",
+    "url": "https://www.naukri.com/job-listings-developer-buzzmeeh-com-new-delhi-1-to-6-years-251126503889",
+    "status": "applied",
+    "recruiterStatus": "Applied",
+    "location": "New Delhi"
+  },
+  {
+    "id": "271025020982",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "080726504042",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126502238",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "210526506825",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "200526500018",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "301025504885",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "280525504535",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "221125500834",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "190925502952",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "150526502869",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "050626500060",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "250926504104",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "231126500356",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "240626506046",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "230626503158",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126501807",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "210824502633",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "191126501453",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "220124500406",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "070426500197",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "210324501047",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "200226502348",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "071023500246",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "191126505639",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126504889",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "191026917907",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "181126016194",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "260224500117",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "281026925640",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "110926500844",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "290726500078",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "051126500497",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "130826502450",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "111124503473",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "070225508008",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "211126500297",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "191225006299",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "250626507522",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "200326504305",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "140726501074",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "230726500721",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "311025502132",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "290526507610",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "241025501213",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "200426502819",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "171024502366",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "101224501392",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "090626503233",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126501694",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "171126025177",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "290426504908",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "270726501971",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "070726501900",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "301025505044",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "301025504091",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "280926503258",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "200825502013",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "170826500257",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "160226506439",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "150626504573",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "130726501022",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "110826503360",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "101125503580",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "070126503516",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126916737",
+    "date": "2026-11-26",
+    "time": "12:54:27 am",
+    "title": "Node js Developer",
+    "company": "Cybersify Cloud Computing",
+    "url": "https://www.naukri.com/job-listings-node-js-developer-cybersify-cloud-computing-pvt-ltd-mohali-2-to-4-years-121126916737",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mohali"
   }
 ]
