@@ -1,0 +1,92 @@
+{
+  "platform": "naukri_india",
+  "lastSyncedAt": "2026-11-25 3:13:24 pm IST",
+  "metrics": {
+    "searchAppearances": 810,
+    "profileViews": 15,
+    "recruiterActionsOnApplies": 300,
+    "totalApplies90Days": 1941
+  },
+  "recentApplicationStatuses": [
+    {
+      "jobId": "151026033264",
+      "title": "MIS Analyst",
+      "company": "Talentstream",
+      "location": "Bengaluru",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-10-15 20:51:52"
+    },
+    {
+      "jobId": "241126030307",
+      "title": "Full Stack Developer :C# / .NET & Python",
+      "company": "Workradius Ai Technologies",
+      "location": "Gurugram",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-11-25 00:42:05"
+    },
+    {
+      "jobId": "231126024218",
+      "title": "Gen AI & B Agentic AI / Python Developer /",
+      "company": "Kwality Recruitments Mumbai",
+      "location": "Hyderabad, Bengaluru, Pune",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-11-23 20:56:46"
+    },
+    {
+      "jobId": "281026007354",
+      "title": "HR Helpdesk Agent International Voice Process upto 10LPA",
+      "company": "Gratitude India",
+      "location": "Bengaluru, Thane, Mumbai (All Areas)",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-11-13 20:11:28"
+    },
+    {
+      "jobId": "241126028893",
+      "title": "KBS Process Associate – Travel & Expense",
+      "company": "KONE Elevator India Pvt. Ltd",
+      "location": "Chennai",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-25 03:17:03"
+    },
+    {
+      "jobId": "241126028606",
+      "title": "Endur Developer",
+      "company": "Deloitte Shared Services India",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 02:31:17"
+    },
+    {
+      "jobId": "241126029244",
+      "title": "Full-Stack Developer -TypeScript- Next-js-React-NestJS-PostgreSQL",
+      "company": "CargoForce ",
+      "location": "Mumbai Suburban",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 01:42:29"
+    },
+    {
+      "jobId": "241126029276",
+      "title": "Data Analyst - Jewellery Industry",
+      "company": "Omkar Placements",
+      "location": "Mumbai Suburban, Thane, Mumbai (All Areas)",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 00:43:47"
+    },
+    {
+      "jobId": "241126029399",
+      "title": "Db2 Luw Database Administrator",
+      "company": "Clover Infotech",
+      "location": "Mumbai",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 00:43:31"
+    },
+    {
+      "jobId": "241126029830",
+      "title": "Mongodb Administrator",
+      "company": "Clover Infotech",
+      "location": "Mumbai (All Areas)",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 00:42:41"
+    }
+  ]
+}

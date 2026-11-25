@@ -1,0 +1,41 @@
+name: Hourly NaukriGulf Profile Refresh
+
+on:
+  schedule:
+    # Off-peak minute (35 past every hour) so GitHub Actions does not throttle top-of-hour crons
+    - cron: '35 * * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh-gulf:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci || npm install
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run NaukriGulf Profile Refresh
+        env:
+          NAUKRIGULF_EMAIL: ${{ secrets.NAUKRIGULF_EMAIL }}
+          NAUKRIGULF_PASSWORD: ${{ secrets.NAUKRIGULF_PASSWORD }}
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" node naukrigulf-profile-refresh.js
+
+      - name: Upload Debug Screenshot on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: naukrigulf-refresh-error-screenshot
+          path: naukrigulf-refresh-error*.png
+          if-no-files-found: ignore

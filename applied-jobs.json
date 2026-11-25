@@ -5073,7 +5073,9 @@
     "time": "8:51:56 pm",
     "title": "MIS Analyst",
     "company": "Talentstream",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru"
   },
   {
     "id": "151026930620",
@@ -10193,7 +10195,9 @@
     "time": "8:56:49 pm",
     "title": "Gen AI & B Agentic AI / Python Developer /",
     "company": "IT Giant (Multi National)  Pan India",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Contacted By Email",
+    "location": "Hyderabad, Bengaluru, Pune"
   },
   {
     "id": "220926001504",
@@ -10401,7 +10405,9 @@
     "time": "8:55:34 pm",
     "title": "KBS Process Associate – Travel & Expense",
     "company": "Kone",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Chennai"
   },
   {
     "id": "241126030097",
@@ -10449,7 +10455,9 @@
     "time": "12:42:08 am",
     "title": "Full Stack Developer :C# / .NET & Python",
     "company": "Workradius Ai Technologies",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Contacted By Email",
+    "location": "Gurugram"
   },
   {
     "id": "241126030096",
@@ -10465,7 +10473,9 @@
     "time": "12:42:44 am",
     "title": "Mongodb Administrator",
     "company": "Clover Infotech",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai (All Areas)"
   },
   {
     "id": "241126029399",
@@ -10473,7 +10483,9 @@
     "time": "12:43:34 am",
     "title": "Db2 Luw Database Administrator",
     "company": "Clover Infotech",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai"
   },
   {
     "id": "241126029276",
@@ -10481,7 +10493,9 @@
     "time": "12:43:50 am",
     "title": "Data Analyst - Jewellery Industry",
     "company": "Leading Jewellery Manufacturing Company",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai Suburban, Thane, Mumbai (All Areas)"
   },
   {
     "id": "251126000164",
@@ -10505,7 +10519,9 @@
     "time": "2:31:20 am",
     "title": "Endur Developer",
     "company": "Deloitte Shared Services India",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
   },
   {
     "id": "241126029432",

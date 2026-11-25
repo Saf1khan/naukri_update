@@ -76,7 +76,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git pull --rebase origin main || true
-          git add applied-jobs.json || true
+          git add applied-jobs.json recruiter-activity-india.json || true
           git diff --staged --quiet || git commit -m "chore: update applied-jobs.json [skip ci]"
           git push || true
 

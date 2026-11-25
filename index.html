@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NAUKRI & GULF — Spatial Glassy Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <style>
+.gd-app {
+  --gd-ink: #25201e;
+  --gd-muted: #423731;
+  --gd-line: rgb(74 49 33 / 15%);
+  --gd-grid: rgb(74 49 33 / 19%);
+  --gd-rim: rgb(255 253 246 / 51%);
+  --gd-edge-light: rgb(255 254 247 / 84%);
+  --gd-edge-shade: rgb(57 40 28 / 19%);
+  --gd-gloss: rgb(255 251 242 / 45%);
+  --gd-frame: rgb(247 234 219 / 23%);
+  --gd-rail: rgb(241 222 206 / 48%);
+  --gd-card: rgb(250 242 232 / 46%);
+  --gd-card-light: rgb(255 251 245 / 34%);
+  --gd-raised: rgb(255 249 243 / 81%);
+  --gd-inner: rgb(255 250 245 / 37%);
+  --gd-surface: #f6ece2;
+  --gd-track: rgb(81 49 32 / 14%);
+  --gd-primary: #261e1b;
+  --gd-primary-ink: #fffaf5;
+  --gd-pick: #fff9f3;
+  --gd-pick-ink: #241b17;
+  --gd-coral: #a43c27;
+  --gd-teal: #09644f;
+  --gd-ochre: #996300;
+  --gd-graph-ink: #40332d;
+  --gd-focus: #194b48;
+  --gd-dark-shadow: 35 21 14;
+  inline-size: 100%;
+  min-inline-size: 0;
+  flex: 1 1 100%;
+  position: relative;
+  isolation: isolate;
+  min-block-size: 100svh;
+  background: #ab8e76;
+  color: var(--gd-ink);
+  color-scheme: light;
+  font-family: "Manrope Variable", Manrope, system-ui, sans-serif;
+  font-size: 13px;
+  font-weight: 550;
+  font-variant-numeric: tabular-nums;
+}
+.gd-app[data-theme="dark"] {
+  --gd-ink: #fff6e9;
+  --gd-muted: #e5d5c7;
+  --gd-line: rgb(243 221 198 / 19%);
+  --gd-grid: rgb(243 221 198 / 19%);
+  --gd-rim: rgb(255 236 212 / 31%);
+  --gd-edge-light: rgb(255 242 225 / 49%);
+  --gd-edge-shade: rgb(11 6 5 / 30%);
+  --gd-gloss: rgb(255 237 213 / 13%);
+  --gd-frame: rgb(42 31 29 / 52%);
+  --gd-rail: rgb(45 32 30 / 59%);
+  --gd-card: rgb(47 36 34 / 53%);
+  --gd-card-light: rgb(106 88 81 / 30%);
+  --gd-raised: rgb(80 67 61 / 82%);
+  --gd-inner: rgb(78 61 56 / 49%);
+  --gd-surface: #3b302c;
+  --gd-track: rgb(245 226 212 / 16%);
+  --gd-primary: #f3ddca;
+  --gd-primary-ink: #231a16;
+  --gd-pick: #f9eee0;
+  --gd-pick-ink: #241b17;
+  --gd-coral: #ff9177;
+  --gd-teal: #75dac0;
+  --gd-ochre: #f1be58;
+  --gd-graph-ink: #e7d9cd;
+  --gd-focus: #f9bf9b;
+  --gd-dark-shadow: 10 4 3;
+  background: #40322b;
+  color-scheme: dark;
+}
+body { margin: 0; padding: 0; }
+.gd-app *, .gd-app *::before, .gd-app *::after { box-sizing: border-box; }
+.gd-app :where(button, input, select) { color: inherit; font: inherit; }
+.gd-app :where(button, a, input, select):focus-visible { outline: 2px solid var(--gd-focus); outline-offset: 3px; }
+.gd-app a { color: inherit; text-decoration: none; }
+.gd-app button { cursor: pointer; }
+.gd-app :where(h1, h2, h3, p, figure) { margin: 0; }
+.gd-app svg { flex: none; }
+.gd-sr { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.gd-background, .gd-app::before {
+  position: fixed;
+  z-index: -2;
+  inset: 0;
+  inline-size: 100%;
+  block-size: 100%;
+  pointer-events: none;
+}
+.gd-background {
+  object-fit: cover;
+  object-position: center 60%;
+  filter: sepia(.22) saturate(.78) brightness(.86);
+}
+.gd-app::before {
+  content: "";
+  z-index: -1;
+  background: linear-gradient(116deg, rgb(73 48 37 / 35%), transparent 43%, rgb(162 101 63 / 24%) 76%, transparent 100%),
+    linear-gradient(0deg, rgb(53 33 25 / 34%), transparent 58%);
+}
+.gd-app[data-theme="dark"] .gd-background { filter: sepia(.15) saturate(.75) brightness(.61); }
+.gd-surround {
+  inline-size: min(calc(100% - 100px), 1380px);
+  margin-inline: auto;
+  padding-block: 24px 8px;
+}
+.gd-top, .gd-dock {
+  border: 1px solid var(--gd-rim);
+  background: linear-gradient(165deg, var(--gd-gloss), transparent 32% 73%, var(--gd-gloss)), var(--gd-rail);
+  box-shadow: inset 1px 1px 1px var(--gd-edge-light), inset -1px -1px 1px var(--gd-edge-shade),
+    inset 0 -2px 5px var(--gd-gloss), 0 7px 20px rgb(var(--gd-dark-shadow) / 17%);
+  backdrop-filter: blur(15px) saturate(1.35);
+  -webkit-backdrop-filter: blur(15px) saturate(1.35);
+}
+.gd-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 430px) minmax(0, 1fr);
+  align-items: center;
+  gap: 12px;
+  min-block-size: 60px;
+  border-radius: 999px;
+  padding: 6px 9px 6px 13px;
+}
+.gd-brand { display: flex; align-items: center; gap: 10px; min-inline-size: 0; padding-inline-start: 3px; }
+.gd-logo {
+  inline-size: 35px; block-size: 35px; display: grid; place-items: center;
+  border-radius: 50%; background: var(--gd-pick); color: var(--gd-pick-ink);
+  box-shadow: inset 0 0 0 1px var(--gd-gloss), 0 2px 7px rgb(var(--gd-dark-shadow) / 12%);
+}
+.gd-logo svg { width: 22px; height: 22px; }
+.gd-brand strong { display: block; font-size: 12px; letter-spacing: .17em; line-height: 1.1; font-weight: 850; }
+.gd-brand small { display: block; margin-block-start: 3px; font-size: 10px; color: var(--gd-muted); }
+.gd-ask {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-block-size: 43px;
+  max-inline-size: 100%;
+  border: 1px solid var(--gd-line);
+  border-radius: 999px;
+  background: var(--gd-inner);
+  box-shadow: inset 0 1px 0 var(--gd-gloss);
+  padding: 4px 13px 4px 9px;
+  text-align: start;
+}
+.gd-ask:hover, .gd-icon-button:hover { background: var(--gd-raised); }
+.gd-orb {
+  flex: none;
+  inline-size: 25px;
+  block-size: 25px;
+  border-radius: 50%;
+  background:
+    radial-gradient(ellipse at 32% 24%, #faf7fe 5%, #72ecf1 25%, transparent 58%),
+    radial-gradient(ellipse at 67% 54%, #e1b7f9, #815add 55%, #353467 79%);
+  box-shadow: inset 0 0 0 .75px rgb(246 245 255 / 75%), inset 0 -2px 5px #604db4, 0 0 0 3px rgb(91 70 115 / 13%), 0 2px 8px rgb(71 46 113 / 35%);
+}
+.gd-prompt {
+  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  font-size: 12px; font-weight: 750;
+  animation: gd-prompt-in .74s steps(28, end) both;
+}
+@keyframes gd-prompt-in { from { clip-path: inset(0 100% 0 0); } }
+.gd-ask-search { margin-inline-start: auto; width: 15px; height: 15px; color: var(--gd-muted); }
+.gd-top-actions { display: flex; justify-content: flex-end; align-items: center; gap: 6px; }
+.gd-icon-button {
+  position: relative; min-inline-size: 44px; min-block-size: 44px; display: inline-grid; place-items: center;
+  border-radius: 999px; border: 1px solid var(--gd-line); padding: 0; background: var(--gd-inner);
+}
+.gd-icon-button svg { width: 17px; height: 17px; stroke-width: 1.75; }
+.gd-notices { background: var(--gd-raised); }
+.gd-notices i {
+  position: absolute; block-size: 6px; inline-size: 6px; inset: 9px 9px auto auto; border-radius: 50%;
+  background: var(--gd-coral); box-shadow: 0 0 0 2px var(--gd-surface);
+}
+
+.gd-stage-wrap { position: relative; margin-block: 11px 0; }
+.gd-stage {
+  color: var(--gd-ink);
+  border: 1px solid var(--gd-rim);
+  border-radius: 34px;
+  background:
+    linear-gradient(148deg, var(--gd-gloss), transparent 19% 77%, color-mix(in srgb, var(--gd-gloss) 48%, transparent)),
+    var(--gd-frame);
+  box-shadow: inset 1px 1px 1px var(--gd-edge-light), inset -1px -1px 1px var(--gd-edge-shade),
+    inset 0 0 7px var(--gd-gloss),
+    0 1px 3px rgb(var(--gd-dark-shadow) / 17%), 0 22px 72px rgb(var(--gd-dark-shadow) / 22%);
+  backdrop-filter: blur(var(--gd-panel-frost, 12px)) saturate(1.24);
+  -webkit-backdrop-filter: blur(var(--gd-panel-frost, 12px)) saturate(1.24);
+}
+.gd-stage-scroll {
+  block-size: max(605px, min(865px, calc(100svh - 165px)));
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: var(--gd-line) transparent;
+  border-radius: inherit;
+  padding: clamp(19px, 2.15vw, 35px) clamp(25px, 3.2vw, 49px) 41px;
+}
+.gd-view-head {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 12px 22px;
+  margin-block-end: 19px;
+}
+.gd-view-head h1 {
+  font-size: clamp(29px, 3.35vw, 49px);
+  font-weight: 760;
+  line-height: 1.03;
+  letter-spacing: -.062em;
+}
+.gd-view-head p { color: var(--gd-muted); font-size: 13px; margin-block-start: 8px; }
+.gd-view-actions { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
+.gd-period {
+  display: inline-flex; align-items: center; padding: 3px; border-radius: 999px;
+  border: 1px solid var(--gd-rim); background: var(--gd-inner);
+  box-shadow: inset 0 1px 0 var(--gd-gloss);
+}
+.gd-period button {
+  min-block-size: 35px; min-inline-size: 56px; border: 0; border-radius: 999px; background: transparent;
+  padding: 0 11px; font-size: 11px; font-weight: 750; white-space: nowrap;
+}
+.gd-period button[aria-pressed="true"] { background: var(--gd-primary); color: var(--gd-primary-ink); }
+.gd-period button[aria-pressed="false"]:hover { background: var(--gd-inner); }
+
+.gd-primary, .gd-secondary {
+  display: inline-flex; justify-content: center; align-items: center; gap: 7px;
+  min-block-size: 40px; padding: 7px 12px;
+  font-size: 11.5px; font-weight: 790; line-height: 1.2; border-radius: 999px;
+  border: 1px solid transparent;
+}
+.gd-primary { background: var(--gd-primary); color: var(--gd-primary-ink); }
+.gd-secondary { background: var(--gd-raised); border-color: var(--gd-rim); color: var(--gd-ink); }
+.gd-primary:hover { filter: brightness(1.17); }
+.gd-secondary:hover { background: var(--gd-surface); }
+.gd-primary svg, .gd-secondary svg { width: 14px; height: 14px; }
+.gd-export { white-space: nowrap; }
+.gd-content { min-inline-size: 0; }
+.gd-analytics, .gd-command-grid, .gd-command-side, .gd-summary, .gd-metric-grid, .gd-analytics-grid { display: grid; gap: 12px; }
+.gd-command-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr) minmax(0, 1.05fr); align-items: stretch; }
+.gd-command-side { grid-column: 1; align-content: start; }
+.gd-command-grid > .gd-activity { grid-column: 2 / -1; }
+.gd-summary { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; padding: 6px; }
+.gd-analytics-grid { grid-template-columns: minmax(0, 1.75fr) minmax(0, 1fr); }
+.gd-metric-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.gd-panel, .gd-metric, .gd-summary {
+  min-inline-size: 0;
+  border: 1px solid var(--gd-rim);
+  border-radius: 20px;
+  background: linear-gradient(144deg, var(--gd-card-light), transparent 66%), var(--gd-card);
+  box-shadow: inset 0 1px 1px var(--gd-edge-light), inset 0 -1px 1px var(--gd-edge-shade), 0 6px 18px rgb(var(--gd-dark-shadow) / 9%);
+}
+.gd-summary { border-radius: 20px; background: var(--gd-inner); }
+.gd-summary .gd-metric { border-radius: 15px; }
+.gd-panel { padding: 15px 16px; }
+.gd-panel-head {
+  display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;
+  gap: 7px 12px; margin-block-end: 12px;
+}
+.gd-panel-head h2 { font-size: 14px; font-weight: 810; letter-spacing: -.024em; }
+.gd-panel-head p { font-size: 11px; color: var(--gd-muted); margin-block-start: 3px; }
+.gd-metric { display: flex; flex-direction: column; justify-content: space-between; min-block-size: 112px; padding: 11px 12px; }
+.gd-metric[data-tone="teal"] {
+  --gd-coral: #ffc8b8;
+  --gd-teal: #b8f1dd;
+  --gd-muted: #e4f5ef;
+  color: #fff;
+  border-color: rgb(196 248 231 / 55%);
+  background: radial-gradient(ellipse at 5% -20%, #3a9381, transparent 68%), linear-gradient(145deg, #1e7461, #08443a);
+  box-shadow: inset 0 1px 2px rgb(214 252 240 / 45%), 0 6px 14px rgb(19 78 64 / 17%);
+}
+.gd-metric-head { display: flex; justify-content: space-between; align-items: center; gap: 4px; min-inline-size: 0; font-size: 11px; font-weight: 740; }
+.gd-metric-icon, .gd-list-icon {
+  display: grid; place-items: center; flex: none; color: inherit;
+  inline-size: 28px; block-size: 28px; border-radius: 10px;
+  background: var(--gd-inner); box-shadow: inset 0 1px 0 var(--gd-gloss);
+}
+.gd-metric-icon svg, .gd-list-icon svg { width: 14px; height: 14px; }
+.gd-metric[data-tone="teal"] .gd-metric-icon { background: rgb(235 255 247 / 16%); }
+.gd-metric-value { display: block; font-size: clamp(22px, 2.35vw, 35px); line-height: 1.05; margin-block: 3px 7px; letter-spacing: -.052em; font-weight: 815; }
+.gd-summary .gd-metric-value { font-size: clamp(20px, 2vw, 31px); }
+.gd-metric-caption, .gd-balance-change { display: flex; flex-wrap: wrap; align-items: center; gap: 4px; color: var(--gd-muted); font-size: 10px; font-weight: 680; }
+.gd-delta {
+  display: inline-flex; align-items: center; gap: 2px; color: var(--gd-teal); font-weight: 850;
+  border-radius: 6px; padding: 2px 4px;
+  background: color-mix(in srgb, var(--gd-teal) 12%, transparent);
+}
+.gd-delta[data-attention="true"] { color: var(--gd-coral); background: color-mix(in srgb, var(--gd-coral) 11%, transparent); }
+.gd-delta svg { width: 11px; height: 11px; stroke-width: 2.4; }
+
+.gd-balance .gd-panel-head { align-items: center; margin-block-end: 9px; }
+.gd-unit { border-radius: 6px; padding: 4px 6px; background: var(--gd-raised); font-size: 10px; font-weight: 810; }
+.gd-balance-number { font-size: clamp(28px, 3.85vw, 57px); font-weight: 820; letter-spacing: -.077em; line-height: 1.02; }
+.gd-balance-change { margin-block-start: 7px; }
+.gd-balance-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-block: 13px 12px; }
+.gd-streams { display: flex; border-radius: 12px; background: var(--gd-inner); padding: 8px 2px; }
+.gd-streams div { flex: 1; min-inline-size: 0; padding: 0 7px; }
+.gd-streams div + div { border-inline-start: 1px solid var(--gd-line); }
+.gd-streams span, .gd-streams strong { display: block; }
+.gd-streams span { font-size: 9px; color: var(--gd-muted); }
+.gd-streams strong { font-size: 11px; font-weight: 810; margin-block-start: 4px; }
+.gd-capacity .gd-panel-head, .gd-approvals .gd-panel-head { margin-block-end: 10px; }
+.gd-capacity-track, .gd-mix-track { display: block; height: 7px; border-radius: 999px; overflow: hidden; background: var(--gd-track); }
+.gd-capacity-track .gd-fill { display: block; block-size: 100%; border-radius: inherit; background: var(--gd-teal); transform-origin: left center; }
+.gd-capacity-label { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 4px; color: var(--gd-muted); font-size: 10px; margin-top: 8px; }
+.gd-capacity-label strong { color: var(--gd-ink); }
+.gd-approval-content { display: flex; align-items: center; gap: 9px; min-inline-size: 0; }
+.gd-approval-content .gd-list-icon { inline-size: 37px; block-size: 37px; color: var(--gd-teal); background: color-mix(in srgb, var(--gd-teal) 12%, var(--gd-inner)); }
+.gd-approval-content div { flex: 1; min-inline-size: 0; }
+.gd-approval-content strong, .gd-approval-content small { display: block; }
+.gd-approval-content strong { font-size: 12px; font-weight: 810; }
+.gd-approval-content small { margin-top: 4px; font-size: 10px; color: var(--gd-muted); }
+.gd-statement .gd-panel-head { margin-block-end: 8px; }
+
+.gd-table-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; max-inline-size: 100%; }
+.gd-search, .gd-filter {
+  display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--gd-line); border-radius: 10px;
+  background: var(--gd-inner); min-block-size: 35px; padding: 0 8px;
+}
+.gd-search svg, .gd-filter svg { width: 13px; height: 13px; color: var(--gd-muted); }
+.gd-search input { width: 135px; flex: 1; min-inline-size: 0; border: 0; background: transparent; min-block-size: 33px; }
+.gd-search input::placeholder { color: var(--gd-muted); opacity: 1; }
+.gd-search input, .gd-filter select { font-size: 11px; }
+.gd-filter select { border: 0; background: transparent; padding: 5px 0; min-inline-size: 0; }
+.gd-filter select option { color: var(--gd-ink); background: var(--gd-surface); }
+.gd-search:focus-within, .gd-filter:focus-within { outline: 2px solid var(--gd-focus); }
+.gd-app .gd-search input:focus-visible, .gd-app .gd-filter select:focus-visible { outline: none; }
+.gd-table-scroll { max-inline-size: 100%; overflow: auto; scrollbar-width: thin; max-block-size: 380px; }
+.gd-table-scroll table { inline-size: 100%; border-spacing: 0; text-align: start; }
+.gd-table-scroll th, .gd-table-scroll td { padding: 9px 10px; text-align: start; }
+.gd-table-scroll th { background: var(--gd-inner); font-size: 10px; color: var(--gd-muted); font-weight: 800; position: sticky; top: 0; backdrop-filter: blur(10px); }
+.gd-table-scroll th:first-child { border-radius: 8px 0 0 8px; }
+.gd-table-scroll th:last-child { border-radius: 0 8px 8px 0; }
+.gd-table-scroll td { white-space: nowrap; font-size: 11px; }
+.gd-table-scroll td:first-child { font-weight: 750; }
+.gd-table-scroll tr + tr td { border-top: 1px solid var(--gd-line); }
+.gd-status {
+  --gd-status-color: var(--gd-graph-ink);
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 4px 6px; border-radius: 999px; font-size: 10px; font-weight: 790;
+  background: color-mix(in srgb, var(--gd-status-color) 11%, var(--gd-inner));
+  color: var(--gd-status-color); white-space: nowrap;
+}
+.gd-status[data-state="teal"] { --gd-status-color: var(--gd-teal); }
+.gd-status[data-state="coral"] { --gd-status-color: var(--gd-coral); }
+.gd-status[data-state="ochre"] { --gd-status-color: var(--gd-ochre); }
+.gd-status i { inline-size: 5px; block-size: 5px; border-radius: 50%; background: currentColor; }
+.gd-empty { padding: 12px 3px; color: var(--gd-muted); font-size: 12px; }
+
+.gd-app [data-tone="ink"] { --gd-series: var(--gd-graph-ink); }
+.gd-app [data-tone="coral"] { --gd-series: var(--gd-coral); }
+.gd-app [data-tone="teal"] { --gd-series: var(--gd-teal); }
+.gd-app [data-tone="ochre"] { --gd-series: var(--gd-ochre); }
+.gd-legend { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; color: var(--gd-muted); }
+.gd-legend span, .gd-device-list button span:first-child { display: inline-flex; align-items: center; gap: 5px; font-size: 10px; font-weight: 740; }
+.gd-legend i, .gd-device-list button span:first-child i { inline-size: 7px; block-size: 7px; border-radius: 50%; background: var(--gd-series); }
+.gd-stack-meta { display: flex; justify-content: space-between; align-items: center; height: 20px; gap: 4px; }
+.gd-chart-readout { font-size: 10px; font-weight: 830; white-space: nowrap; }
+.gd-stack-plot { display: grid; grid-template-columns: repeat(var(--gd-series-count, 7), minmax(0, 1fr)); gap: 4px; block-size: 194px; margin-top: 5px; }
+.gd-command-chart .gd-stack-plot { block-size: 141px; }
+.gd-stack-column { display: flex; flex-direction: column; align-items: center; min-inline-size: 0; border: 0; border-radius: 8px; background: transparent; padding: 3px 0 0; }
+.gd-stack-column:is(:focus-visible, :hover, [aria-pressed="true"]) { background: var(--gd-inner); }
+.gd-stack-track { display: flex; justify-content: center; align-items: end; flex: 1; inline-size: 100%; border-bottom: 1px solid var(--gd-line); }
+.gd-stack-bar {
+  display: flex; flex-direction: column; transform-origin: center bottom;
+  inline-size: min(65%, 40px); min-inline-size: 6px; border-radius: 6px 6px 3px 3px; overflow: hidden;
+}
+.gd-stack-bar i { display: block; flex-basis: 0; background: var(--gd-series); min-block-size: 2px; }
+.gd-stack-bar i:first-child { background: repeating-linear-gradient(138deg, var(--gd-series) 0 4px, color-mix(in srgb, var(--gd-series) 76%, white) 4px 6px); }
+.gd-stack-label { font-size: 9px; color: var(--gd-muted); margin-top: 7px; white-space: nowrap; }
+.gd-revenue-main { display: grid; grid-template-columns: 38px minmax(0, 1fr); }
+.gd-chart-y { display: flex; flex-direction: column; justify-content: space-between; padding-block: 0; font-size: 10px; color: var(--gd-muted); }
+.gd-line-plot { position: relative; min-inline-size: 0; block-size: 208px; }
+.gd-line-plot svg { display: block; width: 100%; height: 100%; overflow: visible; }
+.gd-grid-line { stroke: var(--gd-grid); stroke-dasharray: 3 4; vector-effect: non-scaling-stroke; }
+.gd-chart-path { fill: none; stroke: var(--gd-series); stroke-width: 2.5; stroke-linecap: round; vector-effect: non-scaling-stroke; }
+.gd-line-cursor { stroke: var(--gd-muted); stroke-dasharray: 2 4; vector-effect: non-scaling-stroke; }
+.gd-chart-zones { position: absolute; inset: 0; display: flex; align-items: stretch; }
+.gd-chart-zones button { flex: 1; min-inline-size: 0; border: 0; background: transparent; padding: 0; border-radius: 2px; }
+.gd-line-tooltip {
+  pointer-events: none; position: absolute; top: 6px; left: clamp(70px, var(--gd-tooltip-x), calc(100% - 70px)); translate: -50% 0;
+  display: grid; gap: 2px; min-inline-size: 132px; padding: 7px 8px; background: var(--gd-surface);
+  border: 1px solid var(--gd-line); border-radius: 9px; font-size: 10px; box-shadow: 0 4px 10px rgb(var(--gd-dark-shadow) / 15%);
+}
+.gd-line-tooltip span { display: flex; justify-content: space-between; gap: 10px; }
+.gd-chart-axis { display: flex; justify-content: space-between; margin: 9px 0 0 38px; font-size: 9px; color: var(--gd-muted); }
+.gd-device { display: grid; gap: 8px; justify-items: stretch; }
+.gd-device-ring { position: relative; inline-size: min(100%, 150px); aspect-ratio: 1; justify-self: center; }
+.gd-device-ring svg { display: block; inline-size: 100%; block-size: 100%; }
+.gd-device-segment { stroke: var(--gd-series); transition: opacity .2s ease; }
+.gd-device-segment[data-muted="true"] { opacity: .29; }
+.gd-device-total { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; pointer-events: none; }
+.gd-device-total strong { font-size: 23px; line-height: 1.05; letter-spacing: -.05em; font-weight: 850; }
+.gd-device-total > span { font-size: 10px; margin-top: 5px; color: var(--gd-muted); }
+.gd-device-list { display: grid; gap: 2px; }
+.gd-device-list button {
+  display: grid; grid-template-columns: 78px minmax(0, 1fr) 36px; gap: 7px; align-items: center;
+  min-block-size: 32px; text-align: start; background: transparent; border: 0; border-radius: 8px; padding: 3px 6px;
+}
+.gd-device-list button:is(:hover, [aria-pressed="true"]) { background: var(--gd-inner); }
+.gd-device-list button strong { text-align: end; font-weight: 850; font-size: 11px; }
+.gd-mix-track { height: 4px; }
+.gd-mix-track .gd-fill { display: block; block-size: 100%; border-radius: inherit; background: var(--gd-series); transform-origin: left center; }
+
+.gd-lanes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 9px; }
+.gd-lanes[data-filtered="true"] { grid-template-columns: minmax(0, 1fr); }
+.gd-lane { min-inline-size: 0; border: 1px solid var(--gd-line); background: var(--gd-inner); padding: 7px; border-radius: 14px; max-block-size: 460px; overflow-y: auto; }
+.gd-lane header { display: flex; align-items: center; gap: 5px; padding: 3px 4px 8px; }
+.gd-lane header i { display: inline-grid; place-items: center; border-radius: 7px; width: 23px; height: 23px; color: var(--gd-series); background: color-mix(in srgb, var(--gd-series) 13%, transparent); }
+.gd-lane header svg { width: 13px; height: 13px; }
+.gd-lane header h3 { min-inline-size: 0; font-size: 11px; font-weight: 840; }
+.gd-lane header span { margin-inline-start: auto; color: var(--gd-muted); font-size: 10px; }
+.gd-work-item {
+  display: grid; gap: 5px; width: 100%; text-align: start; border-radius: 11px; padding: 9px;
+  border: 1px solid var(--gd-rim); background: var(--gd-card);
+  box-shadow: inset 0 1px 0 var(--gd-gloss);
+}
+.gd-work-item + .gd-work-item { margin-top: 6px; }
+.gd-work-item:hover { background: var(--gd-raised); }
+.gd-work-titlerow, .gd-work-meta { display: flex; align-items: flex-start; justify-content: space-between; gap: 6px; }
+.gd-work-titlerow strong { font-size: 11.5px; font-weight: 820; }
+.gd-work-titlerow svg { width: 14px; height: 14px; }
+.gd-work-detail { font-size: 10.5px; line-height: 1.42; color: var(--gd-muted); }
+.gd-work-meta { font-size: 9.5px; font-weight: 750; margin-top: 2px; color: var(--gd-muted); }
+
+.gd-dock {
+  position: absolute; z-index: 3;
+  display: flex; align-items: center; gap: 3px; padding: 4px; border-radius: 999px;
+}
+.gd-dock-side { flex-direction: column; left: -24px; top: clamp(66px, 16vh, 153px); }
+.gd-dock-bottom { left: 50%; bottom: -24px; translate: -50% 0; }
+.gd-dock a {
+  z-index: 1; position: relative; display: flex; gap: 6px; justify-content: center; align-items: center;
+  min-inline-size: 44px; min-block-size: 44px; padding: 0 13px; border-radius: 999px;
+  font-size: 11px; font-weight: 800; white-space: nowrap;
+}
+.gd-dock-side a { padding: 0; }
+.gd-dock a svg { width: 16px; height: 16px; stroke-width: 1.9; }
+.gd-dock a[aria-current="page"] { color: var(--gd-pick-ink); }
+.gd-dock a:not([aria-current="page"]):hover { background: var(--gd-inner); }
+.gd-dock-indicator {
+  position: absolute; inset: 0 auto auto 0; pointer-events: none; visibility: hidden;
+  border-radius: 999px; background: var(--gd-pick); box-shadow: inset 0 1px 0 white, 0 2px 7px rgb(var(--gd-dark-shadow) / 16%);
+}
+.gd-dock-indicator[data-ready="true"] { visibility: visible; transition: transform .36s cubic-bezier(.24, .89, .26, 1), width .36s cubic-bezier(.24, .89, .26, 1), height .36s cubic-bezier(.24, .89, .26, 1); }
+.gd-dock-side .gd-dock-text, .gd-dock-short { display: none; }
+.gd-dock-tip {
+  display: none; position: absolute; left: calc(100% + 7px); z-index: 1; pointer-events: none;
+  color: var(--gd-ink); background: var(--gd-surface); padding: 6px 9px; border: 1px solid var(--gd-rim);
+  border-radius: 7px; box-shadow: 0 3px 8px rgb(var(--gd-dark-shadow) / 17%);
+}
+.gd-dock-side a:is(:hover, :focus-visible) .gd-dock-tip { display: inline; }
+.gd-footer { padding: 33px 3px 1px; display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.gd-footer > * {
+  border-radius: 999px; padding: 5px 8px; color: var(--gd-ink); font-size: 10px; font-weight: 740;
+  background: var(--gd-raised); min-block-size: 24px; display: flex; align-items: center; gap: 4px;
+}
+.gd-footer a:hover { text-decoration: underline; }
+.gd-footer a svg { width: 10px; height: 10px; }
+
+.gd-dialog {
+  max-inline-size: min(calc(100% - 26px), 485px); inline-size: 100%;
+  border-radius: 23px; border: 1px solid var(--gd-rim); color: var(--gd-ink); padding: 0;
+  background: var(--gd-surface); box-shadow: 0 20px 80px rgb(var(--gd-dark-shadow) / 38%);
+}
+.gd-dialog::backdrop { background: rgb(30 21 17 / 43%); backdrop-filter: blur(5px); }
+.gd-dialog-inner { padding: 18px; }
+.gd-dialog-inner > header { display: flex; gap: 10px; align-items: center; justify-content: space-between; margin-bottom: 13px; }
+.gd-dialog-inner h2 { font-size: 22px; font-weight: 830; letter-spacing: -.045em; }
+.gd-command-input { inline-size: 100%; padding-inline: 10px; margin-bottom: 8px; min-block-size: 44px; }
+.gd-command-input input { min-block-size: 42px; font-size: 14px; }
+.gd-quick-list { display: grid; gap: 5px; max-block-size: 320px; overflow-y: auto; }
+.gd-quick-list button {
+  display: flex; align-items: center; gap: 9px; width: 100%; padding: 9px;
+  text-align: start; border: 1px solid var(--gd-line); border-radius: 10px; background: var(--gd-inner);
+}
+.gd-quick-list button:hover { background: var(--gd-raised); }
+.gd-quick-list button svg { width: 16px; height: 16px; color: var(--gd-muted); }
+.gd-quick-list button div { flex: 1; }
+.gd-quick-list strong, .gd-quick-list small { display: block; }
+.gd-quick-list small { color: var(--gd-muted); margin-top: 2px; font-size: 11px; }
+.gd-work-dialog-description { margin: 12px 0; }
+.gd-work-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; margin-bottom: 14px; }
+.gd-work-facts div { border: 1px solid var(--gd-line); border-radius: 9px; padding: 8px; }
+.gd-work-facts dt { font-size: 11px; color: var(--gd-muted); }
+.gd-work-facts dd { margin: 4px 0 0; font-weight: 790; }
+
+@media (max-width: 1060px) {
+  .gd-surround { inline-size: calc(100% - 74px); }
+  .gd-stage-scroll { padding-inline: 29px; }
+  .gd-command-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .gd-command-grid > .gd-command-chart { grid-column: 1; }
+  .gd-command-side { grid-column: 2; }
+  .gd-command-grid > .gd-activity { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  .gd-surround { padding-top: 11px; padding-bottom: calc(73px + env(safe-area-inset-bottom)); inline-size: calc(100% - 24px); }
+  .gd-top { grid-template-columns: minmax(0, 1fr) auto; padding: 7px 9px; gap: 6px 12px; border-radius: 21px; }
+  .gd-brand { padding-inline-start: 3px; }
+  .gd-ask { grid-area: 2 / 1 / 3 / -1; min-block-size: 41px; }
+  .gd-top-actions { grid-area: 1 / 2; }
+  .gd-top-actions .gd-icon-button { width: 41px; min-inline-size: 41px; min-block-size: 41px; }
+  .gd-stage { border-radius: 23px; }
+  .gd-stage-scroll { block-size: auto; padding: 15px 13px 17px; overflow: visible; }
+  .gd-view-head { align-items: flex-start; flex-direction: column; gap: 10px; margin-bottom: 14px; }
+  .gd-view-head p { font-size: 12px; margin-top: 6px; }
+  .gd-view-actions { justify-content: flex-start; }
+  .gd-command-grid, .gd-analytics-grid { grid-template-columns: minmax(0, 1fr); }
+  .gd-command-side, .gd-command-grid > .gd-activity { grid-column: 1; }
+  .gd-metric-grid, .gd-lanes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gd-dock-side { display: none; }
+  .gd-dock-bottom { position: fixed; inset: auto 11px calc(9px + env(safe-area-inset-bottom)); translate: none; justify-content: space-between; }
+  .gd-dock-bottom a { flex: 1; flex-direction: column; gap: 2px; padding: 3px 5px; min-block-size: 47px; line-height: 1.2; font-size: 9.5px; }
+  .gd-dock-bottom a svg { width: 15px; height: 15px; }
+  .gd-dock-bottom .gd-dock-text { display: none; }
+  .gd-dock-bottom .gd-dock-short { display: inline; }
+  .gd-footer { padding-top: 9px; }
+}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="module">
+    import React, { useState, useEffect, useRef } from "https://esm.sh/react@18.3.1";
+    import { createRoot } from "https://esm.sh/react-dom@18.3.1/client";
+    import * as Lucide from "https://esm.sh/lucide-react@0.460.0?deps=react@18.3.1";
+
+    const h = React.createElement;
+    const {
+      ArrowDownRight, ArrowRight, ArrowUpRight, Box, CircleDollarSign, Clock3,
+      Download, Ellipsis, Eye, Filter, ListChecks, Search, ShieldCheck, ShoppingBag,
+      TriangleAlert, Users, Zap, ArrowDownToLine, BarChart3, Bell, BriefcaseBusiness,
+      ChevronRight, Command, LayoutDashboard, Moon, Sun, TrendingUp, X, Globe
+    } = Lucide;
+
+    const studioPhoto = "https://cdn.21st.dev/assets/mirror/ea/ea9270b3b7246283219ac52fa77a1213e9d1efb285d76348d3620609ba6cefa7.jpg";
+    const numFmt = new Intl.NumberFormat("en-US");
+
+    const views = [
+      { id: "command", label: "Command Center", short: "Command", icon: LayoutDashboard, description: "Live auto-applies, daily quota, and recruiter actions across Naukri & NaukriGulf.", prompt: "Show today's applications & recruiter actions." },
+      { id: "trends", label: "Application Trends", short: "Trends", icon: TrendingUp, description: "Compare Naukri India and NaukriGulf daily application velocity over time.", prompt: "How are daily applications trending?" },
+      { id: "metrics", label: "Platform Metrics", short: "Metrics", icon: BarChart3, description: "Track search appearances, CV views, and platform distribution.", prompt: "Compare Naukri India vs NaukriGulf performance." },
+      { id: "operations", label: "Recruiter Pipeline", short: "Pipeline", icon: BriefcaseBusiness, description: "Track recruiter emails, CV views, and live application statuses across portals.", prompt: "Which recruiters viewed or contacted me?" },
+    ];
+
+    const platforms = [
+      { id: "all", label: "All Portals" },
+      { id: "india", label: "Naukri India 🇮🇳" },
+      { id: "gulf", label: "NaukriGulf 🇦🇪" },
+    ];
+
+    function getTodayIST() {
+      return new Date().toLocaleDateString("en-CA", { timeZone: "Asia/Kolkata" });
+    }
+
+    function saveCsv(filename, rows) {
+      const csv = rows.map(row => row.map(cell => `"${String(cell ?? "").replaceAll('"', '""')}"`).join(",")).join("\r\n");
+      const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      link.click();
+      setTimeout(() => URL.revokeObjectURL(url), 0);
+    }
+
+    function Legend({ entries }) {
+      return h("div", { className: "gd-legend" },
+        entries.map(({ label, tone }) =>
+          h("span", { key: label }, h("i", { "data-tone": tone, "aria-hidden": "true" }), label)
+        )
+      );
+    }
+
+    function StackChart({ items, labels, tones, title }) {
+      const [active, setActive] = useState(null);
+      const max = Math.max(1, ...items.map(item => item.lower + item.upper)) * 1.12;
+      const selected = active === null ? undefined : items[active];
+
+      return h("figure", { className: "gd-stack", "aria-label": title },
+        h("div", { className: "gd-stack-meta" },
+          h(Legend, { entries: labels.map((label, idx) => ({ label, tone: tones[idx] })) }),
+          selected && h("span", { className: "gd-chart-readout" }, `${selected.label} · ${numFmt.format(selected.lower + selected.upper)} applies`)
+        ),
+        h("div", {
+          className: "gd-stack-plot",
+          style: { "--gd-series-count": Math.max(1, items.length) },
+          onMouseLeave: () => setActive(null)
+        },
+          items.map((item, idx) =>
+            h("button", {
+              type: "button",
+              className: "gd-stack-column",
+              key: item.label,
+              "aria-pressed": active === idx,
+              onMouseEnter: () => setActive(idx),
+              onClick: () => setActive(idx)
+            },
+              h("span", { className: "gd-stack-track", "aria-hidden": "true" },
+                h("span", { className: "gd-stack-bar", style: { height: `${((item.lower + item.upper) / max) * 100}%` } },
+                  h("i", { "data-tone": tones[1], style: { flexGrow: Math.max(0.1, item.upper) } }),
+                  h("i", { "data-tone": tones[0], style: { flexGrow: Math.max(0.1, item.lower) } })
+                )
+              ),
+              h("span", { className: "gd-stack-label", "aria-hidden": "true" }, item.label)
+            )
+          )
+        )
+      );
+    }
+
+    function curve(points) {
+      return points.reduce((path, [x, y], idx) => {
+        if (idx === 0) return `M ${x} ${y}`;
+        const [px, py] = points[idx - 1];
+        const mid = (x + px) / 2;
+        return `${path} C ${mid} ${py}, ${mid} ${y}, ${x} ${y}`;
+      }, "");
+    }
+
+    function TrendLineChart({ labels, seriesA, seriesB }) {
+      const [active, setActive] = useState(null);
+      const plotHeight = 204;
+      const width = 600;
+      const max = Math.max(5, Math.ceil(Math.max(...seriesA, ...seriesB, 5) * 1.15));
+      const pts = (vals) => vals.map((v, i) => [
+        (i * width) / Math.max(1, vals.length - 1),
+        plotHeight - (v / max) * plotHeight
+      ]);
+      const pA = pts(seriesA);
+      const pB = pts(seriesB);
+      const lineA = curve(pA);
+      const last = ((pA.length - 1) * width) / Math.max(1, pA.length - 1);
+      const ticks = [max, Math.round(max * 0.75), Math.round(max * 0.5), Math.round(max * 0.25), 0];
+
+      return h("figure", { className: "gd-revenue-chart" },
+        h("div", { className: "gd-revenue-main" },
+          h("div", { className: "gd-chart-y" }, ticks.map((t, i) => h("span", { key: i }, t))),
+          h("div", { className: "gd-line-plot", onMouseLeave: () => setActive(null) },
+            h("svg", { viewBox: `0 0 ${width} ${plotHeight}`, preserveAspectRatio: "none" },
+              h("defs", null,
+                h("linearGradient", { id: "gd-trend-fill", x1: "0", x2: "0", y1: "0", y2: "1" },
+                  h("stop", { offset: "0", stopColor: "var(--gd-coral)", stopOpacity: ".30" }),
+                  h("stop", { offset: "1", stopColor: "var(--gd-coral)", stopOpacity: ".025" })
+                )
+              ),
+              ticks.map((t, i) => h("line", { className: "gd-grid-line", key: i, x1: 0, x2: width, y1: (plotHeight * i) / 4, y2: (plotHeight * i) / 4 })),
+              h("g", { className: "gd-line-reveal" },
+                h("path", { d: `${lineA} L ${last} ${plotHeight} H 0 Z`, fill: "url(#gd-trend-fill)" }),
+                h("path", { className: "gd-chart-path", "data-tone": "coral", d: lineA }),
+                h("path", { className: "gd-chart-path", "data-tone": "teal", d: curve(pB) })
+              ),
+              active !== null && pA[active] && h("g", null,
+                h("line", { className: "gd-line-cursor", x1: pA[active][0], x2: pA[active][0], y1: 0, y2: plotHeight }),
+                h("circle", { cx: pA[active][0], cy: pA[active][1], r: 4, fill: "var(--gd-coral)" }),
+                h("circle", { cx: pB[active][0], cy: pB[active][1], r: 4, fill: "var(--gd-teal)" })
+              )
+            ),
+            h("div", { className: "gd-chart-zones" },
+              labels.map((lbl, idx) => h("button", {
+                type: "button",
+                key: lbl,
+                onMouseEnter: () => setActive(idx),
+                onClick: () => setActive(idx)
+              }))
+            ),
+            active !== null && h("div", {
+              className: "gd-line-tooltip",
+              style: { "--gd-tooltip-x": `${(active / Math.max(1, labels.length - 1)) * 100}%` }
+            },
+              h("strong", null, labels[active]),
+              h("span", null, "Naukri India ", h("b", null, seriesA[active])),
+              h("span", null, "NaukriGulf ", h("b", null, seriesB[active]))
+            )
+          )
+        ),
+        h("div", { className: "gd-chart-axis" }, labels.map(l => h("span", { key: l }, l)))
+      );
+    }
+
+    function PlatformRingChart({ mix, labels, total }) {
+      const [active, setActive] = useState(null);
+      const tones = ["coral", "teal", "ink"];
+      return h("div", { className: "gd-device" },
+        h("div", { className: "gd-device-ring" },
+          h("svg", { viewBox: "0 0 124 124" },
+            h("circle", { cx: 62, cy: 62, r: 47, fill: "none", stroke: "var(--gd-track)", strokeWidth: 14 }),
+            h("g", { transform: "rotate(-90 62 62)" },
+              mix.map((ratio, idx) =>
+                h("circle", {
+                  key: labels[idx],
+                  cx: 62, cy: 62, r: 47, pathLength: 100,
+                  fill: "none", strokeWidth: 14,
+                  "data-tone": tones[idx],
+                  className: "gd-device-segment",
+                  "data-muted": active !== null && idx !== active,
+                  strokeDasharray: `${Math.max(0, ratio - 0.8)} 100`,
+                  strokeDashoffset: -mix.slice(0, idx).reduce((s, v) => s + v, 0)
+                })
+              )
+            )
+          ),
+          h("div", { className: "gd-device-total" },
+            h("strong", null, active === null ? numFmt.format(total) : numFmt.format(Math.round((total * mix[active]) / 100))),
+            h("span", null, active === null ? "Total Applies" : labels[active])
+          )
+        ),
+        h("div", { className: "gd-device-list" },
+          mix.map((ratio, idx) =>
+            h("button", {
+              type: "button",
+              key: labels[idx],
+              "aria-pressed": active === idx,
+              onClick: () => setActive(active === idx ? null : idx)
+            },
+              h("span", null, h("i", { "data-tone": tones[idx] }), labels[idx]),
+              h("span", { className: "gd-mix-track" }, h("i", { className: "gd-fill", "data-tone": tones[idx], style: { width: `${ratio}%` } })),
+              h("strong", null, `${ratio}%`)
+            )
+          )
+        )
+      );
+    }
+
+    function Panel({ title, subtitle, action, className = "", children }) {
+      return h("section", { className: `gd-panel ${className}`, "data-gd-enter": true },
+        h("header", { className: "gd-panel-head" },
+          h("div", null, h("h2", null, title), subtitle && h("p", null, subtitle)),
+          action
+        ),
+        children
+      );
+    }
+
+    function Metric({ title, icon, value, change, detail, tone }) {
+      return h("article", { className: "gd-metric", "data-tone": tone, "data-gd-enter": true },
+        h("div", { className: "gd-metric-head" },
+          h("span", null, title),
+          h("span", { className: "gd-metric-icon" }, icon)
+        ),
+        h("strong", { className: "gd-metric-value" }, numFmt.format(value)),
+        h("div", { className: "gd-metric-caption" },
+          change && h("span", { className: "gd-delta", "data-attention": tone === "coral" },
+            h(ArrowUpRight, null), change
+          ),
+          h("span", null, detail || "synced live")
+        )
+      );
+    }
+
+    function StatusBadge({ status }) {
+      const s = String(status || "Application Sent");
+      const tone = /contacted|shortlist|email|interview/i.test(s)
+        ? "teal"
+        : /viewed|download/i.test(s)
+        ? "coral"
+        : "ink";
+      return h("span", { className: "gd-status", "data-state": tone }, h("i", null), s);
+    }
+
+    function Dock({ active, side = false, select }) {
+      const nav = useRef(null);
+      const marker = useRef(null);
+
+      useEffect(() => {
+        const container = nav.current;
+        const indicator = marker.current;
+        if (!container || !indicator) return;
+        const adjust = () => {
+          const current = container.querySelector('[aria-current="page"]');
+          if (!current) return;
+          indicator.style.width = `${current.offsetWidth}px`;
+          indicator.style.height = `${current.offsetHeight}px`;
+          indicator.style.transform = `translate(${current.offsetLeft}px, ${current.offsetTop}px)`;
+          indicator.dataset.ready = "true";
+        };
+        const observer = new ResizeObserver(adjust);
+        observer.observe(container);
+        container.querySelectorAll("a").forEach(link => observer.observe(link));
+        adjust();
+        return () => observer.disconnect();
+      }, [active]);
+
+      return h("nav", {
+        ref: nav,
+        className: side ? "gd-dock gd-dock-side" : "gd-dock gd-dock-bottom",
+        "aria-label": side ? "Workspace shortcuts" : "Workspace views"
+      },
+        h("span", { ref: marker, className: "gd-dock-indicator", "aria-hidden": "true" }),
+        views.map(({ id, label, short, icon: Icon }) =>
+          h("a", {
+            href: `#${id}`,
+            key: id,
+            "aria-label": label,
+            "aria-current": active === id ? "page" : undefined,
+            onClick: (e) => { e.preventDefault(); select(id); }
+          },
+            h(Icon, null),
+            h("span", { className: "gd-dock-text" }, label),
+            h("span", { className: "gd-dock-short" }, short),
+            side && h("span", { className: "gd-dock-tip" }, label)
+          )
+        )
+      );
+    }
+
+    function JobsActivityTable({ jobs, platform }) {
+      const [query, setQuery] = useState("");
+      const [statusFilter, setStatusFilter] = useState("All statuses");
+
+      const filtered = jobs.filter(item => {
+        if (platform !== "all" && item.platform !== platform) return false;
+        if (statusFilter === "Recruiter Action" && !/viewed|download|contact|shortlist/i.test(item.recruiterStatus)) return false;
+        if (statusFilter === "Application Sent" && /viewed|download|contact|shortlist/i.test(item.recruiterStatus)) return false;
+        if (query.trim()) {
+          const hay = `${item.title} ${item.company} ${item.location} ${item.date} ${item.recruiterStatus}`.toLowerCase();
+          if (!hay.includes(query.trim().toLowerCase())) return false;
+        }
+        return true;
+      });
+
+      return h(Panel, {
+        title: `Applied Jobs & Recruiter Status (${numFmt.format(filtered.length)})`,
+        subtitle: "Click any role to open the job listing directly on Naukri / NaukriGulf",
+        className: "gd-activity",
+        action: h("div", { className: "gd-table-tools" },
+          h("label", { className: "gd-search" },
+            h(Search, null),
+            h("input", {
+              type: "search",
+              placeholder: "Search role, company...",
+              value: query,
+              onChange: e => setQuery(e.target.value)
+            })
+          ),
+          h("label", { className: "gd-filter" },
+            h(Filter, null),
+            h("select", { value: statusFilter, onChange: e => setStatusFilter(e.target.value) },
+              ["All statuses", "Recruiter Action", "Application Sent"].map(s => h("option", { key: s }, s))
+            )
+          )
+        )
+      },
+        h("div", { className: "gd-table-scroll" },
+          h("table", null,
+            h("thead", null,
+              h("tr", null,
+                h("th", null, "Job Role"),
+                h("th", null, "Company"),
+                h("th", null, "Portal & Location"),
+                h("th", null, "Recruiter Status"),
+                h("th", null, "Date (IST)")
+              )
+            ),
+            h("tbody", null,
+              filtered.slice(0, 120).map(item =>
+                h("tr", { key: `${item.platform}-${item.id}-${item.order}` },
+                  h("td", null,
+                    h("a", {
+                      href: item.url,
+                      target: "_blank",
+                      rel: "noreferrer",
+                      style: { textDecoration: "underline", textUnderlineOffset: "3px" }
+                    }, item.title)
+                  ),
+                  h("td", null, item.company),
+                  h("td", null, `${item.platform === "india" ? "🇮🇳" : "🇦🇪"} ${item.location}`),
+                  h("td", null, h(StatusBadge, { status: item.recruiterStatus })),
+                  h("td", null, `${item.date} ${item.time || ""}`)
+                )
+              )
+            )
+          )
+        ),
+        filtered.length === 0 && h("p", { className: "gd-empty" }, "No matching job applications.")
+      );
+    }
+
+    function GlassyDashboardApp() {
+      const [view, setView] = useState("command");
+      const [platform, setPlatform] = useState("all"); // 'all' | 'india' | 'gulf'
+      const [theme, setTheme] = useState("dark");
+      const [modal, setModal] = useState(null);
+      const [searchQuery, setSearchQuery] = useState("");
+      const [allJobs, setAllJobs] = useState([]);
+      const [indiaAct, setIndiaAct] = useState(null);
+      const [gulfAct, setGulfAct] = useState(null);
+      const contentRef = useRef(null);
+
+      async function fetchSafe(url, fallback) {
+        try {
+          const r = await fetch(`${url}?t=${Date.now()}`);
+          if (!r.ok) return fallback;
+          return await r.json();
+        } catch {
+          return fallback;
+        }
+      }
+
+      useEffect(() => {
+        (async () => {
+          const [indRaw, glfRaw, indA, glfA] = await Promise.all([
+            fetchSafe("./applied-jobs.json", []),
+            fetchSafe("./applied-jobs-gulf.json", []),
+            fetchSafe("./recruiter-activity-india.json", null),
+            fetchSafe("./recruiter-activity-gulf.json", null),
+          ]);
+          setIndiaAct(indA);
+          setGulfAct(glfA);
+
+          const indMap = new Map();
+          (indA?.recentApplicationStatuses || []).forEach(s => {
+            if (s.jobId) indMap.set(String(s.jobId), s);
+          });
+
+          const glfMap = new Map();
+          (glfA?.recentApplicationStatuses || []).forEach(s => {
+            glfMap.set(`${(s.title || "").toLowerCase()}__${(s.company || "").toLowerCase()}`, s);
+          });
+
+          const indJobs = (Array.isArray(indRaw) ? indRaw : [])
+            .filter(r => typeof r === "object" && r.status === "applied")
+            .map((r, i) => {
+              const st = indMap.get(String(r.id));
+              return {
+                id: String(r.id || i),
+                platform: "india",
+                date: r.date || "2026-11-25",
+                time: r.time || "",
+                title: r.title || "Software Engineer",
+                company: r.company || "Confidential",
+                location: r.location || st?.location || "India",
+                url: r.url || `https://www.naukri.com/job-listings-${r.id}`,
+                recruiterStatus: r.recruiterStatus || st?.recruiterStatus || "Application Sent",
+                order: i
+              };
+            });
+
+          const glfJobs = (Array.isArray(glfRaw) ? glfRaw : [])
+            .filter(r => typeof r === "object" && r.status === "applied")
+            .map((r, i) => {
+              const st = glfMap.get(`${(r.title || "").toLowerCase()}__${(r.company || "").toLowerCase()}`);
+              return {
+                id: String(r.id || i),
+                platform: "gulf",
+                date: r.date || "2026-11-25",
+                time: r.time || "",
+                title: r.title || "Software Engineer",
+                company: r.company || "Confidential",
+                location: r.location || st?.location || "Dubai / UAE",
+                url: r.url || "https://www.naukrigulf.com/",
+                recruiterStatus: r.recruiterStatus || st?.recruiterStatus || "Application Submitted",
+                order: i
+              };
+            });
+
+          const combined = [...indJobs, ...glfJobs].sort((a, b) => {
+            if (a.date !== b.date) return b.date.localeCompare(a.date);
+            return b.order - a.order;
+          });
+          setAllJobs(combined);
+        })();
+      }, []);
+
+      useEffect(() => {
+        if (window.gsap && contentRef.current) {
+          window.gsap.fromTo(
+            contentRef.current.querySelectorAll("[data-gd-enter]"),
+            { y: 16, opacity: 0 },
+            { y: 0, opacity: 1, stagger: 0.04, duration: 0.42, ease: "power3.out", clearProps: "transform,opacity" }
+          );
+        }
+      }, [view, platform, allJobs.length]);
+
+      const today = getTodayIST();
+      const platformJobs = allJobs.filter(j => platform === "all" ? true : j.platform === platform);
+      const indiaJobs = allJobs.filter(j => j.platform === "india");
+      const gulfJobs = allJobs.filter(j => j.platform === "gulf");
+
+      const indiaToday = indiaJobs.filter(j => j.date === today).length;
+      const gulfToday = gulfJobs.filter(j => j.date === today).length;
+      const todayApplies = platform === "india" ? indiaToday : platform === "gulf" ? gulfToday : indiaToday + gulfToday;
+      const dailyQuota = platform === "all" ? 50 : 25;
+
+      const indM = indiaAct?.metrics || {};
+      const glfM = gulfAct?.metrics || {};
+
+      const searchAppearances = platform === "india"
+        ? (indM.searchAppearances || 0)
+        : platform === "gulf"
+        ? (glfM.searchAppearances || 0)
+        : (indM.searchAppearances || 0) + (glfM.searchAppearances || 0);
+
+      const profileViews = platform === "india"
+        ? (indM.profileViews || 0)
+        : platform === "gulf"
+        ? (glfM.profileViews || 0) + (glfM.profileDownloads || 0)
+        : (indM.profileViews || 0) + (glfM.profileViews || 0) + (glfM.profileDownloads || 0);
+
+      const gulfViewedCount = (gulfAct?.recentApplicationStatuses || []).filter(s => /viewed|download|contact|shortlist/i.test(s.recruiterStatus)).length;
+      const recruiterActionsCount = platform === "india"
+        ? (indM.recruiterActionsOnApplies || 0)
+        : platform === "gulf"
+        ? gulfViewedCount
+        : (indM.recruiterActionsOnApplies || 0) + gulfViewedCount;
+
+      // Build last 7 active days series
+      const dateCounts = new Map();
+      allJobs.forEach(j => {
+        if (!dateCounts.has(j.date)) dateCounts.set(j.date, { india: 0, gulf: 0 });
+        const d = dateCounts.get(j.date);
+        if (j.platform === "india") d.india++;
+        else d.gulf++;
+      });
+      const last7Dates = [...dateCounts.keys()].sort().slice(-7);
+      const stackItems = (last7Dates.length ? last7Dates : [today]).map(d => {
+        const entry = dateCounts.get(d) || { india: 0, gulf: 0 };
+        return {
+          label: d.slice(5),
+          lower: platform === "gulf" ? 0 : entry.india,
+          upper: platform === "india" ? 0 : entry.gulf,
+        };
+      });
+
+      // Build Recruiter Pipeline items for Operations Kanban view & notifications
+      const pipelineItems = [];
+      if (platform !== "gulf") {
+        (indiaAct?.recentApplicationStatuses || []).forEach((s, i) => {
+          const st = s.recruiterStatus || "Application Sent";
+          const lane = /contacted|shortlist|email/i.test(st)
+            ? "Contacted / Shortlisted"
+            : /viewed|download/i.test(st)
+            ? "Resume / Summary Viewed"
+            : "Application Sent";
+          pipelineItems.push({
+            id: `IND-${s.jobId || i}`,
+            name: s.title,
+            description: `${s.company} · ${st}`,
+            tool: "Naukri India 🇮🇳",
+            owner: s.location || "India",
+            status: lane,
+            timestamp: (s.modifiedDate || today).slice(0, 10)
+          });
+        });
+      }
+      if (platform !== "india") {
+        (gulfAct?.recentApplicationStatuses || []).forEach((s, i) => {
+          const st = s.recruiterStatus || "Application Submitted";
+          const lane = /contacted|shortlist|email/i.test(st)
+            ? "Contacted / Shortlisted"
+            : /viewed|download/i.test(st)
+            ? "Resume / Summary Viewed"
+            : "Application Sent";
+          pipelineItems.push({
+            id: `GLF-${i + 1}`,
+            name: s.title,
+            description: `${s.company} · ${st}`,
+            tool: "NaukriGulf 🇦🇪",
+            owner: s.location || "UAE / Gulf",
+            status: lane,
+            timestamp: "Synced Today"
+          });
+        });
+      }
+
+      const currentView = views.find(v => v.id === view) || views[0];
+      const exportCsv = () => {
+        saveCsv(`naukri-applications-${platform}-${today}.csv`, [
+          ["ID", "Portal", "Date", "Time", "Role", "Company", "Location", "Recruiter Status", "URL"],
+          ...platformJobs.map(j => [j.id, j.platform, j.date, j.time, j.title, j.company, j.location, j.recruiterStatus, j.url])
+        ]);
+      };
+
+      const indPct = allJobs.length ? Math.round((indiaJobs.length / allJobs.length) * 100) : 50;
+      const glfPct = Math.max(0, 100 - indPct);
+
+      return h("div", { className: "gd-app", "data-theme": theme, style: { "--gd-panel-frost": "14px" } },
+        h("img", { className: "gd-background", src: studioPhoto, alt: "", "aria-hidden": "true" }),
+        h("div", { className: "gd-surround" },
+          // Top Bar
+          h("header", { className: "gd-top" },
+            h("div", { className: "gd-brand" },
+              h("span", { className: "gd-logo" },
+                h("svg", { viewBox: "0 0 28 28", fill: "none" },
+                  h("path", { d: "m5 22 7.4-16h3.2L23 22h-4l-5-11.4L9 22H5Z", fill: "currentColor" }),
+                  h("path", { d: "M10 18h8l1.4 3h-10.8l1.4-3Z", fill: "currentColor" })
+                )
+              ),
+              h("div", null,
+                h("strong", null, "NAUKRI COMMAND"),
+                h("small", null, `Safwan Khan · ${ indiaAct?.lastSyncedAt || gulfAct?.lastSyncedAt || "Live Sync" }`)
+              )
+            ),
+            h("button", {
+              type: "button",
+              className: "gd-ask",
+              onClick: () => setModal("search")
+            },
+              h("span", { className: "gd-orb" }),
+              h("span", { className: "gd-prompt", key: view }, currentView.prompt),
+              h(Search, { className: "gd-ask-search" })
+            ),
+            h("div", { className: "gd-top-actions" },
+              h("button", {
+                type: "button",
+                className: "gd-icon-button",
+                title: "Toggle Light / Dark Glass Theme",
+                onClick: () => setTheme(theme === "light" ? "dark" : "light")
+              }, theme === "light" ? h(Moon, null) : h(Sun, null)),
+              h("button", {
+                type: "button",
+                className: "gd-icon-button gd-notices",
+                title: "Recruiter Notifications",
+                onClick: () => setModal("notifications")
+              }, h(Bell, null), h("i", null))
+            )
+          ),
+
+          // Main Stage
+          h("div", { className: "gd-stage-wrap" },
+            h(Dock, { active: view, side: true, select: setView }),
+            h("main", { className: "gd-stage" },
+              h("div", { className: "gd-stage-scroll" },
+                h("header", { className: "gd-view-head" },
+                  h("div", null,
+                    h("h1", null, currentView.label),
+                    h("p", null, currentView.description)
+                  ),
+                  h("div", { className: "gd-view-actions" },
+                    // Platform Switcher (All / Naukri India / NaukriGulf)
+                    h("div", { className: "gd-period", role: "group", "aria-label": "Select Portal" },
+                      platforms.map(p =>
+                        h("button", {
+                          type: "button",
+                          key: p.id,
+                          "aria-pressed": platform === p.id,
+                          onClick: () => setPlatform(p.id)
+                        }, p.label)
+                      )
+                    ),
+                    h("button", {
+                      type: "button",
+                      className: "gd-primary gd-export",
+                      onClick: exportCsv
+                    }, h(ArrowDownToLine, null), "Export CSV")
+                  )
+                ),
+
+                h("div", { className: "gd-content", ref: contentRef, key: `${view}-${platform}` },
+                  // VIEW 1: COMMAND CENTER
+                  view === "command" && h("div", { className: "gd-command-grid" },
+                    h(Panel, {
+                      title: "Total Automated Applications",
+                      className: "gd-balance",
+                      action: h("span", { className: "gd-unit" }, platform.toUpperCase())
+                    },
+                      h("div", { className: "gd-balance-number" }, numFmt.format(platformJobs.length)),
+                      h("div", { className: "gd-balance-change" },
+                        h("span", { className: "gd-delta" }, h(ArrowUpRight, null), `+${todayApplies} today`),
+                        h("span", null, `across active developer searches (${today})`)
+                      ),
+                      h("div", { className: "gd-balance-actions" },
+                        h("button", { type: "button", className: "gd-primary", onClick: () => setView("operations") },
+                          "Recruiter Pipeline ", h(ArrowUpRight, null)
+                        ),
+                        h("button", { type: "button", className: "gd-secondary", onClick: () => setView("trends") },
+                          "View Trends ", h(ArrowRight, null)
+                        )
+                      ),
+                      h("div", { className: "gd-streams" },
+                        h("div", null, h("span", null, "Naukri India 🇮🇳"), h("strong", null, numFmt.format(indiaJobs.length))),
+                        h("div", null, h("span", null, "NaukriGulf 🇦🇪"), h("strong", null, numFmt.format(gulfJobs.length))),
+                        h("div", null, h("span", null, "Today's Quota"), h("strong", null, `${todayApplies} / ${dailyQuota}`))
+                      )
+                    ),
+
+                    h("div", { className: "gd-summary" },
+                      h(Metric, { title: "Recruiter Actions", icon: h(Zap, null), value: recruiterActionsCount, change: "Live", detail: "CV views & invites", tone: "teal" }),
+                      h(Metric, { title: "Search Appearances", icon: h(Users, null), value: searchAppearances, change: "+47%", detail: "last 90 days" }),
+                      h(Metric, { title: "Profile Views & Downloads", icon: h(Eye, null), value: profileViews, change: "Active", detail: "direct CV opens", tone: "coral" }),
+                      h(Metric, { title: "Applied Today (IST)", icon: h(ListChecks, null), value: todayApplies, detail: `India: ${indiaToday}/25 · Gulf: ${gulfToday}/25` })
+                    ),
+
+                    h(Panel, {
+                      title: "Daily Application Activity",
+                      subtitle: "Naukri India vs NaukriGulf · last 7 active days",
+                      className: "gd-command-chart"
+                    },
+                      h(StackChart, {
+                        items: stackItems,
+                        labels: ["Naukri India", "NaukriGulf"],
+                        tones: ["ink", "teal"],
+                        title: "Daily applications by platform"
+                      })
+                    ),
+
+                    h("div", { className: "gd-command-side" },
+                      h(Panel, { title: "Today's Auto-Apply Capacity", className: "gd-capacity" },
+                        h("div", { className: "gd-capacity-track" },
+                          h("span", { className: "gd-fill", style: { width: `${Math.min(100, Math.round((todayApplies / dailyQuota) * 100))}%` } })
+                        ),
+                        h("div", { className: "gd-capacity-label" },
+                          h("span", null, h("strong", null, todayApplies), " applied today"),
+                          h("span", null, `${dailyQuota} daily cap (25 India + 25 Gulf)`)
+                        )
+                      ),
+                      h(Panel, { title: "Recruiter Updates", subtitle: "Employers who viewed or contacted you", className: "gd-approvals" },
+                        h("div", { className: "gd-approval-content" },
+                          h("span", { className: "gd-list-icon" }, h(ShieldCheck, null)),
+                          h("div", null,
+                            h("strong", null, `${pipelineItems.filter(x => x.status !== "Application Sent").length} Active Recruiter Responses`),
+                            h("small", null, "Emails, CV downloads & application views")
+                          ),
+                          h("button", {
+                            type: "button",
+                            className: "gd-icon-button",
+                            onClick: () => setView("operations")
+                          }, h(ArrowUpRight, null))
+                        )
+                      )
+                    ),
+
+                    h(JobsActivityTable, { jobs: allJobs, platform })
+                  ),
+
+                  // VIEW 2 & 3: TRENDS & METRICS
+                  (view === "trends" || view === "metrics") && h("div", { className: "gd-analytics" },
+                    h("div", { className: "gd-metric-grid" },
+                      h(Metric, { title: "Total Applications", icon: h(BriefcaseBusiness, null), value: platformJobs.length, change: `+${todayApplies} today`, tone: "teal" }),
+                      h(Metric, { title: "Search Appearances", icon: h(Users, null), value: searchAppearances, change: "+47%", detail: "recruiter searches" }),
+                      h(Metric, { title: "Profile Views", icon: h(Eye, null), value: profileViews, detail: "direct profile opens" }),
+                      h(Metric, { title: "Recruiter Actions", icon: h(Zap, null), value: recruiterActionsCount, detail: "on submitted applies" })
+                    ),
+                    h("div", { className: "gd-analytics-grid" },
+                      h(Panel, {
+                        title: view === "trends" ? "Naukri India vs NaukriGulf Application Velocity" : "Daily Applications Breakdown",
+                        subtitle: "Comparison across the last 7 active application days",
+                        action: h(Legend, { entries: [{ label: "Naukri India", tone: "coral" }, { label: "NaukriGulf", tone: "teal" }] })
+                      },
+                        view === "trends"
+                          ? h(TrendLineChart, {
+                              labels: stackItems.map(s => s.label),
+                              seriesA: stackItems.map(s => s.lower),
+                              seriesB: stackItems.map(s => s.upper)
+                            })
+                          : h(StackChart, {
+                              items: stackItems,
+                              labels: ["Naukri India", "NaukriGulf"],
+                              tones: ["coral", "teal"],
+                              title: "Daily applications"
+                            })
+                      ),
+                      h(Panel, { title: "Applications by Portal", className: "gd-device-panel" },
+                        h(PlatformRingChart, {
+                          mix: [indPct, glfPct],
+                          labels: ["Naukri India", "NaukriGulf"],
+                          total: allJobs.length
+                        })
+                      )
+                    ),
+                    h(JobsActivityTable, { jobs: allJobs, platform })
+                  ),
+
+                  // VIEW 4: RECRUITER PIPELINE (OPERATIONS KANBAN)
+                  view === "operations" && h("div", { className: "gd-analytics" },
+                    h("div", { className: "gd-metric-grid" },
+                      h(Metric, { title: "Recruiter Actions", icon: h(Zap, null), value: recruiterActionsCount, detail: "last 90 days", tone: "teal" }),
+                      h(Metric, { title: "Tracked Status Cards", icon: h(ListChecks, null), value: pipelineItems.length, detail: "latest synced updates" }),
+                      h(Metric, { title: "Profile Views & Downloads", icon: h(Eye, null), value: profileViews, detail: "India + Gulf combined" }),
+                      h(Metric, { title: "Connected Portals", icon: h(ShieldCheck, null), value: 2, detail: "Naukri India & NaukriGulf" })
+                    ),
+                    h(Panel, {
+                      title: "Recruiter Action Pipeline",
+                      subtitle: "Live status progression from Application Sent → Viewed → Contacted by Recruiter",
+                      className: "gd-board"
+                    },
+                      h("div", { className: "gd-lanes", style: { gridTemplateColumns: "repeat(3, minmax(0, 1fr))" } },
+                        [
+                          { lane: "Contacted / Shortlisted", tone: "teal", icon: h(Zap, null) },
+                          { lane: "Resume / Summary Viewed", tone: "coral", icon: h(Eye, null) },
+                          { lane: "Application Sent", tone: "ochre", icon: h(Clock3, null) },
+                        ].map(({ lane, tone, icon }) => {
+                          const items = pipelineItems.filter(x => x.status === lane);
+                          return h("section", { className: "gd-lane", key: lane },
+                            h("header", null,
+                              h("i", { "data-tone": tone }, icon),
+                              h("h3", null, lane),
+                              h("span", null, items.length)
+                            ),
+                            items.map(item =>
+                              h("button", {
+                                className: "gd-work-item",
+                                type: "button",
+                                key: item.id,
+                                onClick: () => setModal({ item })
+                              },
+                                h("span", { className: "gd-work-titlerow" },
+                                  h("strong", null, item.name),
+                                  h(Ellipsis, null)
+                                ),
+                                h("span", { className: "gd-work-detail" }, item.description),
+                                h("span", { className: "gd-work-meta" },
+                                  h("span", null, item.tool),
+                                  h("span", null, item.owner)
+                                )
+                              )
+                            ),
+                            items.length === 0 && h("p", { className: "gd-empty" }, "No items in this stage yet.")
+                          );
+                        })
+                      )
+                    )
+                  )
+                )
+              )
+            ),
+            h(Dock, { active: view, select: setView })
+          ),
+
+          h("footer", { className: "gd-footer" },
+            h("span", null, `Hourly Refresh + Real-Time Auto-Apply · India (${indiaJobs.length}) & Gulf (${gulfJobs.length})`),
+            h("a", { href: "https://github.com/Saf1khan/naukri_update", target: "_blank", rel: "noreferrer" },
+              "GitHub Actions Live Sync ", h(ArrowUpRight, null)
+            )
+          )
+        ),
+
+        // Quick Search Modal
+        modal === "search" && h("dialog", {
+          className: "gd-dialog",
+          open: true,
+          onClick: e => { if (e.target === e.currentTarget) setModal(null); }
+        },
+          h("section", { className: "gd-dialog-inner" },
+            h("header", null,
+              h("h2", null, "Quick Navigation & Search"),
+              h("button", { type: "button", className: "gd-icon-button", onClick: () => setModal(null) }, h(X, null))
+            ),
+            h("label", { className: "gd-search gd-command-input" },
+              h(Search, null),
+              h("input", {
+                type: "search",
+                placeholder: "Jump to view or filter portal...",
+                value: searchQuery,
+                onChange: e => setSearchQuery(e.target.value),
+                autoFocus: true
+              })
+            ),
+            h("div", { className: "gd-quick-list" },
+              views.filter(v => `${v.label} ${v.description}`.toLowerCase().includes(searchQuery.toLowerCase())).map(v =>
+                h("button", {
+                  key: v.id,
+                  type: "button",
+                  onClick: () => { setView(v.id); setModal(null); }
+                },
+                  h(v.icon, null),
+                  h("div", null, h("strong", null, v.label), h("small", null, v.description)),
+                  h(ChevronRight, null)
+                )
+              )
+            )
+          )
+        ),
+
+        // Notifications Modal
+        modal === "notifications" && h("dialog", {
+          className: "gd-dialog",
+          open: true
+        },
+          h("section", { className: "gd-dialog-inner" },
+            h("header", null,
+              h("h2", null, "Latest Recruiter Actions"),
+              h("button", { type: "button", className: "gd-icon-button", onClick: () => setModal(null) }, h(X, null))
+            ),
+            h("div", { className: "gd-quick-list" },
+              pipelineItems.filter(x => x.status !== "Application Sent").map(item =>
+                h("button", {
+                  type: "button",
+                  key: item.id,
+                  onClick: () => { setView("operations"); setModal({ item }); }
+                },
+                  h(Bell, null),
+                  h("div", null, h("strong", null, item.name), h("small", null, `${item.description} (${item.tool})`)),
+                  h(ArrowRight, null)
+                )
+              ),
+              pipelineItems.filter(x => x.status !== "Application Sent").length === 0 &&
+                h("p", { className: "gd-empty" }, "No new recruiter actions yet.")
+            )
+          )
+        ),
+
+        // Pipeline Item Detail Modal
+        modal && typeof modal === "object" && modal.item && h("dialog", {
+          className: "gd-dialog",
+          open: true
+        },
+          h("section", { className: "gd-dialog-inner" },
+            h("header", null,
+              h("h2", null, modal.item.name),
+              h("button", { type: "button", className: "gd-icon-button", onClick: () => setModal(null) }, h(X, null))
+            ),
+            h(StatusBadge, { status: modal.item.status }),
+            h("p", { className: "gd-work-dialog-description" }, modal.item.description),
+            h("dl", { className: "gd-work-facts" },
+              h("div", null, h("dt", null, "Portal"), h("dd", null, modal.item.tool)),
+              h("div", null, h("dt", null, "Location"), h("dd", null, modal.item.owner)),
+              h("div", null, h("dt", null, "Reference"), h("dd", null, modal.item.id))
+            ),
+            h("button", {
+              type: "button",
+              className: "gd-primary",
+              onClick: () => setModal(null)
+            }, "Done ", h(Command, null))
+          )
+        )
+      );
+    }
+
+    createRoot(document.getElementById("root")).render(h(GlassyDashboardApp));
+  </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+  "platform": "naukrigulf",
+  "lastSyncedAt": "2026-11-25 3:05:30 pm IST",
+  "metrics": {
+    "searchAppearances": 1,
+    "profileViews": 1,
+    "profileDownloads": 1,
+    "contactedByEmail": 0
+  },
+  "recentApplicationStatuses": [
+    {
+      "title": "Full stack Developer",
+      "company": "Knot Host Fze",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Software Engineer - Java, React/NodeJS",
+      "company": "Kiash Solution",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Software Engineer - API",
+      "company": "Client of Brunel",
+      "location": "Doha - Qatar",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Full Stack Developer",
+      "company": "Van Oord Middle East",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Summary Viewed 2 days ago"
+    },
+    {
+      "title": "React / React Native Developer",
+      "company": "Mintlayer",
+      "location": "Abu Dhabi - United Arab Emirates",
+      "recruiterStatus": "Application Submitted 1 week ago"
+    }
+  ]
+}

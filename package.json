@@ -6,7 +6,9 @@
   "scripts": {
     "refresh": "node naukri-cookie-refresh.js",
     "login": "node naukri-profile-refresh.js login",
-    "apply": "node naukri-auto-apply.js"
+    "apply": "node naukri-auto-apply.js",
+    "refresh:gulf": "node naukrigulf-profile-refresh.js",
+    "apply:gulf": "node naukrigulf-auto-apply.js"
   },
   "author": "Ankit Baghel",
   "license": "ISC",

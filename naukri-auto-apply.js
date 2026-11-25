@@ -80,9 +80,10 @@ const CURRENT_CTC   = process.env.CURRENT_CTC   || '3';
 const EXPECTED_CTC  = process.env.EXPECTED_CTC  || '6';
 const CURRENT_LOC   = process.env.LOCATION      || 'Manipal, Udupi';
 
-const APPLIED_FILE = path.join(__dirname, 'applied-jobs.json');
-const LOG_FILE     = path.join(__dirname, 'naukri-apply.log');
-const ERROR_SHOT   = path.join(__dirname, 'naukri-apply-error.png');
+const APPLIED_FILE  = path.join(__dirname, 'applied-jobs.json');
+const ACTIVITY_FILE = path.join(__dirname, 'recruiter-activity-india.json');
+const LOG_FILE      = path.join(__dirname, 'naukri-apply.log');
+const ERROR_SHOT    = path.join(__dirname, 'naukri-apply-error.png');
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 const getISTDate = () => new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' }); // "YYYY-MM-DD"
@@ -528,7 +529,9 @@ async function collectJobLinks(page, expFilterMax) {
                 time: getISTTime(),
                 title: job.title,
                 company: job.company,
+                url: job.href,
                 status: 'applied',
+                recruiterStatus: 'Application Sent',
               };
               rawRecords.push(record);
               saveAppliedData(rawRecords);
@@ -563,6 +566,71 @@ async function collectJobLinks(page, expFilterMax) {
         }
       }
     }
+  }
+
+  // ── Sync Recruiter Activity & Application Status from Naukri India ──────────
+  try {
+    log('\n📊 Syncing Naukri India Application Status & Recruiter Actions...');
+    let dashData = null;
+    let historyData = null;
+
+    const onResponse = async (res) => {
+      const u = res.url();
+      if (u.includes('resman-aggregator-services') && u.includes('/dashboard') && res.status() === 200) {
+        try { dashData = await res.json(); } catch {}
+      }
+      if (u.includes('whtma-services') && u.includes('/applyapi/v5/history') && res.status() === 200) {
+        try { historyData = await res.json(); } catch {}
+      }
+    };
+
+    page.on('response', onResponse);
+    await page.goto('https://www.naukri.com/myapply/historypage', { waitUntil: 'domcontentloaded', timeout: 45000 }).catch(() => {});
+    await sleep(5000);
+    page.off('response', onResponse);
+
+    const db = dashData?.dashBoard || {};
+    const applyDetails = historyData?.applyDetails || [];
+
+    const recentStatuses = applyDetails.map(item => {
+      const statuses = Array.isArray(item.status) ? item.status : [];
+      const latestStatus = statuses[statuses.length - 1]?.statusValue || 'Application Sent';
+      return {
+        jobId: String(item.jobId || ''),
+        title: item.jobTitle || '',
+        company: item.company || '',
+        location: item.location || '',
+        recruiterStatus: latestStatus,
+        modifiedDate: statuses[statuses.length - 1]?.modifiedDate || item.jobActivityDate || '',
+      };
+    });
+
+    // Update matching records in rawRecords with live recruiterStatus & location
+    for (const st of recentStatuses) {
+      const match = rawRecords.find(r => typeof r === 'object' && r.status === 'applied' && String(r.id) === st.jobId);
+      if (match) {
+        match.recruiterStatus = st.recruiterStatus;
+        if (!match.location && st.location) match.location = st.location;
+      }
+    }
+
+    const summary = {
+      platform: 'naukri_india',
+      lastSyncedAt: `${getISTDate()} ${getISTTime()} IST`,
+      metrics: {
+        searchAppearances: Number(db.totalSearchAppearancesCount || 0),
+        profileViews: Number(db.profileViewCount || 0),
+        recruiterActionsOnApplies: Number(historyData?.recruiterActivityOnApplication || 0),
+        totalApplies90Days: Number(historyData?.matchingRowsCount || 0),
+      },
+      recentApplicationStatuses: recentStatuses,
+    };
+
+    fs.writeFileSync(ACTIVITY_FILE, JSON.stringify(summary, null, 2));
+    saveAppliedData(rawRecords);
+    log(`📊 Synced ${recentStatuses.length} India application statuses | Search Appearances: ${summary.metrics.searchAppearances}, Profile Views: ${summary.metrics.profileViews}, Recruiter Actions: ${summary.metrics.recruiterActionsOnApplies}`);
+  } catch (err) {
+    log(`WARN: Could not sync Naukri India recruiter activity: ${err.message.split('\n')[0]}`);
   }
 
   await browser.close();
