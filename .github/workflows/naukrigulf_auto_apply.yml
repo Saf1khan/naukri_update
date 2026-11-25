@@ -10,16 +10,16 @@ name: Daily NaukriGulf Auto-Apply (Hourly Real-Time Mode)
 
 on:
   schedule:
-    # 8:47 AM Dubai (7:47 AM Riyadh / 10:17 AM IST) = 4:47 AM UTC — Morning Gulf office login & first job posts
-    - cron: '47 4 * * 0-5'
-    # 10:17 AM Dubai (9:17 AM Riyadh / 11:47 AM IST) = 6:17 AM UTC — Peak morning recruiter shortlisting window
-    - cron: '17 6 * * 0-5'
-    # 11:47 AM Dubai (10:47 AM Riyadh / 1:17 PM IST) = 7:47 AM UTC — Pre-prayer / midday new job postings
-    - cron: '47 7 * * 0-5'
-    # 2:17 PM Dubai (1:17 PM Riyadh / 3:47 PM IST)   = 10:17 AM UTC — Post-lunch Gulf hiring manager review window
-    - cron: '17 10 * * 0-5'
-    # 4:17 PM Dubai (3:17 PM Riyadh / 5:47 PM IST)   = 12:17 PM UTC — Late afternoon Gulf wrap-up postings
-    - cron: '17 12 * * 0-5'
+    # 9:07 AM Dubai (8:07 AM Riyadh / 10:37 AM IST) = 5:07 AM UTC — Morning Gulf office login & first job posts
+    - cron: '7 5 * * 0-5'
+    # 10:37 AM Dubai (9:37 AM Riyadh / 12:07 PM IST) = 6:37 AM UTC — Peak morning recruiter shortlisting window
+    - cron: '37 6 * * 0-5'
+    # 12:07 PM Dubai (11:07 AM Riyadh / 1:37 PM IST) = 8:07 AM UTC — Pre-prayer / midday new job postings
+    - cron: '7 8 * * 0-5'
+    # 2:37 PM Dubai (1:37 PM Riyadh / 4:07 PM IST)   = 10:37 AM UTC — Post-lunch Gulf hiring manager review window
+    - cron: '37 10 * * 0-5'
+    # 4:37 PM Dubai (3:37 PM Riyadh / 6:07 PM IST)   = 12:37 PM UTC — Late afternoon Gulf wrap-up postings
+    - cron: '37 12 * * 0-5'
   workflow_dispatch:
 
 jobs:
