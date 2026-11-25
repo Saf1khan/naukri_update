@@ -1,92 +1,92 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-25 8:39:05 pm IST",
+  "lastSyncedAt": "2026-11-25 10:53:46 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
-    "recruiterActionsOnApplies": 301,
-    "totalApplies90Days": 1953
+    "recruiterActionsOnApplies": 302,
+    "totalApplies90Days": 1956
   },
   "recentApplicationStatuses": [
     {
-      "jobId": "051126935330",
-      "title": "JAVA+NodeJS+Angular Developer",
-      "company": "Motorola Solutions Kodiak Networks India Private Limited",
+      "jobId": "121224501334",
+      "title": "React JS Developer",
+      "company": "Programming.com",
+      "location": "Bengaluru",
+      "recruiterStatus": "Applied",
+      "modifiedDate": "2026-11-25 22:53:37"
+    },
+    {
+      "jobId": "231126914450",
+      "title": "Node JS Developer",
+      "company": "Shashwath Solution",
       "location": "Bengaluru",
       "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:38:56"
+      "modifiedDate": "2026-11-25 22:52:45"
     },
     {
-      "jobId": "240826008685",
-      "title": "Dot Net Fullstack Developer",
-      "company": "BDO India",
-      "location": "Mumbai",
+      "jobId": "121126918941",
+      "title": "React.js Developer",
+      "company": "Twixor",
+      "location": "Bengaluru",
       "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:34:56"
+      "modifiedDate": "2026-11-25 22:52:26"
     },
     {
-      "jobId": "251126034493",
-      "title": "IDMC Developer",
-      "company": "Datamatics",
-      "location": "Hyderabad, Bengaluru, Mumbai (All Areas)",
+      "jobId": "251126035673",
+      "title": "Engineer",
+      "company": "Jindal Infrastructures",
+      "location": "Surat",
       "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:34:32"
+      "modifiedDate": "2026-11-25 22:51:03"
+    },
+    {
+      "jobId": "251126035833",
+      "title": "Java Full Stack Developer",
+      "company": "Newmark CRE Services",
+      "location": "Hyderabad",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 22:48:29"
     },
     {
       "jobId": "251126034385",
       "title": "Senior Software Development Engineer",
       "company": "Teknuova",
       "location": "Mumbai (All Areas)",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:33:15"
-    },
-    {
-      "jobId": "250826008437",
-      "title": "Communication Developer",
-      "company": "Sage Publications India Pvt Ltd",
-      "location": "Dehradun",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:33:05"
-    },
-    {
-      "jobId": "251126033918",
-      "title": "Validation Engineer",
-      "company": "Talentstream",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:32:05"
-    },
-    {
-      "jobId": "251126035053",
-      "title": "Ai Ml Engineer",
-      "company": "Soc Software",
-      "location": "Hyderabad, Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 20:31:19"
-    },
-    {
-      "jobId": "111126034885",
-      "title": "Private Equity Operations Strategist",
-      "company": "Glynac",
-      "location": "United States (USA)",
       "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-11 23:57:31"
+      "modifiedDate": "2026-11-25 20:53:33"
     },
     {
-      "jobId": "191126035869",
-      "title": "Back End Engineer",
-      "company": "Glynac",
-      "location": "United States (USA)",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-20 00:46:00"
+      "jobId": "111126034225",
+      "title": "Seo Manager",
+      "company": "Synmac Consultants Pvt. Ltd.",
+      "location": "Bengaluru, Chennai",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-11 22:38:16"
     },
     {
-      "jobId": "251126032685",
-      "title": "Php Developer",
-      "company": "Flywings Hr Services",
-      "location": "Pune",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 18:41:39"
+      "jobId": "111126034251",
+      "title": "Seo Associate",
+      "company": "Synmac Consultants Pvt. Ltd.",
+      "location": "Bengaluru, Chennai",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-11 22:37:52"
+    },
+    {
+      "jobId": "121126026543",
+      "title": "Job Role For SEO & Digital Marketing",
+      "company": "Synmac Consultants Pvt. Ltd.",
+      "location": "Bengaluru, Chennai",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-12 16:59:23"
+    },
+    {
+      "jobId": "171126026982",
+      "title": "SEO Executive",
+      "company": "Synmac Consultants Pvt. Ltd.",
+      "location": "Bengaluru, Chennai",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-17 17:32:25"
     }
   ]
 }

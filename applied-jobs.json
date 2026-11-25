@@ -8635,7 +8635,9 @@
     "time": "10:37:55 pm",
     "title": "Seo Associate",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "041125032968",
@@ -8651,7 +8653,9 @@
     "time": "10:38:19 pm",
     "title": "Seo Manager",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "131026048581",
@@ -8717,7 +8721,9 @@
     "time": "4:59:27 pm",
     "title": "Job Role For SEO & Digital Marketing",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "121126025118",
@@ -9389,7 +9395,9 @@
     "time": "5:32:29 pm",
     "title": "SEO Executive",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "171126926752",
@@ -10787,7 +10795,7 @@
     "company": "Teknuova",
     "url": "https://www.naukri.com/job-listings-senior-software-development-engineer-teknuova-mumbai-all-areas-3-to-8-years-251126034385",
     "status": "applied",
-    "recruiterStatus": "Application Sent",
+    "recruiterStatus": "Contacted By Email",
     "location": "Mumbai (All Areas)"
   },
   {
@@ -10894,6 +10902,217 @@
     "url": "https://www.naukri.com/job-listings-java-nodejs-angular-developer-motorola-solutions-kodiak-networks-india-private-limited-bengaluru-1-to-2-years-051126935330",
     "status": "applied",
     "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "251126035778",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126035833",
+    "date": "2026-11-25",
+    "time": "10:48:32 pm",
+    "title": "Java Full Stack Developer",
+    "company": "Newmark CRE Services",
+    "url": "https://www.naukri.com/job-listings-java-full-stack-developer-newmark-cre-services-hyderabad-2-to-4-years-251126035833",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Hyderabad"
+  },
+  {
+    "id": "251126035909",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126035673",
+    "date": "2026-11-25",
+    "time": "10:51:06 pm",
+    "title": "Engineer",
+    "company": "Jindal Infrastructures",
+    "url": "https://www.naukri.com/job-listings-engineer-jindal-infrastructures-surat-3-to-7-years-251126035673",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Surat"
+  },
+  {
+    "id": "180924500513",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "011019500042",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "190826038463",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "301020500935",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "090724502106",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "300524500634",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "270825502710",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "100726508641",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "240426501806",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126918941",
+    "date": "2026-11-25",
+    "time": "10:52:29 pm",
+    "title": "React.js Developer",
+    "company": "Twixor",
+    "url": "https://www.naukri.com/job-listings-react-js-developer-twixor-bengaluru-2-to-6-years-121126918941",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "250626500033",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "190821500311",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "231126914450",
+    "date": "2026-11-25",
+    "time": "10:52:47 pm",
+    "title": "Node JS Developer",
+    "company": "Shashwath Solution",
+    "url": "https://www.naukri.com/job-listings-node-js-developer-shashwath-solution-bengaluru-3-to-4-years-231126914450",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "280722502798",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "231026033772",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "181122502372",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "121124503781",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121124503465",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "050625500737",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "060721500076",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "110223500595",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "091020500933",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121126500532",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "221026010347",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "301222501267",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "130624500252",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "121224501334",
+    "date": "2026-11-25",
+    "time": "10:53:39 pm",
+    "title": "React JS Developer",
+    "company": "Programming.Com",
+    "url": "https://www.naukri.com/job-listings-react-js-developer-programming-com-bengaluru-2-to-5-years-121224501334",
+    "status": "applied",
+    "recruiterStatus": "Applied",
     "location": "Bengaluru"
   }
 ]
