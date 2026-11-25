@@ -68,10 +68,9 @@ const LOCATIONS = (process.env.JOB_LOCATIONS || 'Bangalore,Hyderabad,Pan India,R
 
 const EXP_MIN = parseInt(process.env.JOB_EXPERIENCE_MIN || '1', 10);
 const EXP_MAX = parseInt(process.env.JOB_EXPERIENCE_MAX || '3', 10);
-// EXP_FILTER_MAX: card-level senior-role gate (more lenient than URL filter).
-// Blocks jobs where the MINIMUM years required > this value.
-// 5 = skip roles requiring 5+ years minimum (clearly senior).
-const EXP_FILTER_MAX = parseInt(process.env.EXP_FILTER_MAX || '4', 10);
+// EXP_FILTER_MAX: card-level senior-role gate.
+// Blocks jobs where the MINIMUM years required > 3 (e.g. skips 4+ years minimum).
+const EXP_FILTER_MAX = parseInt(process.env.EXP_FILTER_MAX || '3', 10);
 const MAX_APPLIES     = parseInt(process.env.MAX_APPLIES_PER_RUN  || '25', 10); // daily cap
 const BATCH_PER_RUN   = parseInt(process.env.BATCH_SIZE_PER_RUN   || '5',  10); // max per hourly run
 
@@ -149,9 +148,9 @@ function buildSearchUrl(keyword, location, pageNo = 1) {
 // ── Job Title Relevance Filter ────────────────────────────────────────────────
 // Naukri's fresh-sorted search often pads results with unrelated HR, BPO, Support,
 // Sales, Admin, or Analyst roles. Filter out non-developer titles at the card level.
-const RELEVANT_TITLE_RE = /\b(developer|engineer|engineering|sde\b|programmer|coder|architect|react|next\.?js|nextjs|node\.?js|nodejs|express|nest\.?js|nestjs|mern|mean|frontend|front[\s-]?end|backend|back[\s-]?end|full[\s-]?stack|fullstack|javascript|typescript|python|django|fastapi|flask|web\b|software|ai\b|ml\b|machine\s+learning|artificial\s+intelligence|genai|gen\s+ai|agentic|llm|rag\b|api\b)/i;
+const RELEVANT_TITLE_RE = /\b(developer|engineer|engineering|sde\b|programmer|coder|react|next\.?js|nextjs|node\.?js|nodejs|express|nest\.?js|nestjs|mern|mean|frontend|front[\s-]?end|backend|back[\s-]?end|full[\s-]?stack|fullstack|javascript|typescript|python|django|fastapi|flask|web\b|software|ai\b|ml\b|machine\s+learning|artificial\s+intelligence|genai|gen\s+ai|agentic|llm|rag\b|api\b)/i;
 
-const EXCLUDE_TITLE_RE = /(talent\s+acquisition|recruiter|recruitment|\bhr\b|human\s+resource|\bsales\b|marketing|\bseo\b|\bbpo\b|process\s+associate|customer\s+support|technical\s+support|application\s+support|desktop\s+support|helpdesk|it\s+support|voice\s+process|non[\s-]?voice|\bmis\b|data\s+entry|computer\s+operator|contract\s+management|incident\s+management|database\s+administrator|\bdba\b|mongodb\s+administrator|\bdb2\b|system\s+admin|linux\s+admin|network\s+admin|trainer|faculty|teacher|professor|\btesting\b|\btester\b|\bqa\b|quality\s+assurance|test\s+analyst|manual\s+test|data\s+analyst|business\s+analyst|financial\s+analyst|reporting\s+analyst|adops|workforce\s+planner|artist\s+manager|production\s+scheduling|jewellery|lab\s+coordinator|evaluator)/i;
+const EXCLUDE_TITLE_RE = /(\bsenior\b|\bsr\.?\s+|\blead\b|tech\s+lead|team\s+lead|\bprincipal\b|\bstaff\s+engineer|\bstaff\s+developer|\barchitect\b|\bhead\s+of\b|\bdirector\b|\bvp\b|vice\s+president|\bchief\b|\bcto\b|\bmanager\b|([4-9]|\d{2,})\+?\s*(yrs?|years?)|talent\s+acquisition|recruiter|recruitment|\bhr\b|human\s+resource|\bsales\b|marketing|\bseo\b|\bbpo\b|process\s+associate|customer\s+support|technical\s+support|application\s+support|desktop\s+support|helpdesk|it\s+support|voice\s+process|non[\s-]?voice|\bmis\b|data\s+entry|computer\s+operator|contract\s+management|incident\s+management|database\s+administrator|\bdba\b|mongodb\s+administrator|\bdb2\b|system\s+admin|linux\s+admin|network\s+admin|trainer|faculty|teacher|professor|\btesting\b|\btester\b|\bqa\b|quality\s+assurance|test\s+analyst|manual\s+test|data\s+analyst|business\s+analyst|financial\s+analyst|reporting\s+analyst|adops|workforce\s+planner|artist\s+manager|production\s+scheduling|jewellery|lab\s+coordinator|evaluator)/i;
 
 function isRelevantJobTitle(title) {
   if (!title) return false;

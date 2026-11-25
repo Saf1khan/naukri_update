@@ -51,7 +51,7 @@ jobs:
         env:
           NAUKRIGULF_EMAIL: ${{ secrets.NAUKRIGULF_EMAIL }}
           NAUKRIGULF_PASSWORD: ${{ secrets.NAUKRIGULF_PASSWORD }}
-          EXP_FILTER_MAX: "4"
+          EXP_FILTER_MAX: "3"
           MAX_APPLIES_PER_RUN: "15"
           BATCH_SIZE_PER_RUN: "3"
           NOTICE_PERIOD: "15 days"
