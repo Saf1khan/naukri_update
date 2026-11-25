@@ -123,16 +123,17 @@ function isRelevantJobTitle(title) {
 
 // ── Collect Easy Apply job links from NaukriGulf search page ──────────────────
 async function collectJobLinks(page, expFilterMax) {
-  await page.waitForSelector('div.ng-box.srp-tuple, a.info-position', { timeout: 15000 }).catch(() => {});
+  await page.waitForSelector('div.ng-box.srp-tuple, a.info-position, .no-result, .no-results', { timeout: 5000 }).catch(() => {});
 
   return page.evaluate((expFilterMax) => {
     const cards = document.querySelectorAll('div.ng-box.srp-tuple');
-    return [...cards].map(card => {
+    const totalCards = cards.length;
+    const jobs = [...cards].map(card => {
       const link    = card.querySelector('a.info-position');
       const title   = card.querySelector('.designation-title')?.textContent?.trim() || link?.textContent?.trim() || '';
       const company = card.querySelector('.info-org')?.textContent?.trim() || '';
       const locText = card.querySelector('li.info-loc')?.textContent?.trim() || '';
-      const expText = card.querySelector('li.info-exp')?.textContent?.trim() || '';
+      const expText = card.querySelector('li.info-exp')?.textContent?.trim() || card.textContent || '';
       const href    = link?.href || '';
 
       // Extract NaukriGulf Job ID from "-jid-251126500153"
@@ -153,6 +154,8 @@ async function collectJobLinks(page, expFilterMax) {
     .filter(j => j.href && j.jobId)
     .filter(j => j.isEasy)
     .filter(j => j.minExp <= expFilterMax);
+
+    return { totalCards, jobs };
   }, expFilterMax);
 }
 
@@ -417,13 +420,14 @@ async function syncRecruiterActivity(page, rawRecords) {
           await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
           await humanDelay();
 
-          const jobs = await collectJobLinks(page, EXP_FILTER_MAX);
+          const { totalCards, jobs } = await collectJobLinks(page, EXP_FILTER_MAX);
           const relevant = jobs.filter(j => isRelevantJobTitle(j.title));
           const filtered = relevant.filter(j => !seenIds.has(j.jobId));
-          log(`  Found ${jobs.length} Easy Apply listings (${relevant.length} relevant dev roles, ${filtered.length} fresh, ${relevant.length - filtered.length} already seen)`);
+          log(`  Found ${totalCards} total cards (${jobs.length} Easy Apply <=3 yrs, ${relevant.length} relevant tech, ${filtered.length} fresh)`);
 
           if (filtered.length === 0) {
-            if (jobs.length === 0) break;
+            // NaukriGulf shows 30 cards per full page; if Page 1 has < 25 total cards, Page 2 does not exist!
+            if (totalCards < 25) break;
             continue;
           }
 

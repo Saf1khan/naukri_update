@@ -371,12 +371,13 @@ async function applyToJob(page, jobId, title, company) {
 async function collectJobLinks(page, expFilterMax) {
   await page.waitForSelector(
     '.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]',
-    { timeout: 15000 }
+    { timeout: 6000 }
   ).catch(() => {});
 
-  const jobs = await page.evaluate((expFilterMax) => {
+  return page.evaluate((expFilterMax) => {
     const cards = document.querySelectorAll('.cust-job-tuple, [class*="sjw__tuple"], article.jobTuple, .jobTuple, [class*="jobTuple"]');
-    return [...cards].map(card => {
+    const totalCards = cards.length;
+    const jobs = [...cards].map(card => {
       const link    = card.querySelector('a[href*="/job-listings-"]');
       const title   = card.querySelector('.title, .jobTitle, h2 a')?.textContent?.trim() || '';
       const company = card.querySelector('.comp-name, .companyInfo a, .company, .client-company-name')?.textContent?.trim() || '';
@@ -386,25 +387,21 @@ async function collectJobLinks(page, expFilterMax) {
       const idMatch = href.match(/-(\d{10,})(?:[?]|$)/);
       const jobId   = idMatch?.[1] || href.slice(-12);
 
-      // Extract experience required from the card.
-      // .expwdth is Naukri's specific experience cell class — most reliable.
-      // Fall back to extracting from full card text if not found.
-      const expEl   = card.querySelector('.expwdth');
-      const expText = expEl?.textContent?.trim() || '';
-      // Regex: match "1 - 3 Yrs" or "4-9 Yrs" or "0 to 2 Yrs"
+      // Extract experience required from the card across all Naukri card variants
+      const expEl   = card.querySelector('.expwdth, .ni-job-tuple-icon-srp-experience, [class*="exp" i]');
+      const expText = expEl?.textContent?.trim() || card.textContent || '';
+      // Match "1 - 3 Yrs" or "4-9 Yrs" or "0 to 2 Yrs"
       const expNums = expText.match(/(\d+)(?:\s*[-\u2013to]+\s*(\d+))?\s*Yr/i);
-      // If exp text not found in .expwdth, default minExp to 0 (don't block)
       const minExp  = expNums ? parseInt(expNums[1], 10) : 0;
 
       return { href, title, company, jobId, minExp, expText };
     })
     .filter(j => j.href && j.jobId)
-    // Only block CLEARLY senior roles (min experience > EXP_FILTER_MAX)
-    // e.g. EXP_FILTER_MAX=4 blocks jobs requiring 5+ years minimum
+    // Strictly block roles requiring more than EXP_FILTER_MAX (3) years minimum
     .filter(j => j.minExp <= expFilterMax);
-  }, expFilterMax);
 
-  return jobs;
+    return { totalCards, jobs };
+  }, expFilterMax);
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
@@ -502,14 +499,14 @@ async function collectJobLinks(page, expFilterMax) {
             break outerLoop;
           }
 
-          const jobs = await collectJobLinks(page, EXP_FILTER_MAX);
+          const { totalCards, jobs } = await collectJobLinks(page, EXP_FILTER_MAX);
           const relevant = jobs.filter(j => isRelevantJobTitle(j.title));
           const filtered = relevant.filter(j => !seenIds.has(j.jobId));
-          log(`  Found ${jobs.length} listings on page ${pageNo} (${relevant.length} relevant, ${filtered.length} fresh, ${relevant.length - filtered.length} already seen)`);
+          log(`  Found ${totalCards} total cards on page ${pageNo} (${jobs.length} <=3 yrs, ${relevant.length} relevant, ${filtered.length} fresh)`);
 
           if (filtered.length === 0) {
-            if (jobs.length === 0) break; // No jobs at all → stop pagination
-            continue;                     // All seen → try next page
+            if (totalCards < 15) break; // Fewer than 15 cards on page → no next page exists
+            continue;                   // Full page but all seen → try next page
           }
 
           for (const job of filtered) {
