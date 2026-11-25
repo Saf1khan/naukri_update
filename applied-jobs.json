@@ -8707,7 +8707,9 @@
     "time": "11:57:33 pm",
     "title": "Private Equity Operations Strategist",
     "company": "Glynac",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Contacted By Email",
+    "location": "United States (USA)"
   },
   {
     "id": "121126026543",
@@ -9915,7 +9917,9 @@
     "time": "12:46:04 am",
     "title": "Back End Engineer",
     "company": "Glynac",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Contacted By Email",
+    "location": "United States (USA)"
   },
   {
     "id": "191126035663",
@@ -10704,5 +10708,192 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Pune"
+  },
+  {
+    "id": "251126035053",
+    "date": "2026-11-25",
+    "time": "8:31:22 pm",
+    "title": "Ai Ml Engineer",
+    "company": "Soc Software",
+    "url": "https://www.naukri.com/job-listings-ai-ml-engineer-soc-software-hyderabad-bengaluru-4-to-6-years-251126035053",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Hyderabad, Bengaluru"
+  },
+  {
+    "id": "251126034505",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034444",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034349",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034087",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126033976",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126033918",
+    "date": "2026-11-25",
+    "time": "8:32:08 pm",
+    "title": "Validation Engineer",
+    "company": "Talentstream",
+    "url": "https://www.naukri.com/job-listings-validation-engineer-talentstream-bengaluru-3-to-5-years-251126033918",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "251126034753",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "250826008437",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034495",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034385",
+    "date": "2026-11-25",
+    "time": "8:33:17 pm",
+    "title": "Senior Software Development Engineer",
+    "company": "Teknuova",
+    "url": "https://www.naukri.com/job-listings-senior-software-development-engineer-teknuova-mumbai-all-areas-3-to-8-years-251126034385",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai (All Areas)"
+  },
+  {
+    "id": "231124009688",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034300",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034169",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034047",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034493",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "240826008685",
+    "date": "2026-11-25",
+    "time": "8:34:59 pm",
+    "title": "Dot Net Fullstack Developer",
+    "company": "BDO India",
+    "url": "https://www.naukri.com/job-listings-dot-net-fullstack-developer-bdo-india-mumbai-4-to-8-years-240826008685",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai"
+  },
+  {
+    "id": "251126034286",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034129",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126031830",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126034391",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126034054",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126503632",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "171225504218",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "260825503873",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "290925503093",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "051126935330",
+    "date": "2026-11-25",
+    "time": "8:38:58 pm",
+    "title": "JAVA+NodeJS+Angular Developer",
+    "company": "Motorola Solutions",
+    "url": "https://www.naukri.com/job-listings-java-nodejs-angular-developer-motorola-solutions-kodiak-networks-india-private-limited-bengaluru-1-to-2-years-051126935330",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
   }
 ]

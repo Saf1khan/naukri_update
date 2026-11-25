@@ -1,13 +1,85 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-25 6:41:48 pm IST",
+  "lastSyncedAt": "2026-11-25 8:39:05 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
     "recruiterActionsOnApplies": 301,
-    "totalApplies90Days": 1946
+    "totalApplies90Days": 1953
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "051126935330",
+      "title": "JAVA+NodeJS+Angular Developer",
+      "company": "Motorola Solutions Kodiak Networks India Private Limited",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:38:56"
+    },
+    {
+      "jobId": "240826008685",
+      "title": "Dot Net Fullstack Developer",
+      "company": "BDO India",
+      "location": "Mumbai",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:34:56"
+    },
+    {
+      "jobId": "251126034493",
+      "title": "IDMC Developer",
+      "company": "Datamatics",
+      "location": "Hyderabad, Bengaluru, Mumbai (All Areas)",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:34:32"
+    },
+    {
+      "jobId": "251126034385",
+      "title": "Senior Software Development Engineer",
+      "company": "Teknuova",
+      "location": "Mumbai (All Areas)",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:33:15"
+    },
+    {
+      "jobId": "250826008437",
+      "title": "Communication Developer",
+      "company": "Sage Publications India Pvt Ltd",
+      "location": "Dehradun",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:33:05"
+    },
+    {
+      "jobId": "251126033918",
+      "title": "Validation Engineer",
+      "company": "Talentstream",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:32:05"
+    },
+    {
+      "jobId": "251126035053",
+      "title": "Ai Ml Engineer",
+      "company": "Soc Software",
+      "location": "Hyderabad, Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 20:31:19"
+    },
+    {
+      "jobId": "111126034885",
+      "title": "Private Equity Operations Strategist",
+      "company": "Glynac",
+      "location": "United States (USA)",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-11-11 23:57:31"
+    },
+    {
+      "jobId": "191126035869",
+      "title": "Back End Engineer",
+      "company": "Glynac",
+      "location": "United States (USA)",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-11-20 00:46:00"
+    },
     {
       "jobId": "251126032685",
       "title": "Php Developer",
@@ -15,78 +87,6 @@
       "location": "Pune",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-25 18:41:39"
-    },
-    {
-      "jobId": "251126032698",
-      "title": "AI Engineer - ( Damacloid Technologies ) )http://www.damacloid.com/",
-      "company": "SET Square Gifting",
-      "location": "Mumbai",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 18:41:34"
-    },
-    {
-      "jobId": "251126032840",
-      "title": "Software Engineer",
-      "company": "Ecolab Global Services",
-      "location": "Pune",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 18:40:56"
-    },
-    {
-      "jobId": "251126030662",
-      "title": "Devops Engineer",
-      "company": "GSR Business Services",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 18:40:07"
-    },
-    {
-      "jobId": "251126031005",
-      "title": "Software Developer",
-      "company": "Vibry Business Solutions",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-25 18:39:28"
-    },
-    {
-      "jobId": "291026031201",
-      "title": "Software Developer",
-      "company": "Surender Singh",
-      "location": "Bengaluru, Mangaluru, Mysuru",
-      "recruiterStatus": "Shortlisted",
-      "modifiedDate": "2026-11-25 16:44:57"
-    },
-    {
-      "jobId": "151026033264",
-      "title": "MIS Analyst",
-      "company": "Talentstream",
-      "location": "Bengaluru",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-10-15 20:51:52"
-    },
-    {
-      "jobId": "241126030307",
-      "title": "Full Stack Developer :C# / .NET & Python",
-      "company": "Workradius Ai Technologies",
-      "location": "Gurugram",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-25 00:42:05"
-    },
-    {
-      "jobId": "231126024218",
-      "title": "Gen AI & B Agentic AI / Python Developer /",
-      "company": "Kwality Recruitments Mumbai",
-      "location": "Hyderabad, Bengaluru, Pune",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-23 20:56:46"
-    },
-    {
-      "jobId": "281026007354",
-      "title": "HR Helpdesk Agent International Voice Process upto 10LPA",
-      "company": "Gratitude India",
-      "location": "Bengaluru, Thane, Mumbai (All Areas)",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-13 20:11:28"
     }
   ]
 }
