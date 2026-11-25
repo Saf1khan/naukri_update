@@ -115,9 +115,14 @@ const shortDelay = () => sleep(400 + Math.random() * 400);   // 0.4–0.8 s (bet
 
 // ── Build Naukri search URL — sorted FRESH first ────────────────────────────
 // sort=f   → reverse-chronological (newest jobs at the top)
-// jobAge=0 → all jobs, not just last 24h (combined with sort=f = freshest globally)
+// k=       → explicit keyword query param so Naukri doesn't broaden to generic jobs
 function buildSearchUrl(keyword, location, pageNo = 1) {
-  const kw = keyword.trim().toLowerCase().replace(/\s+/g, '-');
+  // Normalize dots (e.g. "Next.js" → "nextjs", "Node.js" → "nodejs") so Naukri's URL slug parser doesn't break
+  const kwSlug = keyword.trim().toLowerCase()
+    .replace(/\.js\b/g, 'js')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  const kwParam = encodeURIComponent(keyword.trim());
   const pageSuffix = pageNo > 1 ? `-${pageNo}` : '';
 
   // Special locations: "Pan India" or "Remote" don't use "-in-city" suffix
@@ -126,18 +131,30 @@ function buildSearchUrl(keyword, location, pageNo = 1) {
 
   let baseUrl;
   if (isPanIndia) {
-    // https://www.naukri.com/react-developer-jobs?sort=f → all India
-    baseUrl = `https://www.naukri.com/${kw}-jobs${pageSuffix}`;
+    // https://www.naukri.com/react-developer-jobs?k=React%20Developer&sort=f → all India
+    baseUrl = `https://www.naukri.com/${kwSlug}-jobs${pageSuffix}`;
   } else if (isRemote) {
-    // https://www.naukri.com/react-developer-jobs?sort=f&wfhType=5 → remote jobs
-    baseUrl = `https://www.naukri.com/${kw}-jobs${pageSuffix}`;
-    return `${baseUrl}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}&wfhType=5`;
+    // https://www.naukri.com/react-developer-jobs?k=React%20Developer&sort=f&wfhType=5 → remote jobs
+    baseUrl = `https://www.naukri.com/${kwSlug}-jobs${pageSuffix}`;
+    return `${baseUrl}?k=${kwParam}&sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}&wfhType=5`;
   } else {
-    const loc = location.trim().toLowerCase().replace(/\s+/g, '-');
-    baseUrl = `https://www.naukri.com/${kw}-jobs-in-${loc}${pageSuffix}`;
+    const loc = location.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    baseUrl = `https://www.naukri.com/${kwSlug}-jobs-in-${loc}${pageSuffix}`;
   }
 
-  return `${baseUrl}?sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
+  return `${baseUrl}?k=${kwParam}&sort=f&expFrom=${EXP_MIN}&expTo=${EXP_MAX}`;
+}
+
+// ── Job Title Relevance Filter ────────────────────────────────────────────────
+// Naukri's fresh-sorted search often pads results with unrelated HR, BPO, Support,
+// Sales, Admin, or Analyst roles. Filter out non-developer titles at the card level.
+const RELEVANT_TITLE_RE = /\b(developer|engineer|engineering|sde\b|programmer|coder|architect|react|next\.?js|nextjs|node\.?js|nodejs|express|nest\.?js|nestjs|mern|mean|frontend|front[\s-]?end|backend|back[\s-]?end|full[\s-]?stack|fullstack|javascript|typescript|python|django|fastapi|flask|web\b|software|ai\b|ml\b|machine\s+learning|artificial\s+intelligence|genai|gen\s+ai|agentic|llm|rag\b|api\b)/i;
+
+const EXCLUDE_TITLE_RE = /(talent\s+acquisition|recruiter|recruitment|\bhr\b|human\s+resource|\bsales\b|marketing|\bseo\b|\bbpo\b|process\s+associate|customer\s+support|technical\s+support|application\s+support|desktop\s+support|helpdesk|it\s+support|voice\s+process|non[\s-]?voice|\bmis\b|data\s+entry|computer\s+operator|contract\s+management|incident\s+management|database\s+administrator|\bdba\b|mongodb\s+administrator|\bdb2\b|system\s+admin|linux\s+admin|network\s+admin|trainer|faculty|teacher|professor|\btesting\b|\btester\b|\bqa\b|quality\s+assurance|test\s+analyst|manual\s+test|data\s+analyst|business\s+analyst|financial\s+analyst|reporting\s+analyst|adops|workforce\s+planner|artist\s+manager|production\s+scheduling|jewellery|lab\s+coordinator|evaluator)/i;
+
+function isRelevantJobTitle(title) {
+  if (!title) return false;
+  return RELEVANT_TITLE_RE.test(title) && !EXCLUDE_TITLE_RE.test(title);
 }
 
 // ── Inject Naukri session cookies ─────────────────────────────────────────────
@@ -172,7 +189,17 @@ async function applyToJob(page, jobId, title, company) {
       return { status: 'already_applied' };
     }
 
-    // B. Find Apply button
+    // B. Check if it's an external "Apply on company site" button before looking for standard Apply
+    const companySiteBtn = await page.locator(
+      'button[id="company-site-button"], button:has-text("company site"), a:has-text("company site")'
+    ).first().isVisible({ timeout: 1000 }).catch(() => false);
+
+    if (companySiteBtn) {
+      log(`  SKIP (external company site): ${title} @ ${company}`);
+      return { status: 'skipped', reason: 'external_site' };
+    }
+
+    // Find Apply button
     // Naukri renders 2 Apply buttons:
     //   1st: in the job card content area (always visible on page load)
     //   2nd: in a sticky footer (only visible after scrolling — initially hidden)
@@ -190,19 +217,35 @@ async function applyToJob(page, jobId, title, company) {
       return { status: 'skipped', reason: 'no_apply_button' };
     }
 
-    // Check external link
-    const href   = await applyBtn.getAttribute('href').catch(() => null);
-    const target = await applyBtn.getAttribute('target').catch(() => null);
-    if (href && !href.includes('naukri.com') && (href.startsWith('http') || target === '_blank')) {
+    // Check button text and external link attributes
+    const btnText = ((await applyBtn.textContent().catch(() => '')) || '').trim();
+    const href    = await applyBtn.getAttribute('href').catch(() => null);
+    const target  = await applyBtn.getAttribute('target').catch(() => null);
+    if (
+      /company\s*site|external|register\s*to\s*apply|login\s*to\s*apply/i.test(btnText) ||
+      (href && !href.includes('naukri.com') && (href.startsWith('http') || target === '_blank'))
+    ) {
       log(`  SKIP (external company site): ${title} @ ${company}`);
       return { status: 'skipped', reason: 'external_site' };
     }
+
+    const pagesBefore = page.context().pages().length;
 
     // C. Click Apply (scroll into view first to make sure it's not occluded)
     await applyBtn.scrollIntoViewIfNeeded().catch(() => {});
     await sleep(300);
     await applyBtn.click({ timeout: 5000 }).catch(() => {});
     await humanDelay();
+
+    // If clicking Apply opened a new tab (external company portal), close extra tabs and skip
+    const currentPages = page.context().pages();
+    if (currentPages.length > pagesBefore) {
+      for (const p of currentPages) {
+        if (p !== page) await p.close().catch(() => {});
+      }
+      log(`  SKIP (opened external tab): ${title} @ ${company}`);
+      return { status: 'skipped', reason: 'external_site' };
+    }
 
     // D. Check for modal/chatbot (Naukri uses several different class names)
     const modal = page.locator([
@@ -369,12 +412,18 @@ async function collectJobLinks(page, expFilterMax) {
   const todayIST = getISTDate();
   const rawRecords = loadAppliedData();
 
-  // Only track CONFIRMED APPLICATIONS in seenIds.
-  // Skipped/error jobs are NOT added — they will be retried on future runs
-  // (e.g. an external-site job might add Easy Apply later, or a page error was transient).
+  // Track seen job IDs so we never re-open the same job twice:
+  // - All historical 'applied' and permanent 'already_applied' / 'external_site' jobs
+  // - Any job skipped earlier today (e.g. complex_form, no_apply_button) so subsequent
+  //   hourly runs today don't waste 20 minutes re-visiting the same un-applyable pages.
   const seenIds = new Set(
     rawRecords
-      .filter(item => item.status === 'applied' || typeof item === 'string')
+      .filter(item => {
+        if (typeof item === 'string') return true;
+        if (item.status === 'applied' || item.status === 'already_applied' || item.reason === 'external_site') return true;
+        if (item.date === todayIST) return true;
+        return false;
+      })
       .map(item => (typeof item === 'string' ? item : item.id))
   );
 
@@ -454,8 +503,9 @@ async function collectJobLinks(page, expFilterMax) {
           }
 
           const jobs = await collectJobLinks(page, EXP_FILTER_MAX);
-          const filtered = jobs.filter(j => !seenIds.has(j.jobId));
-          log(`  Found ${jobs.length} listings on page ${pageNo} (${filtered.length} fresh, ${jobs.length - filtered.length} already seen)`);
+          const relevant = jobs.filter(j => isRelevantJobTitle(j.title));
+          const filtered = relevant.filter(j => !seenIds.has(j.jobId));
+          log(`  Found ${jobs.length} listings on page ${pageNo} (${relevant.length} relevant, ${filtered.length} fresh, ${relevant.length - filtered.length} already seen)`);
 
           if (filtered.length === 0) {
             if (jobs.length === 0) break; // No jobs at all → stop pagination
@@ -471,8 +521,6 @@ async function collectJobLinks(page, expFilterMax) {
 
             const result = await applyToJob(page, job.jobId, job.title, job.company);
 
-            // Only persist APPLIED jobs to JSON (keeps file small and seenIds clean).
-            // Skipped/error jobs are intentionally NOT saved — they will be retried tomorrow.
             if (result.status === 'applied') {
               const record = {
                 id: job.jobId,
@@ -489,6 +537,18 @@ async function collectJobLinks(page, expFilterMax) {
               log(`  ✅ Applied ${totalAppliedThisRun}/${batchTarget} this run | Total today: ${appliedTodayCount + totalAppliedThisRun}/${MAX_APPLIES}`);
             } else {
               totalSkippedThisRun++;
+              seenIds.add(job.jobId); // Never re-visit in the same run
+              if (result.status !== 'error') {
+                // Persist non-transient skips for today (and permanent external/already_applied)
+                // so the remaining 5 hourly runs today don't re-open the same dead-end job page.
+                rawRecords.push({
+                  id: job.jobId,
+                  date: todayIST,
+                  status: result.status,
+                  reason: result.reason || result.status,
+                });
+                saveAppliedData(rawRecords);
+              }
               log(`  SKIP (${result.reason || result.status}): ${job.title} @ ${job.company}`);
             }
 
