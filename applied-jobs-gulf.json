@@ -30,7 +30,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/full-stack-developer-jobs-in-dubai-uae-in-dotflick-solutions-0-to-5-years-n-cd-20010126-jid-121126500068",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted 4 hours ago"
   },
   {
     "id": "111126000452",
@@ -47,7 +47,7 @@
     "location": "Dubai - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/net-fullstack-developer-jobs-in-dubai-uae-in-confidential-4-to-8-years-n-jid-101126000193",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted 4 hours ago"
   },
   {
     "id": "061126500288",
@@ -57,6 +57,51 @@
     "company": "BITECH",
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/liferay-full-stack-developer-jobs-in-dubai-uae-in-bitech-0-to-5-years-n-cd-20010126-jid-061126500288",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted 4 hours ago"
+  },
+  {
+    "id": "231126500607",
+    "date": "2026-11-26",
+    "time": "1:37:37 am",
+    "title": "AI Engineer",
+    "company": "Techcarrot Fz-llc",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/ai-engineer-jobs-in-dubai-uae-in-techcarrot-fz-llc-1-to-6-years-n-cd-20010126-jid-231126500607",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "071126000077",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "021126501181",
+    "date": "2026-11-26",
+    "time": "1:38:24 am",
+    "title": "Data Scientist",
+    "company": "Slicit",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/data-scientist-jobs-in-dubai-uae-in-slicit-0-to-5-years-n-cd-40006066-jid-021126501181",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "161026000074",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "091126000070",
+    "date": "2026-11-26",
+    "time": "1:40:41 am",
+    "title": "Presales Engineer – AI & Customer Experience Solutions",
+    "company": "Voxtron Middle East LLC",
+    "location": "Dubai - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/presales-engineer-ai-customer-experience-solutions-jobs-in-dubai-uae-in-voxtron-middle-east-2-to-5-years-n-cd-97673-jid-091126000070",
     "status": "applied",
     "recruiterStatus": "Application Submitted"
   }

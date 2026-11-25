@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-25 4:15:53 pm IST",
+  "lastSyncedAt": "2026-11-26 1:40:50 am IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -9,64 +9,34 @@
   },
   "recentApplicationStatuses": [
     {
+      "title": "Data Scientist",
+      "company": "Slicit",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "AI Engineer",
+      "company": "Techcarrot Fz-llc",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
       "title": "Liferay Full Stack Developer",
       "company": "BITECH",
       "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
+      "recruiterStatus": "Application Submitted 4 hours ago"
     },
     {
       "title": ".Net Fullstack Developer",
       "company": "Confidential Company",
       "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
+      "recruiterStatus": "Application Submitted 4 hours ago"
     },
     {
       "title": "Full Stack Developer",
       "company": "Dotflick Solutions",
       "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Strapi Developer",
-      "company": "Dicetek LLC",
-      "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Full stack Developer",
-      "company": "Knot Host Fze",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Software Engineer - Java, React/NodeJS",
-      "company": "Kiash Solution",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Software Engineer - API",
-      "company": "Client of Brunel",
-      "location": "Doha - Qatar",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "Full Stack Developer",
-      "company": "Van Oord Middle East",
-      "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Summary Viewed 2 days ago"
-    },
-    {
-      "title": "React / React Native Developer",
-      "company": "Mintlayer",
-      "location": "Abu Dhabi - United Arab Emirates",
-      "recruiterStatus": "Application Submitted 1 week ago"
-    },
-    {
-      "title": "Artificial Intelligence Engineer",
-      "company": "Emaratech",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted 1 week ago"
+      "recruiterStatus": "Application Submitted 4 hours ago"
     }
   ]
 }
