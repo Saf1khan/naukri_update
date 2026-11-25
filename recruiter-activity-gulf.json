@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-26 1:40:50 am IST",
+  "lastSyncedAt": "2026-11-26 3:28:36 am IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,30 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "n eight n developer",
+      "company": "Midis Group",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "AI content Creator",
+      "company": "Confidential Company",
+      "location": "Ajman - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "AI Automation & DevOps Engineer",
+      "company": "Nysuniverse FZE LLC",
+      "location": "Ajman - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Presales Engineer – AI & Customer Experience Solutions",
+      "company": "Voxtron Middle East LLC",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
     {
       "title": "Data Scientist",
       "company": "Slicit",
@@ -24,19 +48,25 @@
       "title": "Liferay Full Stack Developer",
       "company": "BITECH",
       "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted 4 hours ago"
+      "recruiterStatus": "Application Submitted Today"
     },
     {
       "title": ".Net Fullstack Developer",
       "company": "Confidential Company",
       "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted 4 hours ago"
+      "recruiterStatus": "Application Submitted Today"
     },
     {
       "title": "Full Stack Developer",
       "company": "Dotflick Solutions",
       "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted 4 hours ago"
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Strapi Developer",
+      "company": "Dicetek LLC",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted Today"
     }
   ]
 }

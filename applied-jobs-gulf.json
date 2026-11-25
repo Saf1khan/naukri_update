@@ -19,7 +19,7 @@
     "location": "Dubai - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/strapi-developer-jobs-in-dubai-uae-in-dicetek-llc-4-to-8-years-m-cd-41691-jid-201126000195",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "121126500068",
@@ -30,7 +30,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/full-stack-developer-jobs-in-dubai-uae-in-dotflick-solutions-0-to-5-years-n-cd-20010126-jid-121126500068",
     "status": "applied",
-    "recruiterStatus": "Application Submitted 4 hours ago"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "111126000452",
@@ -47,7 +47,7 @@
     "location": "Dubai - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/net-fullstack-developer-jobs-in-dubai-uae-in-confidential-4-to-8-years-n-jid-101126000193",
     "status": "applied",
-    "recruiterStatus": "Application Submitted 4 hours ago"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "061126500288",
@@ -58,7 +58,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/liferay-full-stack-developer-jobs-in-dubai-uae-in-bitech-0-to-5-years-n-cd-20010126-jid-061126500288",
     "status": "applied",
-    "recruiterStatus": "Application Submitted 4 hours ago"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "231126500607",
@@ -102,6 +102,39 @@
     "company": "Voxtron Middle East LLC",
     "location": "Dubai - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/presales-engineer-ai-customer-experience-solutions-jobs-in-dubai-uae-in-voxtron-middle-east-2-to-5-years-n-cd-97673-jid-091126000070",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "201026000188",
+    "date": "2026-11-26",
+    "time": "3:28:14 am",
+    "title": "AI Automation & DevOps Engineer",
+    "company": "Nysuniverse FZE LLC",
+    "location": "Ajman - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/ai-automation-devops-engineer-jobs-in-ajman-uae-in-nysuniverse-fze-llc-2-to-5-years-n-cd-379508-jid-201026000188",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "151026000223",
+    "date": "2026-11-26",
+    "time": "3:28:20 am",
+    "title": "AI content Creator",
+    "company": "Confidential Company",
+    "location": "Ajman - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/ai-content-creator-jobs-in-ajman-uae-in-confidential-1-to-3-years-n-jid-151026000223",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "160126500171",
+    "date": "2026-11-26",
+    "time": "3:28:27 am",
+    "title": "n eight n developer",
+    "company": "Midis Group",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/n-eight-n-developer-jobs-in-dubai-uae-in-midis-group-2-to-5-years-n-cd-10001626-jid-160126500171",
     "status": "applied",
     "recruiterStatus": "Application Submitted"
   }
