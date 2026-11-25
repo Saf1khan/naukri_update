@@ -10427,7 +10427,9 @@
     "time": "11:21:22 pm",
     "title": "QA Tester / Junior Developer ERP Implementation",
     "company": "Ultra Stone Impex",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru"
   },
   {
     "id": "241126030072",
@@ -11113,6 +11115,59 @@
     "url": "https://www.naukri.com/job-listings-react-js-developer-programming-com-bengaluru-2-to-5-years-121224501334",
     "status": "applied",
     "recruiterStatus": "Applied",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "251126036451",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126036220",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "020726025027",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "300725504280",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "140126503384",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "221125501745",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "261026501705",
+    "date": "2026-11-25",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "261026006307",
+    "date": "2026-11-25",
+    "time": "11:47:07 pm",
+    "title": "React JS Developer",
+    "company": "Amantya Technologies",
+    "url": "https://www.naukri.com/job-listings-react-js-developer-amantya-technologies-bengaluru-2-to-5-years-261026006307",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
     "location": "Bengaluru"
   }
 ]

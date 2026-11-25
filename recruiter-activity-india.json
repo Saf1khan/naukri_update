@@ -1,13 +1,53 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-25 10:53:46 pm IST",
+  "lastSyncedAt": "2026-11-25 11:47:13 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
-    "recruiterActionsOnApplies": 302,
-    "totalApplies90Days": 1956
+    "recruiterActionsOnApplies": 301,
+    "totalApplies90Days": 1957
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "261026006307",
+      "title": "React JS Developer",
+      "company": "Amantya Technologies",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 23:47:04"
+    },
+    {
+      "jobId": "251126036451",
+      "title": "Fullstack Developer",
+      "company": "Rhizobee Innovations",
+      "location": "Mumbai, South Goa",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-25 23:43:37"
+    },
+    {
+      "jobId": "201026011683",
+      "title": "Multiple Opening - Fresher - IT",
+      "company": "Modern Ballistic",
+      "location": "Pune",
+      "recruiterStatus": "Contacted By Email",
+      "modifiedDate": "2026-10-22 08:18:29"
+    },
+    {
+      "jobId": "241126030097",
+      "title": "QA Tester / Junior Developer ERP Implementation",
+      "company": "Ultra Stone Impex",
+      "location": "Bengaluru",
+      "recruiterStatus": "Resume Viewed",
+      "modifiedDate": "2026-11-24 23:21:19"
+    },
+    {
+      "jobId": "291026031201",
+      "title": "Software Developer",
+      "company": "Surender Singh",
+      "location": "Bengaluru, Mangaluru, Mysuru",
+      "recruiterStatus": "Not Shortlisted",
+      "modifiedDate": "2026-11-25 23:22:14"
+    },
     {
       "jobId": "121224501334",
       "title": "React JS Developer",
@@ -47,46 +87,6 @@
       "location": "Hyderabad",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-25 22:48:29"
-    },
-    {
-      "jobId": "251126034385",
-      "title": "Senior Software Development Engineer",
-      "company": "Teknuova",
-      "location": "Mumbai (All Areas)",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-25 20:53:33"
-    },
-    {
-      "jobId": "111126034225",
-      "title": "Seo Manager",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-11 22:38:16"
-    },
-    {
-      "jobId": "111126034251",
-      "title": "Seo Associate",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-11 22:37:52"
-    },
-    {
-      "jobId": "121126026543",
-      "title": "Job Role For SEO & Digital Marketing",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-12 16:59:23"
-    },
-    {
-      "jobId": "171126026982",
-      "title": "SEO Executive",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-17 17:32:25"
     }
   ]
 }
