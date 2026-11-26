@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-27 1:28:40 am IST",
+  "lastSyncedAt": "2026-11-27 3:26:02 am IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,18 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "Automation Test Engineer QA Specialist",
+      "company": "Dotflick Solutions",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "Confidential Company",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
     {
       "title": "GenAI + Node.js Developer",
       "company": "Clover Infotech",
@@ -36,6 +48,24 @@
       "title": "Flutter Developer",
       "company": "Trycode",
       "location": "Dubai , Ajman , Fujairah - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Embedded Software Engineer",
+      "company": "ARCA Technology Manufacturing Ltd",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "System Matched"
+    },
+    {
+      "title": "Software Developer A JR",
+      "company": "Platinus Technologies",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "System Matched"
+    },
+    {
+      "title": "ArduPilot Software Engineer",
+      "company": "ARCA Technology Manufacturing Ltd",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
       "recruiterStatus": "Application Submitted"
     }
   ]
