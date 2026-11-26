@@ -6571,7 +6571,9 @@
     "time": "3:36:38 pm",
     "title": "Data Science Engineer(Jr)",
     "company": "Nexacore",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Hyderabad, Bengaluru, Noida"
   },
   {
     "id": "280726016324",
@@ -9999,7 +10001,9 @@
     "time": "7:09:33 pm",
     "title": "Junior SEO Executive",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "201126027229",
@@ -10007,7 +10011,9 @@
     "time": "7:09:39 pm",
     "title": "Digital Marketing & SEO Executive",
     "company": "Synmac Consultants Pvt. Ltd.",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru, Chennai"
   },
   {
     "id": "201126028436",
@@ -10461,7 +10467,9 @@
     "time": "11:25:00 pm",
     "title": "Artificial Intelligence Engineer",
     "company": "Recruito",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Gurugram"
   },
   {
     "id": "241126030307",
@@ -11848,5 +11856,180 @@
     "date": "2026-11-26",
     "status": "skipped",
     "reason": "no_submit_btn"
+  },
+  {
+    "id": "011026034180",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "180926036343",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "290926037730",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "250926033391",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "180926036059",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "180926036538",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "011026034856",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "220926046002",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "240926037138",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "280926029239",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "280926029561",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "290926037921",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "220926046557",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "141026037355",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "210926026588",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "220926045753",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "261126038167",
+    "date": "2026-11-26",
+    "time": "6:18:42 pm",
+    "title": "Openings For CAD & C++ Developer - HCL Software",
+    "company": "HCLTech",
+    "url": "https://www.naukri.com/job-listings-openings-for-cad-c-developer-hcl-software-hcl-software-pune-bengaluru-mumbai-all-areas-2-to-6-years-261126038167",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru, Pune, Mumbai (All Areas)"
+  },
+  {
+    "id": "261126036157",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126036111",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126040625",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126040569",
+    "date": "2026-11-26",
+    "time": "6:19:24 pm",
+    "title": "Sdet Engineer",
+    "company": "BLJ Tech Geeks",
+    "url": "https://www.naukri.com/job-listings-sdet-engineer-blj-tech-geeks-noida-gurugram-delhi-ncr-3-to-5-years-261126040569",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Gurugram, Noida, Delhi / NCR"
+  },
+  {
+    "id": "261126040091",
+    "date": "2026-11-26",
+    "time": "6:19:35 pm",
+    "title": "Hiring | Integration Engineer (PT-103 Certified) | Workforce Software",
+    "company": "Leading UK-Based MNC IT  Company",
+    "url": "https://www.naukri.com/job-listings-hiring-integration-engineer-pt-103-certified-workforce-software-green-start-india-3-to-8-years-261126040091",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "India"
+  },
+  {
+    "id": "261126040079",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126041264",
+    "date": "2026-11-26",
+    "time": "6:21:14 pm",
+    "title": "Python Fullstack Developer",
+    "company": "Navthrough Solutions",
+    "url": "https://www.naukri.com/job-listings-python-fullstack-developer-navthrough-solutions-chennai-3-to-5-years-261126041264",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Chennai"
+  },
+  {
+    "id": "261126041038",
+    "date": "2026-11-26",
+    "time": "6:22:25 pm",
+    "title": "Engineer",
+    "company": "Talent Corner HR Services",
+    "url": "https://www.naukri.com/job-listings-engineer-talent-corner-hr-services-pune-1-to-3-years-261126041038",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Pune"
   }
 ]
