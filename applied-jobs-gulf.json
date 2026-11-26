@@ -69,7 +69,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/ai-engineer-jobs-in-dubai-uae-in-techcarrot-fz-llc-1-to-6-years-n-cd-20010126-jid-231126500607",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "071126000077",
@@ -86,7 +86,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/data-scientist-jobs-in-dubai-uae-in-slicit-0-to-5-years-n-cd-40006066-jid-021126501181",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "161026000074",
@@ -103,7 +103,7 @@
     "location": "Dubai - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/presales-engineer-ai-customer-experience-solutions-jobs-in-dubai-uae-in-voxtron-middle-east-2-to-5-years-n-cd-97673-jid-091126000070",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "201026000188",
@@ -114,7 +114,7 @@
     "location": "Ajman - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/ai-automation-devops-engineer-jobs-in-ajman-uae-in-nysuniverse-fze-llc-2-to-5-years-n-cd-379508-jid-201026000188",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "151026000223",
@@ -125,7 +125,7 @@
     "location": "Ajman - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/ai-content-creator-jobs-in-ajman-uae-in-confidential-1-to-3-years-n-jid-151026000223",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "160126500171",
@@ -135,6 +135,45 @@
     "company": "Midis Group",
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/n-eight-n-developer-jobs-in-dubai-uae-in-midis-group-2-to-5-years-n-cd-10001626-jid-160126500171",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted Today"
+  },
+  {
+    "id": "261126000134",
+    "date": "2026-11-26",
+    "time": "8:24:50 pm",
+    "title": "AI Engineer",
+    "company": "SUNDUS MANAGEMENT CONSULTANCY & STUDIES BUREAUL.L.C",
+    "location": "Abu Dhabi - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/ai-engineer-jobs-in-abu-dhabi-uae-in-sundus-consultancy-2-to-6-years-m-cd-31713-jid-261126000134",
+    "status": "applied",
+    "recruiterStatus": "System Matched"
+  },
+  {
+    "id": "041126501639",
+    "date": "2026-11-26",
+    "time": "8:24:55 pm",
+    "title": "AI Program Facilitator",
+    "company": "Orelis global",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/ai-program-facilitator-jobs-in-dubai-uae-in-orelis-global-1-to-6-years-n-cd-40006078-jid-041126501639",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "111126000452",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "061026000034",
+    "date": "2026-11-26",
+    "time": "8:25:50 pm",
+    "title": "Java Developer",
+    "company": "A1 Properties",
+    "location": "Abu Dhabi , Ajman - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/java-developer-jobs-in-abu-dhabi-uae-in-a1-properties-0-to-5-years-n-cd-376337-jid-061026000034",
     "status": "applied",
     "recruiterStatus": "Application Submitted"
   }
