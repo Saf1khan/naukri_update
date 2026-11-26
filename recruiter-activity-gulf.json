@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-26 8:25:58 pm IST",
+  "lastSyncedAt": "2026-11-26 10:53:21 pm IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,24 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "Software Developer A JR",
+      "company": "Platinus Technologies",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "System Matched"
+    },
+    {
+      "title": "ArduPilot Software Engineer",
+      "company": "ARCA Technology Manufacturing Ltd",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Software Developer A JR AND MID LEVEL For UAE Onsite Location",
+      "company": "Platinus Technologies",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "System Matched"
+    },
     {
       "title": "Java Developer",
       "company": "A1 Properties",
@@ -48,24 +66,6 @@
       "title": "Presales Engineer – AI & Customer Experience Solutions",
       "company": "Voxtron Middle East LLC",
       "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "Data Scientist",
-      "company": "Slicit",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "AI Engineer",
-      "company": "Techcarrot Fz-llc",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "Liferay Full Stack Developer",
-      "company": "BITECH",
-      "location": "Dubai - United Arab Emirates",
       "recruiterStatus": "Application Submitted Today"
     }
   ]
