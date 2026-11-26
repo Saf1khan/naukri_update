@@ -1,13 +1,53 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-26 6:22:31 pm IST",
+  "lastSyncedAt": "2026-11-26 8:12:09 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
     "recruiterActionsOnApplies": 300,
-    "totalApplies90Days": 1954
+    "totalApplies90Days": 1959
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "261126042507",
+      "title": "Python Developer",
+      "company": "Novotree Minds Consulting",
+      "location": "Mumbai",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 20:09:40"
+    },
+    {
+      "jobId": "261126042988",
+      "title": "Front End Developer",
+      "company": "Kyzer Software India",
+      "location": "Ahmedabad",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 20:04:11"
+    },
+    {
+      "jobId": "261126043168",
+      "title": "Servicenow Developer",
+      "company": "AG Success Staffing Solutions",
+      "location": "Pune",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 20:02:38"
+    },
+    {
+      "jobId": "261126043883",
+      "title": "Devops Engineer",
+      "company": "Airtel",
+      "location": "Gurugram",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 20:02:33"
+    },
+    {
+      "jobId": "261126043174",
+      "title": "Ai Ml Engineer",
+      "company": "Cross Domain Solutions (CDS)",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 20:01:43"
+    },
     {
       "jobId": "261126041038",
       "title": "Engineer",
@@ -47,46 +87,6 @@
       "location": "Bengaluru, Pune, Mumbai (All Areas)",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-26 18:18:40"
-    },
-    {
-      "jobId": "241126029880",
-      "title": "Artificial Intelligence Engineer",
-      "company": "Recruito",
-      "location": "Gurugram",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-26 16:33:13"
-    },
-    {
-      "jobId": "271026021740",
-      "title": "Data Science Engineer(Jr)",
-      "company": "Nexacore",
-      "location": "Hyderabad, Bengaluru, Noida",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-10-27 15:36:35"
-    },
-    {
-      "jobId": "241126030307",
-      "title": "Full Stack Developer :C# / .NET & Python",
-      "company": "Workradius Ai Technologies",
-      "location": "Gurugram",
-      "recruiterStatus": "Contacted By Email",
-      "modifiedDate": "2026-11-25 00:42:05"
-    },
-    {
-      "jobId": "201126027294",
-      "title": "Junior SEO Executive",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-20 19:09:30"
-    },
-    {
-      "jobId": "201126027229",
-      "title": "Digital Marketing & SEO Executive",
-      "company": "Synmac Consultants Pvt. Ltd.",
-      "location": "Bengaluru, Chennai",
-      "recruiterStatus": "Resume Viewed",
-      "modifiedDate": "2026-11-20 19:09:36"
     }
   ]
 }

@@ -12031,5 +12031,170 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Pune"
+  },
+  {
+    "id": "261126043542",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126043185",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126043174",
+    "date": "2026-11-26",
+    "time": "8:01:46 pm",
+    "title": "Ai Ml Engineer",
+    "company": "Cross Domain Solutions (CDS)",
+    "url": "https://www.naukri.com/job-listings-ai-ml-engineer-cross-domain-solutions-cds-bengaluru-3-to-4-years-261126043174",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "290926037590",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "011026034680",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "250926032747",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "290926038084",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "220926046268",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "280926029484",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "141026037469",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "240926035140",
+    "date": "2026-11-26",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "261126042500",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "280826011299",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126043883",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126043168",
+    "date": "2026-11-26",
+    "time": "8:02:41 pm",
+    "title": "Servicenow Developer",
+    "company": "Tech Mahindra",
+    "url": "https://www.naukri.com/job-listings-servicenow-developer-ag-success-staffing-solutions-pune-1-to-6-years-261126043168",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Pune"
+  },
+  {
+    "id": "070126015200",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "100626020765",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "120626013636",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126042988",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126506833",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "261126506808",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "external_site"
+  },
+  {
+    "id": "261126037676",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "161026019268",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126043936",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126042507",
+    "date": "2026-11-26",
+    "time": "8:09:43 pm",
+    "title": "Python Developer",
+    "company": "NovoTree Minds Consulting",
+    "url": "https://www.naukri.com/job-listings-python-developer-novotree-minds-consulting-mumbai-3-to-6-years-261126042507",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai"
   }
 ]
