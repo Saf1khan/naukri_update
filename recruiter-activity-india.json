@@ -1,13 +1,29 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-26 11:33:02 pm IST",
+  "lastSyncedAt": "2026-11-27 12:41:25 am IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
     "recruiterActionsOnApplies": 301,
-    "totalApplies90Days": 1963
+    "totalApplies90Days": 1965
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "180926022700",
+      "title": "Aws Devops Engineer",
+      "company": "Vinayak Solutions",
+      "location": "Delhi / NCR",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-27 00:32:04"
+    },
+    {
+      "jobId": "070123007358",
+      "title": "R & D Design Engineers",
+      "company": "Medi Analytika",
+      "location": "Chennai, Kolkata, Delhi / NCR",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-27 00:31:22"
+    },
     {
       "jobId": "261126044028",
       "title": "Software Development Engineer",
@@ -71,22 +87,6 @@
       "location": "Pune",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-26 20:02:38"
-    },
-    {
-      "jobId": "261126043883",
-      "title": "Devops Engineer",
-      "company": "Airtel",
-      "location": "Gurugram",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 20:02:33"
-    },
-    {
-      "jobId": "261126043174",
-      "title": "Ai Ml Engineer",
-      "company": "Cross Domain Solutions (CDS)",
-      "location": "Bengaluru",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 20:01:43"
     }
   ]
 }
