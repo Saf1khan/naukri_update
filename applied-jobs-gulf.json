@@ -227,5 +227,50 @@
     "url": "https://www.naukrigulf.com/software-developer-a-jr-jobs-in-dubai-uae-in-platinus-technologies-0-to-5-years-n-cd-20010126-jid-161126500086",
     "status": "applied",
     "recruiterStatus": "System Matched"
+  },
+  {
+    "id": "301026500844",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "081026000091",
+    "date": "2026-11-26",
+    "time": "11:53:56 pm",
+    "title": "Embedded Software Engineer",
+    "company": "ARCA Technology Manufacturing Ltd",
+    "location": "Abu Dhabi - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/embedded-software-engineer-jobs-in-abu-dhabi-uae-in-arca-technology-manufacturing-ltd-2-to-5-years-n-cd-331557-jid-081026000091",
+    "status": "applied",
+    "recruiterStatus": "System Matched"
+  },
+  {
+    "id": "061026000072",
+    "date": "2026-11-26",
+    "time": "11:54:01 pm",
+    "title": "Flutter Developer",
+    "company": "Trycode",
+    "location": "Dubai , Ajman , Fujairah - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/flutter-developer-jobs-in-dubai-uae-in-trycode-0-to-2-years-n-cd-376375-jid-061026000072",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "280926000054",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "161126000269",
+    "date": "2026-11-26",
+    "time": "11:54:50 pm",
+    "title": "Backend Developer",
+    "company": "AQARY Investment and Development",
+    "location": "Abu Dhabi - United Arab Emirates (UAE)",
+    "url": "https://www.naukrigulf.com/backend-developer-jobs-in-abu-dhabi-uae-in-aqary-investment-and-development-1-to-6-years-n-cd-383154-jid-161126000269",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
   }
 ]

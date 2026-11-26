@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-26 10:53:21 pm IST",
+  "lastSyncedAt": "2026-11-26 11:54:59 pm IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,24 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "Backend Developer",
+      "company": "AQARY Investment and Development",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Flutter Developer",
+      "company": "Trycode",
+      "location": "Dubai , Ajman , Fujairah - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Embedded Software Engineer",
+      "company": "ARCA Technology Manufacturing Ltd",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "System Matched"
+    },
     {
       "title": "Software Developer A JR",
       "company": "Platinus Technologies",
@@ -19,54 +37,6 @@
       "company": "ARCA Technology Manufacturing Ltd",
       "location": "Abu Dhabi - United Arab Emirates (UAE)",
       "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Software Developer A JR AND MID LEVEL For UAE Onsite Location",
-      "company": "Platinus Technologies",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "System Matched"
-    },
-    {
-      "title": "Java Developer",
-      "company": "A1 Properties",
-      "location": "Abu Dhabi , Ajman - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "AI Program Facilitator",
-      "company": "Orelis global",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "AI Engineer",
-      "company": "SUNDUS MANAGEMENT CONSULTANCY & STUDIES BUREAUL.L.C",
-      "location": "Abu Dhabi - United Arab Emirates (UAE)",
-      "recruiterStatus": "System Matched"
-    },
-    {
-      "title": "n eight n developer",
-      "company": "Midis Group",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "AI content Creator",
-      "company": "Confidential Company",
-      "location": "Ajman - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "AI Automation & DevOps Engineer",
-      "company": "Nysuniverse FZE LLC",
-      "location": "Ajman - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted Today"
-    },
-    {
-      "title": "Presales Engineer – AI & Customer Experience Solutions",
-      "company": "Voxtron Middle East LLC",
-      "location": "Dubai - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted Today"
     }
   ]
 }
