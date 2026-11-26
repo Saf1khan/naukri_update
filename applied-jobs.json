@@ -1337,7 +1337,9 @@
     "time": "2:35:08 pm",
     "title": "Hiring For Employee Database Management (HRSS)",
     "company": "Accenture",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Not Shortlisted",
+    "location": "Bengaluru"
   },
   {
     "id": "210825013795",
@@ -12196,5 +12198,79 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Mumbai"
+  },
+  {
+    "id": "261126044371",
+    "date": "2026-11-26",
+    "time": "10:28:06 pm",
+    "title": "Python Programmer",
+    "company": "Synechron",
+    "url": "https://www.naukri.com/job-listings-python-programmer-synechron-bengaluru-3-to-5-years-261126044371",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "261126044323",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126044194",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126044562",
+    "date": "2026-11-26",
+    "time": "10:28:35 pm",
+    "title": "Embedded Design Engineer (Firmware & Hardware)",
+    "company": "Gayatri Comtek Lab",
+    "url": "https://www.naukri.com/job-listings-embedded-design-engineer-firmware-hardware-gayatri-comtek-lab-mumbai-2-to-5-years-261126044562",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai"
+  },
+  {
+    "id": "261126044484",
+    "date": "2026-11-26",
+    "time": "10:28:41 pm",
+    "title": "Software Development Engineer (C# / .NET / WPF)",
+    "company": "Gayatri Comtek Lab",
+    "url": "https://www.naukri.com/job-listings-software-development-engineer-c-net-wpf-gayatri-comtek-lab-mumbai-suburban-1-to-3-years-261126044484",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai Suburban"
+  },
+  {
+    "id": "261126044028",
+    "date": "2026-11-26",
+    "time": "10:28:53 pm",
+    "title": "Software Development Engineer",
+    "company": "Route Mobile (RML)",
+    "url": "https://www.naukri.com/job-listings-software-development-engineer-route-mobile-rml-delhi-ncr-mumbai-all-areas-1-to-3-years-261126044028",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Delhi / NCR, Mumbai (All Areas)"
+  },
+  {
+    "id": "261126044086",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126044046",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126044730",
+    "date": "2026-11-26",
+    "status": "skipped",
+    "reason": "no_submit_btn"
   }
 ]

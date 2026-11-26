@@ -1,13 +1,53 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-26 8:12:09 pm IST",
+  "lastSyncedAt": "2026-11-26 10:36:44 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
-    "recruiterActionsOnApplies": 300,
-    "totalApplies90Days": 1959
+    "recruiterActionsOnApplies": 301,
+    "totalApplies90Days": 1963
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "261126044028",
+      "title": "Software Development Engineer",
+      "company": "Route Mobile (RML)",
+      "location": "Delhi / NCR, Mumbai (All Areas)",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 22:28:50"
+    },
+    {
+      "jobId": "261126044484",
+      "title": "Software Development Engineer (C# / .NET / WPF)",
+      "company": "Gayatri Comtek Lab",
+      "location": "Mumbai Suburban",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 22:28:38"
+    },
+    {
+      "jobId": "261126044562",
+      "title": "Embedded Design Engineer (Firmware & Hardware)",
+      "company": "Gayatri Comtek Lab",
+      "location": "Mumbai",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 22:28:32"
+    },
+    {
+      "jobId": "261126044371",
+      "title": "Python Programmer",
+      "company": "Synechron",
+      "location": "Bengaluru",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-26 22:28:03"
+    },
+    {
+      "jobId": "210926014839",
+      "title": "Hiring For Employee Database Management (HRSS)",
+      "company": "Accenture",
+      "location": "Bengaluru",
+      "recruiterStatus": "Not Shortlisted",
+      "modifiedDate": "2026-11-26 21:32:06"
+    },
     {
       "jobId": "261126042507",
       "title": "Python Developer",
@@ -47,46 +87,6 @@
       "location": "Bengaluru",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-26 20:01:43"
-    },
-    {
-      "jobId": "261126041038",
-      "title": "Engineer",
-      "company": "Talent Corner Hr Services",
-      "location": "Pune",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 18:22:22"
-    },
-    {
-      "jobId": "261126041264",
-      "title": "Python Fullstack Developer",
-      "company": "Navthrough Solutions",
-      "location": "Chennai",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 18:21:11"
-    },
-    {
-      "jobId": "261126040091",
-      "title": "Hiring | Integration Engineer (PT-103 Certified) | Workforce Software",
-      "company": "Green Start",
-      "location": "India",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 18:19:32"
-    },
-    {
-      "jobId": "261126040569",
-      "title": "Sdet Engineer",
-      "company": "BLJ Tech Geeks",
-      "location": "Gurugram, Noida, Delhi / NCR",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 18:19:21"
-    },
-    {
-      "jobId": "261126038167",
-      "title": "Openings For CAD & C++ Developer - HCL Software",
-      "company": "HCL Software",
-      "location": "Bengaluru, Pune, Mumbai (All Areas)",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-26 18:18:40"
     }
   ]
 }
