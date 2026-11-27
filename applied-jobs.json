@@ -12687,5 +12687,87 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Mumbai, Bengaluru, Delhi / NCR"
+  },
+  {
+    "id": "241126024155",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126008638",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126030766",
+    "date": "2026-11-27",
+    "time": "10:14:22 pm",
+    "title": "Hil Test Engineer",
+    "company": "HCLTech",
+    "url": "https://www.naukri.com/job-listings-hil-test-engineer-hcltech-bengaluru-3-to-6-years-251126030766",
+    "status": "applied",
+    "recruiterStatus": "Application Sent"
+  },
+  {
+    "id": "241126023842",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126027634",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126025522",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126028444",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "271126056658",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "030826000077",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "251126009604",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "271126057113",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126027172",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "260626501619",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "external_site"
   }
 ]

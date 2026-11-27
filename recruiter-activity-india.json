@@ -1,13 +1,21 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-27 8:01:34 pm IST",
+  "lastSyncedAt": "2026-11-27 10:25:03 pm IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
-    "recruiterActionsOnApplies": 304,
+    "recruiterActionsOnApplies": 305,
     "totalApplies90Days": 1973
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "241126028514",
+      "title": "Databricks Data Engineer",
+      "company": "Diggibyte Technologies",
+      "location": "Ahmedabad, Bengaluru, Hosur",
+      "recruiterStatus": "Not Shortlisted",
+      "modifiedDate": "2026-11-27 21:26:46"
+    },
     {
       "jobId": "271126920412",
       "title": "Facilitator : Full Stack",
@@ -79,14 +87,6 @@
       "location": "Nagpur",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-27 18:13:12"
-    },
-    {
-      "jobId": "271126047287",
-      "title": "AI -ML Engineer",
-      "company": "Centricore Systems",
-      "location": "Pune",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-27 18:13:06"
     }
   ]
 }
