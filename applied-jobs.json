@@ -12566,5 +12566,126 @@
     "status": "applied",
     "recruiterStatus": "Applied",
     "location": "Noida"
+  },
+  {
+    "id": "271126056226",
+    "date": "2026-11-27",
+    "time": "7:55:51 pm",
+    "title": "React 18 developer with Python Figma Aws",
+    "company": "Big4  Company",
+    "url": "https://www.naukri.com/job-listings-react-18-developer-with-python-figma-aws-erm-placement-services-pune-bengaluru-3-to-8-years-271126056226",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru, Pune"
+  },
+  {
+    "id": "081026947277",
+    "date": "2026-11-27",
+    "time": "7:55:58 pm",
+    "title": "Java Fullstack(Angular) Developer",
+    "company": "Infosys",
+    "url": "https://www.naukri.com/job-listings-java-fullstack-angular-developer-infosys-limited-hyderabad-bengaluru-2-to-3-years-081026947277",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Hyderabad, Bengaluru"
+  },
+  {
+    "id": "271126053724",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "250926033177",
+    "date": "2026-11-27",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "141026037415",
+    "date": "2026-11-27",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "250926033247",
+    "date": "2026-11-27",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "271126056066",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "161026019611",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126056014",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "010626027077",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "210926026488",
+    "date": "2026-11-27",
+    "status": "already_applied",
+    "reason": "already_applied"
+  },
+  {
+    "id": "201126018306",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126050995",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126918008",
+    "date": "2026-11-27",
+    "time": "8:00:54 pm",
+    "title": "Node.js Developer",
+    "company": "Appscrip",
+    "url": "https://www.naukri.com/job-listings-node-js-developer-appscrip-surat-1-to-3-years-271126918008",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Surat"
+  },
+  {
+    "id": "271126014346",
+    "date": "2026-11-27",
+    "time": "8:01:22 pm",
+    "title": "Fullstack Developer (React + Node JS)",
+    "company": "Wipro",
+    "url": "https://www.naukri.com/job-listings-fullstack-developer-react-node-js-aim-multiskills-jobs-bengaluru-3-to-6-years-271126014346",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "271126920412",
+    "date": "2026-11-27",
+    "time": "8:01:27 pm",
+    "title": "Facilitator : Full Stack",
+    "company": "InUnity",
+    "url": "https://www.naukri.com/job-listings-facilitator-full-stack-inunity-mumbai-bengaluru-delhi-ncr-2-to-7-years-271126920412",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Mumbai, Bengaluru, Delhi / NCR"
   }
 ]
