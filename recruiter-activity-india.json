@@ -1,6 +1,6 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-27 11:19:07 pm IST",
+  "lastSyncedAt": "2026-11-28 12:38:24 am IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
@@ -8,6 +8,14 @@
     "totalApplies90Days": 1973
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "220424001785",
+      "title": "Frontend Software Developer",
+      "company": "EaseMyTrip.com",
+      "location": "Gurugram",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-28 00:37:25"
+    },
     {
       "jobId": "241126028514",
       "title": "Databricks Data Engineer",
@@ -79,14 +87,6 @@
       "location": "Noida",
       "recruiterStatus": "Applied",
       "modifiedDate": "2026-11-27 18:16:55"
-    },
-    {
-      "jobId": "271126047019",
-      "title": "Database Developer",
-      "company": "Debashu Services",
-      "location": "Nagpur",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-27 18:13:12"
     }
   ]
 }

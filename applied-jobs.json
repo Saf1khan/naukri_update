@@ -12775,5 +12775,178 @@
     "date": "2026-11-27",
     "status": "skipped",
     "reason": "no_apply_button"
+  },
+  {
+    "id": "271126057154",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "271126057113",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "241126024155",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126008638",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "241126023842",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "261126027634",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126025522",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "251126028444",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "271126053724",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "271126056658",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "281126000016",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126000055",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "030826000077",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126057431",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126009772",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "261126044046",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "160926026874",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "231026033772",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "190826038463",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "221026010347",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "020726025027",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271025020982",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "171126025177",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "161026019268",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "281126000085",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "220424003255",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "220424003639",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "220424001785",
+    "date": "2026-11-28",
+    "time": "12:37:28 am",
+    "title": "Frontend Software Developer",
+    "company": "Easemytrip",
+    "url": "https://www.naukri.com/job-listings-frontend-software-developer-easemytrip-com-gurugram-3-to-8-years-220424001785",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Gurugram"
   }
 ]
