@@ -12769,5 +12769,11 @@
     "date": "2026-11-27",
     "status": "skipped",
     "reason": "external_site"
+  },
+  {
+    "id": "271126057154",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
   }
 ]
