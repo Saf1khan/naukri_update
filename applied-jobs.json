@@ -1835,7 +1835,9 @@
     "time": "5:18:52 pm",
     "title": "AI & Python Developer  Fresher 2026",
     "company": "HCSIPL",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Contacted By Email",
+    "location": "Hyderabad"
   },
   {
     "id": "230926028147",
@@ -4699,7 +4701,9 @@
     "time": "2:21:08 pm",
     "title": "Fullstack Developer",
     "company": "Myraid",
-    "status": "applied"
+    "status": "applied",
+    "recruiterStatus": "Resume Viewed",
+    "location": "Bengaluru"
   },
   {
     "id": "210826031387",
@@ -12020,7 +12024,7 @@
     "company": "Navthrough Solutions",
     "url": "https://www.naukri.com/job-listings-python-fullstack-developer-navthrough-solutions-chennai-3-to-5-years-261126041264",
     "status": "applied",
-    "recruiterStatus": "Application Sent",
+    "recruiterStatus": "Resume Viewed",
     "location": "Chennai"
   },
   {
@@ -12031,7 +12035,7 @@
     "company": "Talent Corner HR Services",
     "url": "https://www.naukri.com/job-listings-engineer-talent-corner-hr-services-pune-1-to-3-years-261126041038",
     "status": "applied",
-    "recruiterStatus": "Application Sent",
+    "recruiterStatus": "Not Shortlisted",
     "location": "Pune"
   },
   {
@@ -12460,5 +12464,107 @@
     "date": "2026-11-27",
     "status": "skipped",
     "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126048490",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126045250",
+    "date": "2026-11-27",
+    "time": "6:11:41 pm",
+    "title": "Database Engineer",
+    "company": "Careernet",
+    "url": "https://www.naukri.com/job-listings-database-engineer-careernet-bengaluru-3-to-6-years-271126045250",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Bengaluru"
+  },
+  {
+    "id": "271126035613",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126034904",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126034599",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_apply_button"
+  },
+  {
+    "id": "191126032864",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "171126030680",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "301026029161",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126047287",
+    "date": "2026-11-27",
+    "time": "6:13:08 pm",
+    "title": "AI -ML Engineer",
+    "company": "Centricore Systems",
+    "url": "https://www.naukri.com/job-listings-ai-ml-engineer-centricore-systems-pune-3-to-6-years-271126047287",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Pune"
+  },
+  {
+    "id": "271126047019",
+    "date": "2026-11-27",
+    "time": "6:13:15 pm",
+    "title": "Database Developer",
+    "company": "Debashu Services",
+    "url": "https://www.naukri.com/job-listings-database-developer-debashu-services-nagpur-0-to-3-years-271126047019",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Nagpur"
+  },
+  {
+    "id": "271126044620",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "271126050042",
+    "date": "2026-11-27",
+    "time": "6:15:04 pm",
+    "title": "React Native Developer",
+    "company": "Protocol Zone",
+    "url": "https://www.naukri.com/job-listings-react-native-developer-protocol-zone-ahmedabad-3-to-5-years-271126050042",
+    "status": "applied",
+    "recruiterStatus": "Application Sent"
+  },
+  {
+    "id": "271126501102",
+    "date": "2026-11-27",
+    "time": "6:16:58 pm",
+    "title": "Node.js Developer",
+    "company": "Webkype",
+    "url": "https://www.naukri.com/job-listings-node-js-developer-webkype-info-services-pvt-ltd-noida-2-to-4-years-271126501102",
+    "status": "applied",
+    "recruiterStatus": "Applied",
+    "location": "Noida"
   }
 ]
