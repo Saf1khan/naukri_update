@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-27 3:26:02 am IST",
+  "lastSyncedAt": "2026-11-27 8:24:09 pm IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -9,64 +9,64 @@
   },
   "recentApplicationStatuses": [
     {
-      "title": "Automation Test Engineer QA Specialist",
-      "company": "Dotflick Solutions",
+      "title": "Data Engineer",
+      "company": "Techcarrot Fz-llc",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "System Matched"
+    },
+    {
+      "title": "Cloudera Data Engineer",
+      "company": "Midis Group",
       "location": "Dubai - United Arab Emirates",
       "recruiterStatus": "Application Submitted"
     },
     {
-      "title": "Technical Support Engineer",
-      "company": "Confidential Company",
-      "location": "Abu Dhabi - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "GenAI + Node.js Developer",
-      "company": "Clover Infotech",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Planning Engineer",
-      "company": "Galadari Brothers Co. LLC",
-      "location": "Sharjah - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Python Developer",
-      "company": "Dotflick Solutions",
+      "title": "Artificial Intelligence Engineer",
+      "company": "Asreet Consulting",
       "location": "Dubai - United Arab Emirates",
       "recruiterStatus": "Application Submitted"
     },
     {
       "title": "Backend Developer",
+      "company": "Midis Group",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Automation Test Engineer QA Specialist",
+      "company": "Dotflick Solutions",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Technical Support Engineer",
+      "company": "Confidential Company",
+      "location": "Abu Dhabi - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "GenAI + Node.js Developer",
+      "company": "Clover Infotech",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Planning Engineer",
+      "company": "Galadari Brothers Co. LLC",
+      "location": "Sharjah - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Python Developer",
+      "company": "Dotflick Solutions",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted Today"
+    },
+    {
+      "title": "Backend Developer",
       "company": "AQARY Investment and Development",
       "location": "Abu Dhabi - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Flutter Developer",
-      "company": "Trycode",
-      "location": "Dubai , Ajman , Fujairah - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Embedded Software Engineer",
-      "company": "ARCA Technology Manufacturing Ltd",
-      "location": "Abu Dhabi - United Arab Emirates (UAE)",
-      "recruiterStatus": "System Matched"
-    },
-    {
-      "title": "Software Developer A JR",
-      "company": "Platinus Technologies",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "System Matched"
-    },
-    {
-      "title": "ArduPilot Software Engineer",
-      "company": "ARCA Technology Manufacturing Ltd",
-      "location": "Abu Dhabi - United Arab Emirates (UAE)",
-      "recruiterStatus": "Application Submitted"
+      "recruiterStatus": "Application Submitted Today"
     }
   ]
 }

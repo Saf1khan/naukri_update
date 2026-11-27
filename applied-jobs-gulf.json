@@ -271,7 +271,7 @@
     "location": "Abu Dhabi - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/backend-developer-jobs-in-abu-dhabi-uae-in-aqary-investment-and-development-1-to-6-years-n-cd-383154-jid-161126000269",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "071126000077",
@@ -330,7 +330,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/python-developer-jobs-in-dubai-uae-in-dotflick-solutions-1-to-4-years-n-cd-20010126-jid-121126500081",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "280926000342",
@@ -347,7 +347,7 @@
     "location": "Sharjah - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/planning-engineer-jobs-in-sharjah-uae-in-galadari-brothers-co-llc-2-to-5-years-n-cd-87751-jid-261126000294",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "240826501287",
@@ -358,7 +358,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/genai-node-js-developer-jobs-in-dubai-uae-in-clover-infotech-1-to-6-years-n-cd-20010126-jid-240826501287",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "021126501012",
@@ -375,7 +375,7 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/backend-developer-jobs-in-dubai-uae-in-midis-group-2-to-4-years-n-cd-10001626-jid-160126500222",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "021126000076",
@@ -386,7 +386,7 @@
     "location": "Abu Dhabi - United Arab Emirates (UAE)",
     "url": "https://www.naukrigulf.com/technical-support-engineer-jobs-in-abu-dhabi-uae-in-confidential-2-to-7-years-n-jid-021126000076",
     "status": "applied",
-    "recruiterStatus": "Application Submitted"
+    "recruiterStatus": "Application Submitted Today"
   },
   {
     "id": "121126500079",
@@ -397,6 +397,45 @@
     "location": "Dubai - United Arab Emirates",
     "url": "https://www.naukrigulf.com/automation-test-engineer-qa-specialist-jobs-in-dubai-uae-in-dotflick-solutions-2-to-7-years-n-cd-20010126-jid-121126500079",
     "status": "applied",
+    "recruiterStatus": "Application Submitted Today"
+  },
+  {
+    "id": "271126500084",
+    "date": "2026-11-27",
+    "time": "8:22:28 pm",
+    "title": "Artificial Intelligence Engineer",
+    "company": "Asreet Consulting",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/artificial-intelligence-engineer-jobs-in-dubai-uae-in-asreet-consulting-0-to-5-years-n-cd-20010126-jid-271126500084",
+    "status": "applied",
     "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "271126000082",
+    "date": "2026-11-27",
+    "status": "skipped",
+    "reason": "unconfirmed"
+  },
+  {
+    "id": "160126500161",
+    "date": "2026-11-27",
+    "time": "8:23:50 pm",
+    "title": "Cloudera Data Engineer",
+    "company": "Midis Group",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/cloudera-data-engineer-jobs-in-dubai-uae-in-midis-group-2-to-5-years-n-cd-10001626-jid-160126500161",
+    "status": "applied",
+    "recruiterStatus": "Application Submitted"
+  },
+  {
+    "id": "251126500048",
+    "date": "2026-11-27",
+    "time": "8:24:01 pm",
+    "title": "Data Engineer",
+    "company": "Techcarrot Fz-llc",
+    "location": "Dubai - United Arab Emirates",
+    "url": "https://www.naukrigulf.com/data-engineer-jobs-in-dubai-uae-in-techcarrot-fz-llc-0-to-5-years-n-cd-20010126-jid-251126500048",
+    "status": "applied",
+    "recruiterStatus": "System Matched"
   }
 ]
