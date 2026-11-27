@@ -12948,5 +12948,45 @@
     "status": "applied",
     "recruiterStatus": "Application Sent",
     "location": "Gurugram"
+  },
+  {
+    "id": "281126000156",
+    "date": "2026-11-28",
+    "time": "1:11:00 am",
+    "title": "Software Engineer (Remote)",
+    "company": "Quik Hire Staffing Solutions",
+    "url": "https://www.naukri.com/job-listings-software-engineer-remote-quik-hire-staffing-solutions-india-0-to-0-years-281126000156",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "India"
+  },
+  {
+    "id": "051126037933",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "201126029905",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
+  },
+  {
+    "id": "220424001220",
+    "date": "2026-11-28",
+    "time": "1:13:26 am",
+    "title": "Software Test Engineer",
+    "company": "Easemytrip",
+    "url": "https://www.naukri.com/job-listings-software-test-engineer-easemytrip-com-gurugram-2-to-7-years-220424001220",
+    "status": "applied",
+    "recruiterStatus": "Application Sent",
+    "location": "Gurugram"
+  },
+  {
+    "id": "281126000084",
+    "date": "2026-11-28",
+    "status": "skipped",
+    "reason": "no_submit_btn"
   }
 ]

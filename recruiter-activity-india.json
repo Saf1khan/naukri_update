@@ -1,13 +1,29 @@
 {
   "platform": "naukri_india",
-  "lastSyncedAt": "2026-11-28 12:38:24 am IST",
+  "lastSyncedAt": "2026-11-28 1:19:18 am IST",
   "metrics": {
     "searchAppearances": 0,
     "profileViews": 0,
     "recruiterActionsOnApplies": 305,
-    "totalApplies90Days": 1973
+    "totalApplies90Days": 1975
   },
   "recentApplicationStatuses": [
+    {
+      "jobId": "220424001220",
+      "title": "Software Test Engineer",
+      "company": "EaseMyTrip.com",
+      "location": "Gurugram",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-28 01:13:23"
+    },
+    {
+      "jobId": "281126000156",
+      "title": "Software Engineer (Remote)",
+      "company": "Quik Hire Staffing Solutions",
+      "location": "India",
+      "recruiterStatus": "Application Sent",
+      "modifiedDate": "2026-11-28 01:10:57"
+    },
     {
       "jobId": "220424001785",
       "title": "Frontend Software Developer",
@@ -71,22 +87,6 @@
       "location": "India",
       "recruiterStatus": "Application Sent",
       "modifiedDate": "2026-11-27 18:20:49"
-    },
-    {
-      "jobId": "141126015125",
-      "title": "Subject Matter Expert (Expert Reports)",
-      "company": "Innodata India",
-      "location": "Delhi / NCR",
-      "recruiterStatus": "Application Sent",
-      "modifiedDate": "2026-11-27 18:20:29"
-    },
-    {
-      "jobId": "271126501102",
-      "title": "Node.js Developer",
-      "company": "Webkype Info Services Pvt. Ltd.",
-      "location": "Noida",
-      "recruiterStatus": "Applied",
-      "modifiedDate": "2026-11-27 18:16:55"
     }
   ]
 }
