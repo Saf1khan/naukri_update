@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-27 11:41:53 pm IST",
+  "lastSyncedAt": "2026-11-28 3:25:23 am IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,24 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "IT Specialist",
+      "company": "Loops Automation LLC",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "IT Support Engineer",
+      "company": "Al Haktur IT Solutions",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "IT Support Engineer",
+      "company": "Kazamer Tax Consultant",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
     {
       "title": "Product Engineer",
       "company": "Elcome International LLC",
@@ -48,25 +66,7 @@
       "title": "Data Engineer",
       "company": "Techcarrot Fz-llc",
       "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "System Matched"
-    },
-    {
-      "title": "Cloudera Data Engineer",
-      "company": "Midis Group",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Artificial Intelligence Engineer",
-      "company": "Asreet Consulting",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted"
-    },
-    {
-      "title": "Backend Developer",
-      "company": "Midis Group",
-      "location": "Dubai - United Arab Emirates",
-      "recruiterStatus": "Application Submitted Today"
+      "recruiterStatus": "System Matched 2 hours ago"
     }
   ]
 }
