@@ -1,6 +1,6 @@
 {
   "platform": "naukrigulf",
-  "lastSyncedAt": "2026-11-27 10:30:27 pm IST",
+  "lastSyncedAt": "2026-11-27 11:41:53 pm IST",
   "metrics": {
     "searchAppearances": 1,
     "profileViews": 1,
@@ -8,6 +8,24 @@
     "contactedByEmail": 0
   },
   "recentApplicationStatuses": [
+    {
+      "title": "Product Engineer",
+      "company": "Elcome International LLC",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Website Developer",
+      "company": "Beyond Limits Business Center L.L.C",
+      "location": "Dubai - United Arab Emirates (UAE)",
+      "recruiterStatus": "System Matched"
+    },
+    {
+      "title": "Mobile app marketer",
+      "company": "Appkasa",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
     {
       "title": "iOS and Android developer",
       "company": "Appkasa",
@@ -37,6 +55,18 @@
       "company": "Midis Group",
       "location": "Dubai - United Arab Emirates",
       "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Artificial Intelligence Engineer",
+      "company": "Asreet Consulting",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted"
+    },
+    {
+      "title": "Backend Developer",
+      "company": "Midis Group",
+      "location": "Dubai - United Arab Emirates",
+      "recruiterStatus": "Application Submitted Today"
     }
   ]
 }
